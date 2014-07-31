@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>The Cope Evans Project | Quakers in a Time of Transition</title>
+    {% include "top_links.html" %}
+  </head>
+
+  <body>
+    {% include "menu.html" %}
+    <!-- background image overlay (semi transparent dark background image overlay) -->
+    <!-- comment or remove if you don't want the overlay on top of the image -->
+    <div class="background-image-overlay"></div>
+
+    <!-- outer background container - the element from where the default page background image is set, and the element which changes its background when scrolling through other sections (.section-wrapoer) that have attribute "data-custom-background-img" set. 
+     - data-default-background-img attr is required for sections (.section-wrapper) below that have no custom background defined.
+     - use same image in the backstretch.js code in the footer for IE8 or less browsers -->
+    <div id="outer-background-container" data-default-background-img="{{STATIC_URL}}images/other_images/White-Background-Xtra.jpg" style="background-image:url({{STATIC_URL}}images/other_images/White-Background-Xtra.jpg);"></div>
+    <!-- end: #outer-background-container -->    
+
+    <!-- Outer Container -->
+    <div id="outer-container">
+
+      <!-- Left Sidebar -->
+      <section id="left-sidebar">
+        <!-- Menu Icon for smaller viewports -->
+        <div id="mobile-menu-icon" class="visible-xs" onClick="toggle_main_menu();"><span class="glyphicon glyphicon-th"></span></div>
+
+        <!-- ==================================================================
+        MAIN MENU 
+        ==================================================================  -->
+        <!-- Each menu item links to a section (<article class="section-wrapper...") in the main content below.
+             - set each <li> id to this format: "menu-item-[the id of the .section-wrapper to link to]".
+             - set href of each <a> to the id of the .section-wrapper to link to -->
+        <ul id="main-menu">
+          <li id="menu-item-intro" class="menu-item scroll"><a href="#intro">Cope Evans</a></li>
+          <li id="menu-item-text" class="menu-item scroll"><a href="#text">About Our Project</a></li>
+          <li id="menu-item-pizza" class="menu-item scroll"><a href="#pizza">The Collection</a></li>
+          <li id="menu-item-tree" class="menu-item scroll"><a href="#tree">Family Tree</a></li>
+            <li id="menu-item-arguments" class="menu-item scroll"><a href="#arguments">Page Rank</a></li>
+          <li id="menu-item-contact" class="menu-item scroll"><a href="#contact">Contact</a></li>
+          <!-- to include a link which doesn't scroll to a section inside the page, remove the .scroll class from the <li> - example below -->
+          <!-- <li id="menu-item-alt-page" class="menu-item"><a href="http://www.link.com">Outer Link</a></li> -->
+        </ul><!-- #main-menu -->
+        <!-- ==================== END: MAIN MENU ==================== -->
+
+      </section><!-- #left-sidebar -->
+      <!-- end: Left Sidebar -->
+
+      <!-- ==================================================================
+      MAIN CONTENT
+      ==================================================================  -->
+      <!-- all the website sections are contained in the <article> tag with class ".section-wrapper" and a unique id.
+           - to edit / remove / create website sections, you have to handle the content contained in these <article> tags -->
+      <section id="main-content" class="clearfix">
+        
+        <!-- ==================== SECTION TYPE: Intro Text ==================== -->
+        <!-- This type of section should contain heading and intro paragraph. It can also include links to other sections -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="intro" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/cope evans_0050.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              <!-- Start: Section content to edit -->
+
+                <!-- <p> text in .feature-text is larger  -->
+                <section class="feature-text">
+                  <h1>Who Were The Cope Evans?</h1>
+                  <p>The Cope and Evans families were two interconnected families that were prominent Quakers in the Philadelphia-area as far back as the 18th century. The data and research we draw from for the intents of this project is primarily from letters written and received from members of this family during the 18th to the early 20th century.</p>
+                  <!-- to add scrolling effects to links linking to same page section, add .link-scroll class -->
+
+                    <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-15');" class="btn btn-outline-inverse btn-sm">read more</a></p>
+                
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+                     - it is important to set a unique id -->
+                <div class="content-to-populate-in-modal" id="modal-content-15">
+                  <h1>What You Need to Know</h1>
+                  <p><img data-img-src="{{STATIC_URL}}images/other_images/ThomasPCope.jpg" class="lazy rounded_border hover_effect pull-right" alt="Lorem Ipsum">In this project you first come to view this family first through the character of Thomas Pim Cope who rose to prominence from 1790 to 1830s by running a successful import and export business and established the family’s global connections. From there, we move into narratives of the later generations highlighted by the explorations and letters of Clementine Cope and the public works of Francis Reeve Cope during the Reconstruction.
+</p>
+                  <h3></h3>
+                  <p><img data-img-src="{{STATIC_URL}}images/other_images/Amy_Ellis_Yarnall_Mrs_Edgar_Cope.jpg" class="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum">This family and its collection are extremely important in answering scholarly questions unique to the Industrial Age, while providing context by including letters from generations and time periods that frame this moment. There are many questions this project has produced and will produce, and it was a relentless struggle to restrain ourselves. This project ought to serve as an invitation into more possibilities, questions, and scholarly research.  A possible question and caveat of this project is surrounded around how the Cope Evans family and their values or practices may differ from Quakers of their time due to their affluence.</p>
+                  <p></p>
+              <!-- End: Section content to edit -->
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Intro Text ==================== -->
+
+        <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="text" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/cope evans_0053.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              <!-- Start: Section content to edit -->
+
+                <h1 class="section-title">What is Our Project?</h1>
+
+                <p class="feature-paragraph"><img data-img-src="{{STATIC_URL}}images/other_images/hsc0159_01a.jpg" class="lazy pull-right" alt="Lorem Ipsum">Our project explores the exchange of letters sent and received during the end of the 18th century to the beginning of the 20th century by the Cope-Evans family, a prominent Philadelphia-area Quaker family. Through these letters and the lives of the writers/recipients we are able to provide insight into how the Industrial Age produced Quakers that engaged with the outside world, through our analysis of their letters, movement and networks. In our research and analysis, we look at how the changing times, the changing Philadelphia city, and changing lifestyle impacted and were impacted by these networks and movement.<a href="#carousel"></a></p>
+                <!-- to make a popup/modal link add an onClick function call to the function: 
+                     - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+
+                
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+                     - it is important to set a unique id -->
+                <div class="content-to-populate-in-modal" id="modal-content-1">
+                  <h1>What You Need To Know</h1>
+                  <p><img data-img-src="{{STATIC_URL}}images/other_images/SampleLetter.jpg" class="lazy rounded_border hover_effect pull-right" alt="Lorem Ipsum">In this project you first come to view this family first through the character of Thomas Pim Cope who rose to prominence from 1790 to 1830s  by running a successful import and export business that established the families global connections. He was the founder of the Cope packet line - a mercantile shipping firm based in Philadelphia and trading with England and the Far East. His sons, Henry and Alfred later took on the business themselves when their father withdrew from the company in 1829 (Special Collections).</p>
+                  <h3>Other main characters featured in this project are  Clementine Cope and Francis Reeve Cope.</h3>
+                  <p><img data-img-src="{{STATIC_URL}}images/other_images/transp-image3.png" class="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum">Pop up Text Here</p>
+                </div><!-- #modal-content-1 -->
+
+              <!-- End: Section content to edit --> 
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
+
+       <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="pizza" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/hsc0161_01a.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              <!-- Start: Section content to edit -->
+ 
+                <h1 class="section-title">The Collection</h1>
+
+                <p class="feature-paragraph"><img data-img-src="{{STATIC_URL}}images/other_images/hsc0688_01.jpg" class="lazy pull-right" alt="Lorem Ipsum">The Cope Evans Family Papers contain the letters of the closely related Cope and Evans families written between 1732 and 1911.
+</p>
+<p>The collection consists of letters (with accompanying poetry, acrostics, drawings, clippings, etc.); along with marriage certificates, photographs, a friendship book, estate related papers and account books, and computer disks. The bulk of the collection consists of ca. 2,600 letters of the closely related Quaker families of Cope and Evans of Germantown (Philadelphia, Pa.); other families represented include Brown, Drinker and Haines. Letters are predominantly to and from relatives: the vast majority are between immediate family members (parents and children, husbands and wives, brothers, sisters).</p>
+<p>They discuss family, friends and home life, and reflect the social environment of their respective communities. Other topics to be found within the letters include Philadelphia history, Haverford history, travels in Europe, education, illness and death, and discussions of national events such as the Civil War, Reconstruction, and the assassinations of Presidents Lincoln and McKinley. They are a rich source of information on a large number of topics.
+<a href="#carousel"></a></p>
+                <!-- to make a popup/modal link add an onClick function call to the function: 
+                     - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+                <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-7');" class="btn btn-outline-inverse btn-sm">read more</a></p>
+                
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+                     - it is important to set a unique id -->
+                <div class="content-to-populate-in-modal" id="modal-content-7">
+                  <h1>The Collection</h1>
+                  <p><img data-img-src="{{STATIC_URL}}images/other_images/transp-image4.png" class="lazy rounded_border hover_effect pull-right" alt="Lorem Ipsum">Business matters dominate the letters of brothers Henry, William D. and Alfred Cope: Henry and Alfred continuing the Cope family shipping business begun by their father and William D. Cope (1798-1873) establishing his farm in Susquehanna Co., Pa. where he looked after his father's land interests. </p>
+                    <p>The letters of Anna S. Cope (1822-1916) and Francis R. Cope (1821-1909) discuss home life and children, family and friends activities; many of Anna S. Cope's letters were written from family vacation spots in New England, where she often went to escape the hot summer months in Philadelphia. Letters of Francis R. Cope include letters written while in Virginia on Freedmen's Relief Association business after the Civil War (1866) as well as letters related to the sale of Pa. Freedmen's Assoc. property in Washington, D.C.</p>
+                    <p>The letters of sisters Clementine, Caroline and Annette Cope include many travel letters from Europe. Clementine Cope's letters also include those written while teaching at a Freedmen's Association School in Baltimore in 1865.</p>
+                    <p>There are a number of letters written by children; of particular interest are those written by brothers Henry, Francis and William D. Cope while at Westtown Boarding School in the early 1800s and letters of brothers Francis R. Cope (1821-1909) and Thomas P. Cope (1823-1900) while at Haverford College in the 1830s.</p>
+                    <p>The letters of Elizabeth S. Cope relate family and travel news; letters after the death of her husband Alexis T. Cope in 1883 express her loss.</p>
+                    <p>Letters of Rachel and Jonathan Evans discuss children, family, home life and health concerns and contain much related both to their roles as parents and to their obvious love for each other. Rachel's letters include information on the illness, treatment and recovery of their oldest child, Anna Cope Evans, who was sent to "Bournewood" (Brookline, Mass.) after a nervous breakdown in 1900; also letters of Anna Cope Evans (b. 1875) from "Bournewood." [Note: many handwritten comments on letters in the collection are in the hand of Elizabeth S. Cope (1848-1937)]</p>
+                    <p>Also marriage certificates, copies of original photographs of members of Hartshorne, Yarnall, Stokes, Garrett, Wistar, Haines, Drinker and Bright families, friendship book of Francis R. Cope at Haverford College (1835-1838), papers and account books of estate of Thomas Evans (1798-1868), computer disks of the index to the letters prepared by J. Morris Evans.</p>
+                    <p>Some persons represented in the collection are:</p>
+                    <p>Alexis T. Cope (1850-1883) [34 letters]; Alfred Cope (1806-1875) [29 letters]; Alfred Cope (1857-1897) [29 letters]; Anna S. Cope (1822-1916)[ca. 232 letters]; Annette Cope (1843-1916) [22 letters]; Clementine Cope (1835-1903) [89 letters]; Caroline E. Cope (1840-1944) [33 letters].</p>
+                    <p>Elizabeth S. Cope (1848-1937) [ca. 191 letters]; Elizabeth Waln Stokes Cope (1823-1902) [20 letters]; Francis R. Cope (1821-1909) [ca. 453 letters]; Francis R. Cope (1878-1962) [25 letters]; Henry Cope (1793-1865) [47 letters].</p>
+                    <p>Mary Cope (1766-1825) [37 letters]; Thomas P. Cope (1768-1854) [24 letters]; Thomas P. Cope (1823-1900) [66 letters]; William D. Cope (1798-1873) [ca. 134 letters]; Jonathan Evans (1843-1911) [ca. 239 letters]; Rachel C. Evans (1850-1939) [ca. 295 letters].</p>
+                </div><!-- #modal-content-1 -->
+
+
+              <!-- End: Section content to edit -->
+
+            </div><!-- .col-sm-11 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Features Grid ==================== -->
+                <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="tree" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/hsc0097_01.jpeg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              <!-- Start: Section content to edit -->
+
+                <h1 class="section-title">Family Tree</h1>
+		<a href="/dendro/41/"><img src="{{STATIC_URL}}images/other_images/familyTree.png"></a>
+                <!-- to make a popup/modal link add an onClick function call to the function: 
+                     - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+  
+                
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+                     - it is important to set a unique id -->
+                <div class="content-to-populate-in-modal" id="modal-content-1">
+                  <h1>What You Need To Know</h1>
+                  <p><img data-img-src="{{STATIC_URL}}images/other_images/SampleLetter.jpg" class="lazy rounded_border hover_effect pull-right" alt="Lorem Ipsum">In this project you first come to view this family first through the character of Thomas Pim Cope who rose to prominence from 1790 to 1830s  by running a successful import and export business that established the families global connections. He was the founder of the Cope packet line - a mercantile shipping firm based in Philadelphia and trading with England and the Far East. His sons, Henry and Alfred later took on the business themselves when their father withdrew from the company in 1829 (Special Collections).</p>
+                  <h3>Other main characters featured in this project are  Clementine Cope and Francis Reeve Cope.</h3>
+                  <p><img data-img-src="{{STATIC_URL}}images/other_images/transp-image3.png" class="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum">Pop up Text Here</p>
+                </div><!-- #modal-content-1 -->
+
+              <!-- End: Section content to edit --> 
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
+
+
+         <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="arguments" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/cope evans_0054.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              <!-- Start: Section content to edit -->
+
+                <h1 class="section-title">Important People</h1>
+                <img src="{{STATIC_URL}}images/other_images/pageRank.png">
+		<!-- to make a popup/modal link add an onClick function call to the function: 
+                     - populate_and_open_modal(event, '[id of popup content container - see below]') -->                
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+ 
+                </div><!-- #modal-content-1 -->
+
+              <!-- End: Section content to edit --> 
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
+
+        <!-- ==================== SECTION TYPE: Contact ==================== -->
+        <!-- This type of section should contain text (contact details) and a contact form -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="contact" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/hsc1189_01.jpg">
+          <div class="content-wrapper clearfix">
+
+              <!-- Start: Section content to edit -->
+            
+              <h1 class="section-title">Contact</h1>
+              
+                <!-- CONTACT DETAILS -->
+                <div class="contact-details col-sm-5 col-md-3">
+                  <p>370,<br/>Lancaster Avenue,<br/>Haverford<br/>PA</p>
+                  <p>Tel: (617) 943 9555</p>
+                  <p><a href="mailto:crada@haverford.edu">crada@haverford.edu</a></p>
+                </div>
+                <!-- END: CONTACT DETAILS -->
+
+                <!-- CONTACT FORM -->
+                <div class="col-sm-7 col-md-9">
+                  <!-- IMPORTANT: change the email address at the top of the {{STATIC_URL}}php/mail.php file to the email address that you want this form to send to -->
+                  <form class="form-style validate-form clearfix" action="{{STATIC_URL}}php/mail.php" method="POST" role="form">
+
+                    <!-- form left col -->
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="text" class="text-field form-control validate-field required" data-validation-type="string" id="form-name" placeholder="Full Name" name="name">
+                      </div>  
+                      <div class="form-group">
+                        <input type="email" class="text-field form-control validate-field required" data-validation-type="email" id="form-email" placeholder="Email Address" name="email">
+                      </div>
+                      <div class="form-group">
+                        <input type="tel" class="text-field form-control validate-field phone" data-validation-type="phone" id="form-contact-number" placeholder="Contact Number" name="contact_number">
+                      </div>                 
+                    </div><!-- end: form left col -->
+
+                    <!-- form right col -->
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <textarea placeholder="Message..." class="form-control validate-field required" name="message"></textarea>
+                      </div> 
+                      <div class="form-group">
+                        <img src="{{STATIC_URL}}images/theme_images/loader-form.GIF" class="form-loader">
+                        <button type="submit" class="btn btn-sm btn-outline-inverse">Submit</button>
+                      </div> 
+                      <div class="form-group form-general-error-container"></div>           
+                    </div><!-- end: form right col -->
+
+                  </form>
+                </div><!-- end: CONTACT FORM -->
+
+              <!-- End: Section content to edit -->
+
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== ENDL SECTION TYPE: Contact ==================== -->
+
+      </section><!-- #main-content -->
+      <!-- ==================== END: MAIN CONTENT ==================== -->
+
+      <!-- Footer -->
+      <section id="footer">
+
+        <!-- Go to Top -->
+        <div id="go-to-top" onclick="scroll_to_top();"><span class="icon glyphicon glyphicon-chevron-up"></span></div>
+
+        <!-- ==================================================================
+        SOCIAL ICONS
+        ==================================================================  -->
+        <!-- Each social icon item consists of the following:
+             - Link to the social page in href of <a>
+             - social icon in the <img> - a list of social icons options are found in the directory {{STATIC_URL}}images/theme_images/social_icons/ -->
+        <ul class="social-icons">
+          <li><a href="#" target="_blank" title="Facebook"><img src="{{STATIC_URL}}images/theme_images/social_icons/facebook.png" alt="Facebook"></a></li>
+          <li><a href="#" target="_blank" title="Twitter"><img src="{{STATIC_URL}}images/theme_images/social_icons/twitter.png" alt="Twitter"></a></li>
+          <li><a href="#" target="_blank" title="Google+"><img src="{{STATIC_URL}}images/theme_images/social_icons/googleplus.png" alt="Google+"></a></li>
+        </ul>
+        <!-- ==================== END: Social Icons ==================== -->
+
+        <!-- copyright text -->
+        <div class="footer-text-line">&copy; 2014 Twilli | Air</div>
+      </section>
+      <!-- end: Footer -->      
+
+    </div><!-- #outer-container -->
+    <!-- end: Outer Container -->
+
+    <!-- Modal -->
+    <!-- DO NOT MOVE, EDIT OR REMOVE - this is needed in order for popup content to be populated in it -->
+    <div class="modal fade" id="common-modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <div class="modal-body">
+          </div><!-- .modal-body -->
+        </div><!-- .modal-content -->
+      </div><!-- .modal-dialog -->
+    </div><!-- .modal -->    
+
+  {% include "bottom_javascript.html" %}
+  </body>
+</html>

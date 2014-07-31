@@ -1,0 +1,36 @@
+body {
+padding:0px;
+margin:0px;
+background-color:lightgrey;
+}
+
+h1 {
+text-align:center;
+font-size:50px;
+margin:20px;
+font-style:italic;
+}
+
+ul {
+margin-left:0px;
+padding-left:0px;
+width:80%;
+margin:auto;
+}
+
+li {
+text-align:center;
+display:inline-block;
+list-style-type:none;
+padding:10px;
+margin:10px;
+background-color:white;
+box-shadow: 10px 10px 5px #888888;
+width:300px;
+}
+
+a {
+color:black;
+font-weight:bold;
+font-style:italic;
+}

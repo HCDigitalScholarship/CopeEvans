@@ -1,0 +1,4826 @@
+[
+  {
+    "pk": "160", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Manitou Springs (Colo.)", 
+      "country": "United States", 
+      "longitude": "-104.9171989", 
+      "state": "Colorado", 
+      "latitude": "38.8597127", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "313", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Sharon Inn, Sharon, Connecticut", 
+      "country": "United States", 
+      "longitude": "-73.087749", 
+      "state": "Connecticut", 
+      "latitude": "41.6032207", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "64", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Wilmington, (Del.)", 
+      "country": "United States", 
+      "longitude": "-75.5397878", 
+      "state": "Delaware", 
+      "latitude": "39.7390721", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "69", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Wilmington, (Del. )", 
+      "country": "United States", 
+      "longitude": "-75.5397878", 
+      "state": "Delaware", 
+      "latitude": "39.7390721", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "166", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "New Castle (Del.)", 
+      "country": "United States", 
+      "longitude": "-75.5668166", 
+      "state": "Delaware", 
+      "latitude": "39.6620397", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "168", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Wilmington (Del.)", 
+      "country": "United States", 
+      "longitude": "-75.5397878", 
+      "state": "Delaware", 
+      "latitude": "39.7390721", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "271", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "W. Del", 
+      "country": "United States", 
+      "longitude": "-75.5276699", 
+      "state": "Delaware", 
+      "latitude": "38.9108325", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "11", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Washington DC", 
+      "country": "United States", 
+      "longitude": "-77.0368707", 
+      "state": "District of Columbia", 
+      "latitude": "38.9071923", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "90", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Washington (D.C.)", 
+      "country": "United States", 
+      "longitude": "-77.0368707", 
+      "state": "District of Columbia", 
+      "latitude": "38.9071923", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "106", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Washington (D.C.);", 
+      "country": "United States", 
+      "longitude": "-77.0368707", 
+      "state": "District of Columbia", 
+      "latitude": "38.9071923", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "186", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Saint Augustine (Fla.)", 
+      "country": "United States", 
+      "longitude": "-81.311667", 
+      "state": "Florida", 
+      "latitude": "29.895833", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "339", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Savannah (Ga.)", 
+      "country": "United States", 
+      "longitude": "-81.0998342", 
+      "state": "Georgia", 
+      "latitude": "32.0835407", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "378", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Richmond (Ind.)", 
+      "country": "United States", 
+      "longitude": "-84.8902382", 
+      "state": "Indiana", 
+      "latitude": "39.8289369", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "82", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Iowa Falls (Iowa)", 
+      "country": "United States", 
+      "longitude": "-93.2645741", 
+      "state": "Iowa", 
+      "latitude": "42.5198868", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "66", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Mountrath (Ireland)", 
+      "country": "Ireland", 
+      "longitude": "-7.4751396", 
+      "state": "Leinster", 
+      "latitude": "53.0025597", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "108", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Dublin (Ireland)", 
+      "country": "Ireland", 
+      "longitude": "-6.2603097", 
+      "state": "Leinster", 
+      "latitude": "53.3498053", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "270", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "New Orleans (La.)", 
+      "country": "United States", 
+      "longitude": "-90.0715323", 
+      "state": "Louisiana", 
+      "latitude": "29.9510658", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "15", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Bar Harbor", 
+      "country": "United States", 
+      "longitude": "-68.2039123", 
+      "state": "Maine", 
+      "latitude": "44.3876119", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "38", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Mount Desert", 
+      "country": "United States", 
+      "longitude": "-68.3193614", 
+      "state": "Maine", 
+      "latitude": "44.3357884", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "58", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Northeast Harbor (Me.)", 
+      "country": "United States", 
+      "longitude": "-68.2903234", 
+      "state": "Maine", 
+      "latitude": "44.2942813", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "227", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Gorham (Me.)", 
+      "country": "United States", 
+      "longitude": "-70.4442252", 
+      "state": "Maine", 
+      "latitude": "43.6795314", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "272", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Asticou (Me.)", 
+      "country": "United States", 
+      "longitude": "-68.2816823", 
+      "state": "Maine", 
+      "latitude": "44.3039689", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "295", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "York Harbor (Me.)", 
+      "country": "United States", 
+      "longitude": "-70.6456077", 
+      "state": "Maine", 
+      "latitude": "43.1367551", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "318", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "York Harbor, Maine", 
+      "country": "United States", 
+      "longitude": "-69.4454689", 
+      "state": "Maine", 
+      "latitude": "45.253783", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "358", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Mt Desert (Me.)", 
+      "country": "United States", 
+      "longitude": "-68.3193614", 
+      "state": "Maine", 
+      "latitude": "44.3357884", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "370", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "North East (Me.)", 
+      "country": "United States", 
+      "longitude": "-69.4454689", 
+      "state": "Maine", 
+      "latitude": "45.253783", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "374", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "North-East Harbor", 
+      "country": "United States", 
+      "longitude": "-68.2903234", 
+      "state": "Maine", 
+      "latitude": "44.2942813", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "386", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Mt. Desert (Me. : Town)", 
+      "country": "United States", 
+      "longitude": "-68.3193614", 
+      "state": "Maine", 
+      "latitude": "44.3357884", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "51", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Baltimore (Md.)", 
+      "country": "United States", 
+      "longitude": "-76.6121893", 
+      "state": "Maryland", 
+      "latitude": "39.2903848", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "124", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Germantown", 
+      "country": "United States", 
+      "longitude": "-77.2716502", 
+      "state": "Maryland", 
+      "latitude": "39.1731621", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "236", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Massey Farm (Md.)", 
+      "country": "United States", 
+      "longitude": "-75.9053793", 
+      "state": "Maryland", 
+      "latitude": "39.3509248", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "239", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Mencola Cottage (Md.)", 
+      "country": "United States", 
+      "longitude": "-76.6412712", 
+      "state": "Maryland", 
+      "latitude": "39.0457549", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "373", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Maryland", 
+      "country": "United States", 
+      "longitude": "-76.6412712", 
+      "state": "Maryland", 
+      "latitude": "39.0457549", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "399", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Berkley (Md.)", 
+      "country": "United States", 
+      "longitude": "-76.20917", 
+      "state": "Maryland", 
+      "latitude": "39.66139", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "1", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Boston", 
+      "country": "United States", 
+      "longitude": "-71.0597732", 
+      "state": "Massachusetts", 
+      "latitude": "42.3584308", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "68", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "New Bedford (Mass.)", 
+      "country": "United States", 
+      "longitude": "-70.934205", 
+      "state": "Massachusetts", 
+      "latitude": "41.6362152", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "76", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Springfield, Mass.", 
+      "country": "United States", 
+      "longitude": "-72.589811", 
+      "state": "Massachusetts", 
+      "latitude": "42.1014831", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "85", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "New Bedford, MA", 
+      "country": "United States", 
+      "longitude": "-70.934205", 
+      "state": "Massachusetts", 
+      "latitude": "41.6362152", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "142", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Boston (Mass.)", 
+      "country": "United States", 
+      "longitude": "-71.0597732", 
+      "state": "Massachusetts", 
+      "latitude": "42.3584308", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "158", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Salem (Mass.)", 
+      "country": "United States", 
+      "longitude": "-70.8967155", 
+      "state": "Massachusetts", 
+      "latitude": "42.51954", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "223", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Fall River (Mass.)", 
+      "country": "United States", 
+      "longitude": "-71.1550451", 
+      "state": "Massachusetts", 
+      "latitude": "41.7014912", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "281", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Pittsfield (Mass.)", 
+      "country": "United States", 
+      "longitude": "-73.2453824", 
+      "state": "Massachusetts", 
+      "latitude": "42.4500845", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "296", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Worcester (Mass.)", 
+      "country": "United States", 
+      "longitude": "-71.8022934", 
+      "state": "Massachusetts", 
+      "latitude": "42.2625932", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "302", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Cambridge (Mass.)", 
+      "country": "United States", 
+      "longitude": "-71.1097335", 
+      "state": "Massachusetts", 
+      "latitude": "42.3736158", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "319", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Petersham, Mass.", 
+      "country": "United States", 
+      "longitude": "-72.186669", 
+      "state": "Massachusetts", 
+      "latitude": "42.4837752", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "351", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Magnolia (Mass.)", 
+      "country": "United States", 
+      "longitude": "-70.7106005", 
+      "state": "Massachusetts", 
+      "latitude": "42.5737067", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "354", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Magnolia (Gloucester, Mass.)", 
+      "country": "United States", 
+      "longitude": "-70.7106005", 
+      "state": "Massachusetts", 
+      "latitude": "42.5737067", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "359", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Plymouth (Mass.)", 
+      "country": "United States", 
+      "longitude": "-70.6672621", 
+      "state": "Massachusetts", 
+      "latitude": "41.9584457", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "405", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Auburndale (Mass.)", 
+      "country": "United States", 
+      "longitude": "-71.2471097", 
+      "state": "Massachusetts", 
+      "latitude": "42.3479782", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "406", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Leicester (Mass.)", 
+      "country": "United States", 
+      "longitude": "-71.9086843", 
+      "state": "Massachusetts", 
+      "latitude": "42.245926", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "409", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "East Northfield (Mass.)", 
+      "country": "United States", 
+      "longitude": "-72.4528885", 
+      "state": "Massachusetts", 
+      "latitude": "42.6959093", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "52", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Ann Arbor, MI", 
+      "country": "United States", 
+      "longitude": "-85.6023643", 
+      "state": "Michigan", 
+      "latitude": "44.3148443", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "304", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Ann Arbor", 
+      "country": "United States", 
+      "longitude": "-83.7430378", 
+      "state": "Michigan", 
+      "latitude": "42.2808256", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "2", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Lake Winnipisseogee", 
+      "country": "United States", 
+      "longitude": "-71.3219147", 
+      "state": "New Hampshire", 
+      "latitude": "43.6093667", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "41", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Franconia", 
+      "country": "United States", 
+      "longitude": "-71.7479075", 
+      "state": "New Hampshire", 
+      "latitude": "44.2271729", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "177", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Franconia (N.H.)", 
+      "country": "United States", 
+      "longitude": "-71.7479075", 
+      "state": "New Hampshire", 
+      "latitude": "44.2271729", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "228", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Center Harbor (N.H.)", 
+      "country": "United States", 
+      "longitude": "-71.463611", 
+      "state": "New Hampshire", 
+      "latitude": "43.708056", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "292", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Intervale (N.H.)", 
+      "country": "United States", 
+      "longitude": "-71.1400712", 
+      "state": "New Hampshire", 
+      "latitude": "44.0742357", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "315", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Wolfeboro, NH", 
+      "country": "United States", 
+      "longitude": "-71.2128", 
+      "state": "New Hampshire", 
+      "latitude": "43.5842", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "340", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Glen House, White Mountain, NH", 
+      "country": "United States", 
+      "longitude": "-71.5723953", 
+      "state": "New Hampshire", 
+      "latitude": "43.1938516", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "401", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Holderness (N.H. : Town)", 
+      "country": "United States", 
+      "longitude": "-71.5884095", 
+      "state": "New Hampshire", 
+      "latitude": "43.7320175", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "9", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Hopatcong", 
+      "country": "United States", 
+      "longitude": "-74.6593281", 
+      "state": "New Jersey", 
+      "latitude": "40.9328762", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "87", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Cape May (N.J.)", 
+      "country": "United States", 
+      "longitude": "-74.9060053", 
+      "state": "New Jersey", 
+      "latitude": "38.9351125", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "94", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Trenton (N.J.)", 
+      "country": "United States", 
+      "longitude": "-74.7429384", 
+      "state": "New Jersey", 
+      "latitude": "40.2170534", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "95", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Schooleys Mountain (N.J.)", 
+      "country": "United States", 
+      "longitude": "-74.8137769", 
+      "state": "New Jersey", 
+      "latitude": "40.7992662", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "131", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Atlantic City (N.J.)", 
+      "country": "United States", 
+      "longitude": "-74.4229266", 
+      "state": "New Jersey", 
+      "latitude": "39.3642834", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "139", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Deal (N.J.)", 
+      "country": "United States", 
+      "longitude": "-74.0006927", 
+      "state": "New Jersey", 
+      "latitude": "40.243168", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "185", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Moorestown (N.J.)", 
+      "country": "United States", 
+      "longitude": "-74.948886", 
+      "state": "New Jersey", 
+      "latitude": "39.9688817", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "215", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Long Branch (N.J.)", 
+      "country": "United States", 
+      "longitude": "-73.9923596", 
+      "state": "New Jersey", 
+      "latitude": "40.3042778", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "230", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Hopatcong (N.J.)", 
+      "country": "United States", 
+      "longitude": "-74.6593281", 
+      "state": "New Jersey", 
+      "latitude": "40.9328762", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "232", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Jersey City (N.J.)", 
+      "country": "United States", 
+      "longitude": "-74.0776417", 
+      "state": "New Jersey", 
+      "latitude": "40.7281575", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "238", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Dennis Cottage (Atlantic City, N.J.)", 
+      "country": "United States", 
+      "longitude": "-74.4056612", 
+      "state": "New Jersey", 
+      "latitude": "40.0583238", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "259", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Salem, New Jersey", 
+      "country": "United States", 
+      "longitude": "-74.4056612", 
+      "state": "New Jersey", 
+      "latitude": "40.0583238", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "267", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Cinnamonson (N.J.)", 
+      "country": "United States", 
+      "longitude": "-74.9927693", 
+      "state": "New Jersey", 
+      "latitude": "39.9969646", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "291", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Eatontown, Monmouth County, N.J.", 
+      "country": "United States", 
+      "longitude": "-74.4056612", 
+      "state": "New Jersey", 
+      "latitude": "40.0583238", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "311", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Brielle (N.J.)", 
+      "country": "United States", 
+      "longitude": "-74.0565263", 
+      "state": "New Jersey", 
+      "latitude": "40.1078931", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "314", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Trenton Boarding School", 
+      "country": "United States", 
+      "longitude": "-74.7429384", 
+      "state": "New Jersey", 
+      "latitude": "40.2170534", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "320", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Burlington (N.J.)", 
+      "country": "United States", 
+      "longitude": "-74.8648873", 
+      "state": "New Jersey", 
+      "latitude": "40.071222", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "337", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Ocean House, Cape Island, NJ", 
+      "country": "United States", 
+      "longitude": "-74.4056612", 
+      "state": "New Jersey", 
+      "latitude": "40.0583238", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "355", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Manunka Chunk Junction (N.J.)", 
+      "country": "United States", 
+      "longitude": "-74.4056612", 
+      "state": "New Jersey", 
+      "latitude": "40.0583238", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "356", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Locust Grove, Rockway (N.J.)", 
+      "country": "United States", 
+      "longitude": "-74.4056612", 
+      "state": "New Jersey", 
+      "latitude": "40.0583238", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "357", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Spring Lake (N.J.)", 
+      "country": "United States", 
+      "longitude": "-74.0281925", 
+      "state": "New Jersey", 
+      "latitude": "40.1534476", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "365", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Hopatcong, N.J.", 
+      "country": "United States", 
+      "longitude": "-74.4056612", 
+      "state": "New Jersey", 
+      "latitude": "40.0583238", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "411", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Camden (N.J.)", 
+      "country": "United States", 
+      "longitude": "-75.1196199", 
+      "state": "New Jersey", 
+      "latitude": "39.9259463", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "415", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Woodstown (N.J.)", 
+      "country": "United States", 
+      "longitude": "-75.3282454", 
+      "state": "New Jersey", 
+      "latitude": "39.6515027", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "3", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Caldwell Lake George", 
+      "country": "United States", 
+      "longitude": "-73.7186387", 
+      "state": "New York", 
+      "latitude": "43.422655", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "10", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Mohonk", 
+      "country": "United States", 
+      "longitude": "-74.1327355", 
+      "state": "New York", 
+      "latitude": "41.8029232", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "12", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "West Point", 
+      "country": "United States", 
+      "longitude": "-74.05", 
+      "state": "New York", 
+      "latitude": "41.3667", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "61", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Catskill (N.Y.)", 
+      "country": "United States", 
+      "longitude": "-73.8645734", 
+      "state": "New York", 
+      "latitude": "42.2173102", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "102", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Watertown (N.Y.)", 
+      "country": "United States", 
+      "longitude": "-75.9107565", 
+      "state": "New York", 
+      "latitude": "43.9747838", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "104", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Alexandria Bay (N.Y.)", 
+      "country": "United States", 
+      "longitude": "-75.9177309", 
+      "state": "New York", 
+      "latitude": "44.3358836", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "132", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Elizabethtown (N.Y.)", 
+      "country": "United States", 
+      "longitude": "-73.5904478", 
+      "state": "New York", 
+      "latitude": "44.2163337", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "152", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Brooklyn (N.Y.)", 
+      "country": "United States", 
+      "longitude": "-73.9441579", 
+      "state": "New York", 
+      "latitude": "40.6781784", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "157", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Little Falls (N.Y.)", 
+      "country": "United States", 
+      "longitude": "-74.8595957", 
+      "state": "New York", 
+      "latitude": "43.0434039", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "162", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Flushing (N.Y.)", 
+      "country": "United States", 
+      "longitude": "-73.833079", 
+      "state": "New York", 
+      "latitude": "40.7674987", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "164", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Hudson (N.Y.)", 
+      "country": "United States", 
+      "longitude": "-73.790959", 
+      "state": "New York", 
+      "latitude": "42.2528649", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "173", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Binghamton (N.Y.)", 
+      "country": "United States", 
+      "longitude": "-75.9179738", 
+      "state": "New York", 
+      "latitude": "42.0986867", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "192", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Richfield (N.Y.)", 
+      "country": "United States", 
+      "longitude": "-75.0540468", 
+      "state": "New York", 
+      "latitude": "42.8572942", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "193", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Tannersville (N.Y.)", 
+      "country": "United States", 
+      "longitude": "-74.1337508", 
+      "state": "New York", 
+      "latitude": "42.1956438", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "211", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Saranac Lake (N.Y.)", 
+      "country": "United States", 
+      "longitude": "-74.1312662", 
+      "state": "New York", 
+      "latitude": "44.329496", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "224", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Mohonk Lake (N.Y.)", 
+      "country": "United States", 
+      "longitude": "-74.1573929", 
+      "state": "New York", 
+      "latitude": "41.766329", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "252", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Lake Minnewaska (N.Y.)", 
+      "country": "United States", 
+      "longitude": "-74.236274", 
+      "state": "New York", 
+      "latitude": "41.7261156", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "294", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Saratoga (N.Y.)", 
+      "country": "United States", 
+      "longitude": "-73.6300729", 
+      "state": "New York", 
+      "latitude": "43.0448483", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "308", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Gill House, Henderson Harbor (N.Y.)", 
+      "country": "United States", 
+      "longitude": "-76.2018719", 
+      "state": "New York", 
+      "latitude": "43.8647846", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "312", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "The Clifton House, Niagara Falls (N.Y. and Ont.)", 
+      "country": "United States", 
+      "longitude": "-79.0377388", 
+      "state": "New York", 
+      "latitude": "43.0962143", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "363", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Geneva (N.Y.)", 
+      "country": "United States", 
+      "longitude": "-76.985557", 
+      "state": "New York", 
+      "latitude": "42.8679836", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "56", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Laurel House [Catskill, New York]", 
+      "country": "United States", 
+      "longitude": "-74.0059413", 
+      "state": "New York", 
+      "latitude": "40.7127837", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "150", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Maple Shade (Odessa, N.Y.)", 
+      "country": "United States", 
+      "longitude": "-74.0059413", 
+      "state": "New York", 
+      "latitude": "40.7127837", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "169", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "New York (N.Y.)", 
+      "country": "United States", 
+      "longitude": "-74.0059413", 
+      "state": "New York", 
+      "latitude": "40.7127837", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "276", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Ausable Chasm, NY", 
+      "country": "United States", 
+      "longitude": "-74.0059413", 
+      "state": "New York", 
+      "latitude": "40.7127837", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "287", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Albany, N. Y.", 
+      "country": "United States", 
+      "longitude": "-74.0059413", 
+      "state": "New York", 
+      "latitude": "40.7127837", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "289", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Minnewaska, Ulster County, New York", 
+      "country": "United States", 
+      "longitude": "-74.0059413", 
+      "state": "New York", 
+      "latitude": "40.7127837", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "326", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Laurel House, Catskill, NY", 
+      "country": "United States", 
+      "longitude": "-74.0059413", 
+      "state": "New York", 
+      "latitude": "40.7127837", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "327", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Wildmere, Lake Minnewaska, NY", 
+      "country": "United States", 
+      "longitude": "-74.0059413", 
+      "state": "New York", 
+      "latitude": "40.7127837", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "331", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Elizabethtown, N.Y.", 
+      "country": "United States", 
+      "longitude": "-74.0059413", 
+      "state": "New York", 
+      "latitude": "40.7127837", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "334", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Saratoga, NY", 
+      "country": "United States", 
+      "longitude": "-74.0059413", 
+      "state": "New York", 
+      "latitude": "40.7127837", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "338", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Lake George, New York", 
+      "country": "United States", 
+      "longitude": "-74.0059413", 
+      "state": "New York", 
+      "latitude": "40.7127837", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "349", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "The Ruisseaumont, Lake Placid, Essex Co. (N.Y.)", 
+      "country": "United States", 
+      "longitude": "-74.0059413", 
+      "state": "New York", 
+      "latitude": "40.7127837", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "17", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Chalybeate Springs", 
+      "country": "United States", 
+      "longitude": "-78.813905", 
+      "state": "North Carolina", 
+      "latitude": "35.508492", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "306", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Greensboro (N.C.)", 
+      "country": "United States", 
+      "longitude": "-79.7919754", 
+      "state": "North Carolina", 
+      "latitude": "36.0726354", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "245", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Wheeling, Virginia", 
+      "country": "United States", 
+      "longitude": "-80.6568942", 
+      "state": "Ohio", 
+      "latitude": "40.4315734", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "360", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Mt. Pleasant (Ohio)", 
+      "country": "United States", 
+      "longitude": "-80.7978631", 
+      "state": "Ohio", 
+      "latitude": "40.1753485", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "307", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Birchcliffe, Ontario, Canada", 
+      "country": "Canada", 
+      "longitude": "-85.3232139", 
+      "state": "Ontario", 
+      "latitude": "51.253775", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "43", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Awbury (Philadelphia, Pa.); Germantown (Philadelphia, Pa.)", 
+      "country": "United States", 
+      "longitude": "-77.1945247", 
+      "state": "Pennsylvania", 
+      "latitude": "41.2033216", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "46", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Philadelphia (Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.163789", 
+      "state": "Pennsylvania", 
+      "latitude": "39.952335", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "47", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Dimock (Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.8982517", 
+      "state": "Pennsylvania", 
+      "latitude": "41.7464652", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "48", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Pennsylvania", 
+      "country": "United States", 
+      "longitude": "-77.1945247", 
+      "state": "Pennsylvania", 
+      "latitude": "41.2033216", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "49", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Westtown Boarding School, PA", 
+      "country": "United States", 
+      "longitude": "-77.1945247", 
+      "state": "Pennsylvania", 
+      "latitude": "41.2033216", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "50", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Philadelphia, (Pa. )", 
+      "country": "United States", 
+      "longitude": "-77.1945247", 
+      "state": "Pennsylvania", 
+      "latitude": "41.2033216", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "53", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Philadelphia(Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.163789", 
+      "state": "Pennsylvania", 
+      "latitude": "39.952335", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "55", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Dundale (Villanova, Pa.)", 
+      "country": "United States", 
+      "longitude": "-77.1945247", 
+      "state": "Pennsylvania", 
+      "latitude": "41.2033216", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "57", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Haverford College", 
+      "country": "United States", 
+      "longitude": "-75.3062377", 
+      "state": "Pennsylvania", 
+      "latitude": "40.0078604", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "59", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Westtown (Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.5567821", 
+      "state": "Pennsylvania", 
+      "latitude": "39.9444343", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "60", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Steamer Pennsylvania", 
+      "country": "United States", 
+      "longitude": "-77.1945247", 
+      "state": "Pennsylvania", 
+      "latitude": "41.2033216", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "65", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Caln (Pa: Township); Chester County (Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.7802235", 
+      "state": "Pennsylvania", 
+      "latitude": "39.9909398", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "71", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Philadelphia, PA", 
+      "country": "United States", 
+      "longitude": "-77.1945247", 
+      "state": "Pennsylvania", 
+      "latitude": "41.2033216", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "74", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Scranton(Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.6624122", 
+      "state": "Pennsylvania", 
+      "latitude": "41.408969", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "77", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Philadelphia, (Pa.)", 
+      "country": "United States", 
+      "longitude": "-77.1945247", 
+      "state": "Pennsylvania", 
+      "latitude": "41.2033216", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "79", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Bristol (Pa.)", 
+      "country": "United States", 
+      "longitude": "-74.8518311", 
+      "state": "Pennsylvania", 
+      "latitude": "40.1006661", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "83", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Downingtown (Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.7032742", 
+      "state": "Pennsylvania", 
+      "latitude": "40.0064958", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "89", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Stoddartsville (Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.6282449", 
+      "state": "Pennsylvania", 
+      "latitude": "41.129807", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "91", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Woodbourne (Susquehanna County, Pa.)", 
+      "country": "United States", 
+      "longitude": "-77.1945247", 
+      "state": "Pennsylvania", 
+      "latitude": "41.2033216", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "92", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Montrose (Susquehanna County, Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.8771388", 
+      "state": "Pennsylvania", 
+      "latitude": "41.8339653", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "93", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Awbury; Philadelphia (Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.1689876", 
+      "state": "Pennsylvania", 
+      "latitude": "40.050133", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "97", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Clifton (Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.5393155", 
+      "state": "Pennsylvania", 
+      "latitude": "41.2509919", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "98", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Philadelphia (Pa).", 
+      "country": "United States", 
+      "longitude": "-75.163789", 
+      "state": "Pennsylvania", 
+      "latitude": "39.952335", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "101", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Chambersburg (Pa.)", 
+      "country": "United States", 
+      "longitude": "-77.6611022", 
+      "state": "Pennsylvania", 
+      "latitude": "39.9375911", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "103", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Phildelphia (Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.163789", 
+      "state": "Pennsylvania", 
+      "latitude": "39.952335", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "105", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Philadelphia (Pa.);", 
+      "country": "United States", 
+      "longitude": "-75.163789", 
+      "state": "Pennsylvania", 
+      "latitude": "39.952335", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "107", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Philadelphia", 
+      "country": "United States", 
+      "longitude": "-75.163789", 
+      "state": "Pennsylvania", 
+      "latitude": "39.952335", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "119", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Westtown (Pa. : Township)", 
+      "country": "United States", 
+      "longitude": "-75.586893", 
+      "state": "Pennsylvania", 
+      "latitude": "39.9327837", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "125", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Haverford (Pa. : Township)", 
+      "country": "United States", 
+      "longitude": "-75.281691", 
+      "state": "Pennsylvania", 
+      "latitude": "39.974229", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "126", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "West Chester (Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.6054882", 
+      "state": "Pennsylvania", 
+      "latitude": "39.9606643", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "129", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Bloomsdale (Pa.)", 
+      "country": "United States", 
+      "longitude": "-74.854454", 
+      "state": "Pennsylvania", 
+      "latitude": "40.1281088", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "130", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Woodbourne; Philadelphia (Pa.)", 
+      "country": "United States", 
+      "longitude": "-74.8891667", 
+      "state": "Pennsylvania", 
+      "latitude": "40.1925", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "133", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Delaware Water Gap (Pa.); Philadelphia (Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.1429563", 
+      "state": "Pennsylvania", 
+      "latitude": "40.9792619", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "136", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Calcon Hook", 
+      "country": "United States", 
+      "longitude": "-75.2630473", 
+      "state": "Pennsylvania", 
+      "latitude": "39.9015003", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "137", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Harrisburg (Pa.)", 
+      "country": "United States", 
+      "longitude": "-76.8867008", 
+      "state": "Pennsylvania", 
+      "latitude": "40.2731911", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "138", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Chester (Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.3557457", 
+      "state": "Pennsylvania", 
+      "latitude": "39.849557", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "140", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Haverford (Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.3208107", 
+      "state": "Pennsylvania", 
+      "latitude": "40.0022406", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "144", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Bradford (Pa.)", 
+      "country": "United States", 
+      "longitude": "-78.649163", 
+      "state": "Pennsylvania", 
+      "latitude": "41.9564953", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "146", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "East Marlborough (Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.7255192", 
+      "state": "Pennsylvania", 
+      "latitude": "39.8800869", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "147", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Germantown (Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.1749671", 
+      "state": "Pennsylvania", 
+      "latitude": "40.028521", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "148", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Overbrook (Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.2420722", 
+      "state": "Pennsylvania", 
+      "latitude": "39.9845206", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "149", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Church Lane (Philadelphia, Pa.)", 
+      "country": "United States", 
+      "longitude": "-77.1945247", 
+      "state": "Pennsylvania", 
+      "latitude": "41.2033216", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "153", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Roxborough (Philadelphia, Pa.)", 
+      "country": "United States", 
+      "longitude": "-77.1945247", 
+      "state": "Pennsylvania", 
+      "latitude": "41.2033216", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "154", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Pocono Inn (Pocono(Pa.).)", 
+      "country": "United States", 
+      "longitude": "-75.3062326", 
+      "state": "Pennsylvania", 
+      "latitude": "41.0632959", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "155", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "East Bradford (Pa. : Township)", 
+      "country": "United States", 
+      "longitude": "-78.6707238", 
+      "state": "Pennsylvania", 
+      "latitude": "41.9652518", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "156", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Radnor (Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.3599105", 
+      "state": "Pennsylvania", 
+      "latitude": "40.0462208", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "161", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Bryn Mawr (Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.3151772", 
+      "state": "Pennsylvania", 
+      "latitude": "40.0230237", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "167", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Rosemont (Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.3237979", 
+      "state": "Pennsylvania", 
+      "latitude": "40.0256664", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "170", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Susquehanna County (Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.8069082", 
+      "state": "Pennsylvania", 
+      "latitude": "41.745553", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "172", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Point Pleasant (Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.0663", 
+      "state": "Pennsylvania", 
+      "latitude": "40.4226", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "197", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Silver Lake (Pa. : Township)", 
+      "country": "United States", 
+      "longitude": "-76.8710151", 
+      "state": "Pennsylvania", 
+      "latitude": "40.1362933", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "198", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "West Bradford, Chester County Pa", 
+      "country": "United States", 
+      "longitude": "-75.8069082", 
+      "state": "Pennsylvania", 
+      "latitude": "40.0010204", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "199", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Birmingham, Chester County Pa", 
+      "country": "United States", 
+      "longitude": "-75.8069082", 
+      "state": "Pennsylvania", 
+      "latitude": "40.0010204", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "200", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Stoddartsville", 
+      "country": "United States", 
+      "longitude": "-75.6282449", 
+      "state": "Pennsylvania", 
+      "latitude": "41.129807", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "201", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Fairfield (Pa.)", 
+      "country": "United States", 
+      "longitude": "-77.3685984", 
+      "state": "Pennsylvania", 
+      "latitude": "39.7873173", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "212", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Montgomery County (Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.3878525", 
+      "state": "Pennsylvania", 
+      "latitude": "40.2290075", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "214", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Lechauweki Springs (Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.4021928", 
+      "state": "Pennsylvania", 
+      "latitude": "40.5958918", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "231", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Snow Shoe (Pa.)", 
+      "country": "United States", 
+      "longitude": "-77.9494488", 
+      "state": "Pennsylvania", 
+      "latitude": "41.0308914", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "233", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Overbrook (Philadelphia, Pa.)", 
+      "country": "United States", 
+      "longitude": "-77.1945247", 
+      "state": "Pennsylvania", 
+      "latitude": "41.2033216", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "250", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Walnut Street, Philadelphia", 
+      "country": "United States", 
+      "longitude": "-75.163789", 
+      "state": "Pennsylvania", 
+      "latitude": "39.952335", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "253", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Woodbourne, Dimock, Susquehanna County(Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.8069082", 
+      "state": "Pennsylvania", 
+      "latitude": "41.745553", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "258", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Easton, PA", 
+      "country": "United States", 
+      "longitude": "-77.1945247", 
+      "state": "Pennsylvania", 
+      "latitude": "41.2033216", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "260", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Mauch Chunk(Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.7280599", 
+      "state": "Pennsylvania", 
+      "latitude": "40.8603938", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "274", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Sunbury (Northumberland), PA", 
+      "country": "United States", 
+      "longitude": "-77.1945247", 
+      "state": "Pennsylvania", 
+      "latitude": "41.2033216", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "277", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Haverford School, near Buck P.O., Old Lancaster Road", 
+      "country": "United States", 
+      "longitude": "-75.3208107", 
+      "state": "Pennsylvania", 
+      "latitude": "40.0022406", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "279", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Haverford School", 
+      "country": "United States", 
+      "longitude": "-75.305507", 
+      "state": "Pennsylvania", 
+      "latitude": "40.014304", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "282", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Woodburne, Susquehanna County (Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.8069082", 
+      "state": "Pennsylvania", 
+      "latitude": "41.745553", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "284", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Auburn Township (Susquehanna County, Pa.)", 
+      "country": "United States", 
+      "longitude": "-77.1945247", 
+      "state": "Pennsylvania", 
+      "latitude": "41.2033216", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "285", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Easton Northhampton County Penn", 
+      "country": "United States", 
+      "longitude": "-75.2207323", 
+      "state": "Pennsylvania", 
+      "latitude": "40.688432", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "293", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Sharon (Pa.)", 
+      "country": "United States", 
+      "longitude": "-80.4934035", 
+      "state": "Pennsylvania", 
+      "latitude": "41.2331116", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "297", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Lancaster(Pa.)", 
+      "country": "United States", 
+      "longitude": "-76.3055144", 
+      "state": "Pennsylvania", 
+      "latitude": "40.0378755", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "298", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Sansom Square, Philadelphia", 
+      "country": "United States", 
+      "longitude": "-75.163789", 
+      "state": "Pennsylvania", 
+      "latitude": "39.952335", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "300", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Lancaster PA", 
+      "country": "United States", 
+      "longitude": "-76.3055144", 
+      "state": "Pennsylvania", 
+      "latitude": "40.0378755", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "301", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "19 N Second Street, Philadelphia PA", 
+      "country": "United States", 
+      "longitude": "-75.163789", 
+      "state": "Pennsylvania", 
+      "latitude": "39.952335", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "303", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Connymeade (Pa.)", 
+      "country": "United States", 
+      "longitude": "-77.1945247", 
+      "state": "Pennsylvania", 
+      "latitude": "41.2033216", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "305", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Susquehannah County, PA", 
+      "country": "United States", 
+      "longitude": "-77.1945247", 
+      "state": "Pennsylvania", 
+      "latitude": "41.2033216", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "309", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Woodbourne, Dimock(Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.8982517", 
+      "state": "Pennsylvania", 
+      "latitude": "41.7464652", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "310", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "272 Spruce Street, Philadelphia, PA", 
+      "country": "United States", 
+      "longitude": "-77.1945247", 
+      "state": "Pennsylvania", 
+      "latitude": "41.2033216", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "321", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Care of H & A Cope, Philadelphia", 
+      "country": "United States", 
+      "longitude": "-75.163789", 
+      "state": "Pennsylvania", 
+      "latitude": "39.952335", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "322", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Wilkes-Barre(Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.8813075", 
+      "state": "Pennsylvania", 
+      "latitude": "41.2459149", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "325", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Plymouth (Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.9446428", 
+      "state": "Pennsylvania", 
+      "latitude": "41.2403596", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "332", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Penn College, Buck Tavern(Pa.)", 
+      "country": "United States", 
+      "longitude": "-77.1945247", 
+      "state": "Pennsylvania", 
+      "latitude": "41.2033216", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "333", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "102 South 4th St, Philadelphia, PA", 
+      "country": "United States", 
+      "longitude": "-77.1945247", 
+      "state": "Pennsylvania", 
+      "latitude": "41.2033216", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "341", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Lancaster (Pa.)", 
+      "country": "United States", 
+      "longitude": "-76.3055144", 
+      "state": "Pennsylvania", 
+      "latitude": "40.0378755", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "342", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Fair Hill, Arch Street, Philadelphia (Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.163789", 
+      "state": "Pennsylvania", 
+      "latitude": "39.952335", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "344", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "[Philadelphia (Pa.)]", 
+      "country": "United States", 
+      "longitude": "-75.163789", 
+      "state": "Pennsylvania", 
+      "latitude": "39.952335", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "347", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Philaelphia (Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.163789", 
+      "state": "Pennsylvania", 
+      "latitude": "39.952335", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "348", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Woodbourne (Susquehann County(Pa.).)", 
+      "country": "United States", 
+      "longitude": "-77.1945247", 
+      "state": "Pennsylvania", 
+      "latitude": "41.2033216", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "350", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Montrose (Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.8771388", 
+      "state": "Pennsylvania", 
+      "latitude": "41.8339653", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "371", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Wayne Junction, Germantown, Philadelphia (Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.163789", 
+      "state": "Pennsylvania", 
+      "latitude": "39.952335", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "375", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Auburn (Schuylkill County(Pa.).)", 
+      "country": "United States", 
+      "longitude": "-76.093272", 
+      "state": "Pennsylvania", 
+      "latitude": "40.5984249", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "379", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Mauch Chunk (Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.7280599", 
+      "state": "Pennsylvania", 
+      "latitude": "40.8603938", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "380", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Dinnock P.O., Pennsylvania", 
+      "country": "United States", 
+      "longitude": "-77.1945247", 
+      "state": "Pennsylvania", 
+      "latitude": "41.2033216", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "387", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Philadelphia (pa", 
+      "country": "United States", 
+      "longitude": "-75.163789", 
+      "state": "Pennsylvania", 
+      "latitude": "39.952335", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "389", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Muncy (Pa.)", 
+      "country": "United States", 
+      "longitude": "-76.7855152", 
+      "state": "Pennsylvania", 
+      "latitude": "41.2056373", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "390", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "London Grove (Pa. : Township)", 
+      "country": "United States", 
+      "longitude": "-75.811026", 
+      "state": "Pennsylvania", 
+      "latitude": "39.815236", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "392", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Lake Teedyuskung (Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.0939651", 
+      "state": "Pennsylvania", 
+      "latitude": "41.5174859", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "393", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Hawley (Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.1821189", 
+      "state": "Pennsylvania", 
+      "latitude": "41.4759224", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "394", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Dundaf (Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.5515744", 
+      "state": "Pennsylvania", 
+      "latitude": "41.6539704", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "402", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Philadelpia (Pa.)", 
+      "country": "United States", 
+      "longitude": "-75.163789", 
+      "state": "Pennsylvania", 
+      "latitude": "39.952335", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "404", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Aubury (Pa.)", 
+      "country": "United States", 
+      "longitude": "-80.0689776", 
+      "state": "Pennsylvania", 
+      "latitude": "41.986842", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "413", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Bucks Tavern (Haverford Township, Pa.)", 
+      "country": "United States", 
+      "longitude": "-77.1945247", 
+      "state": "Pennsylvania", 
+      "latitude": "41.2033216", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "418", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "New Garden", 
+      "country": "United States", 
+      "longitude": "-75.7669", 
+      "state": "Pennsylvania", 
+      "latitude": "39.8356", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "376", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Quebec (Province)", 
+      "country": "Canada", 
+      "longitude": "-73.5491361", 
+      "state": "Quebec", 
+      "latitude": "52.9399159", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "135", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Madeira", 
+      "country": "Portugal", 
+      "longitude": "-16.9594723", 
+      "state": "Regi?o Aut?noma da Madeira", 
+      "latitude": "32.7607074", 
+      "continent": "Africa"
+    }
+  }, 
+  {
+    "pk": "273", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Funchal (Madeira Islands)", 
+      "country": "Portugal", 
+      "longitude": "-16.9240554", 
+      "state": "Regi?o Aut?noma da Madeira", 
+      "latitude": "32.6669328", 
+      "continent": "Africa"
+    }
+  }, 
+  {
+    "pk": "345", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Madeira (Madeira Islands)", 
+      "country": "Portugal", 
+      "longitude": "-16.9594723", 
+      "state": "Regi?o Aut?noma da Madeira", 
+      "latitude": "32.7607074", 
+      "continent": "Africa"
+    }
+  }, 
+  {
+    "pk": "31", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "R I", 
+      "country": "United States", 
+      "longitude": "-71.4774291", 
+      "state": "Rhode Island", 
+      "latitude": "41.5800945", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "159", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Providence (R.I.)", 
+      "country": "United States", 
+      "longitude": "-71.4128343", 
+      "state": "Rhode Island", 
+      "latitude": "41.8239891", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "216", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Peace Dale (R.I.)", 
+      "country": "United States", 
+      "longitude": "-71.4986694", 
+      "state": "Rhode Island", 
+      "latitude": "41.4512129", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "324", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Redwood Cottage, Newport, Rhode Island", 
+      "country": "United States", 
+      "longitude": "-71.4774291", 
+      "state": "Rhode Island", 
+      "latitude": "41.5800945", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "25", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Newport", 
+      "country": "United States", 
+      "longitude": "-71.3128285", 
+      "state": "Rhode Island", 
+      "latitude": "41.4901024", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "44", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Newport (R.I.)", 
+      "country": "United States", 
+      "longitude": "-71.3128285", 
+      "state": "Rhode Island", 
+      "latitude": "41.4901024", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "54", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Jamestown, RI", 
+      "country": "United States", 
+      "longitude": "-71.3672755", 
+      "state": "Rhode Island", 
+      "latitude": "41.4970465", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "72", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Newport, RI", 
+      "country": "United States", 
+      "longitude": "-71.3128285", 
+      "state": "Rhode Island", 
+      "latitude": "41.4901024", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "176", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Conanicut (Island : Rhode Island)", 
+      "country": "United States", 
+      "longitude": "-71.3758871", 
+      "state": "Rhode Island", 
+      "latitude": "41.5376018", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "179", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Jamestown (R.I.)", 
+      "country": "United States", 
+      "longitude": "-71.3672755", 
+      "state": "Rhode Island", 
+      "latitude": "41.4970465", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "237", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Bateman's Point (Newport, R.I.)", 
+      "country": "United States", 
+      "longitude": "-71.3128285", 
+      "state": "Rhode Island", 
+      "latitude": "41.4901024", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "343", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Newport (R.I)", 
+      "country": "United States", 
+      "longitude": "-71.3128285", 
+      "state": "Rhode Island", 
+      "latitude": "41.4901024", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "346", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Conanicut (R.I.)", 
+      "country": "United States", 
+      "longitude": "-71.3758871", 
+      "state": "Rhode Island", 
+      "latitude": "41.5376018", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "353", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Easton's Point (Newport, R.I.)", 
+      "country": "United States", 
+      "longitude": "-71.3128285", 
+      "state": "Rhode Island", 
+      "latitude": "41.4901024", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "362", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Fowler's Rocks (Conanicut Island, R.I.)", 
+      "country": "United States", 
+      "longitude": "-71.3758871", 
+      "state": "Rhode Island", 
+      "latitude": "41.5376018", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "364", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "2nd Beach (Newport, R.I)", 
+      "country": "United States", 
+      "longitude": "-71.3128285", 
+      "state": "Rhode Island", 
+      "latitude": "41.4901024", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "368", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Fowlers' Rocks", 
+      "country": "United States", 
+      "longitude": "-71.3758871", 
+      "state": "Rhode Island", 
+      "latitude": "41.5376018", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "414", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Fowlers Rocks", 
+      "country": "United States", 
+      "longitude": "-71.3758871", 
+      "state": "Rhode Island", 
+      "latitude": "41.5376018", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "416", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Jamestown, R.I.", 
+      "country": "United States", 
+      "longitude": "-71.3672755", 
+      "state": "Rhode Island", 
+      "latitude": "41.4970465", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "180", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Golspie (Scotland)", 
+      "country": "United Kingdom", 
+      "longitude": "-3.976086", 
+      "state": "Scotland", 
+      "latitude": "57.973406", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "203", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Edinburgh (Scotland)", 
+      "country": "United Kingdom", 
+      "longitude": "-3.188267", 
+      "state": "Scotland", 
+      "latitude": "55.953252", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "397", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Aberfoyle (Scotland)", 
+      "country": "United Kingdom", 
+      "longitude": "-4.387737", 
+      "state": "Scotland", 
+      "latitude": "56.181314", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "0", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Charleston", 
+      "country": "United States", 
+      "longitude": "-79.9310512", 
+      "state": "South Carolina", 
+      "latitude": "32.7764749", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "182", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Charleston (S.C.)", 
+      "country": "United States", 
+      "longitude": "-79.9310512", 
+      "state": "South Carolina", 
+      "latitude": "32.7764749", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "408", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Camden (S.C.)", 
+      "country": "United States", 
+      "longitude": "-80.6070237", 
+      "state": "South Carolina", 
+      "latitude": "34.2465393", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "78", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Lookout Mountain, TN", 
+      "country": "United States", 
+      "longitude": "-86.5804473", 
+      "state": "Tennessee", 
+      "latitude": "35.5174913", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "220", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Burtlington", 
+      "country": "United States", 
+      "longitude": "-73.212072", 
+      "state": "Vermont", 
+      "latitude": "44.4758825", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "226", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Rutland (Vt.)", 
+      "country": "United States", 
+      "longitude": "-72.9726065", 
+      "state": "Vermont", 
+      "latitude": "43.6106237", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "5", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Lynchburg", 
+      "country": "United States", 
+      "longitude": "-79.1422464", 
+      "state": "Virginia", 
+      "latitude": "37.4137536", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "6", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Farmville", 
+      "country": "United States", 
+      "longitude": "-78.3919401", 
+      "state": "Virginia", 
+      "latitude": "37.3020965", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "62", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Bridgewater Cottage, Hampton (Va.)", 
+      "country": "United States", 
+      "longitude": "-76.3452218", 
+      "state": "Virginia", 
+      "latitude": "37.0298687", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "70", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Locust Shade", 
+      "country": "United States", 
+      "longitude": "-77.3507955", 
+      "state": "Virginia", 
+      "latitude": "38.5335905", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "165", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Alexandria (Va.)", 
+      "country": "United States", 
+      "longitude": "-77.0469214", 
+      "state": "Virginia", 
+      "latitude": "38.8048355", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "218", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Norfolk (Va.)", 
+      "country": "United States", 
+      "longitude": "-76.2858726", 
+      "state": "Virginia", 
+      "latitude": "36.8507689", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "372", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Liberty (Va.)", 
+      "country": "United States", 
+      "longitude": "-77.351348", 
+      "state": "Virginia", 
+      "latitude": "38.145019", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "382", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Petersburg (Va.)", 
+      "country": "United States", 
+      "longitude": "-77.4019267", 
+      "state": "Virginia", 
+      "latitude": "37.2279279", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "383", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Farmville (Va.)", 
+      "country": "United States", 
+      "longitude": "-78.3919401", 
+      "state": "Virginia", 
+      "latitude": "37.3020965", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "384", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Lynchburg (Va.)", 
+      "country": "United States", 
+      "longitude": "-79.1422464", 
+      "state": "Virginia", 
+      "latitude": "37.4137536", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "385", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Richmond (Va.)", 
+      "country": "United States", 
+      "longitude": "-77.4360481", 
+      "state": "Virginia", 
+      "latitude": "37.5407246", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "403", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Elizabeth City county (Va.)", 
+      "country": "United States", 
+      "longitude": "-76.6877339", 
+      "state": "Virginia", 
+      "latitude": "37.23513", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "410", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Charlottesville (Va.)", 
+      "country": "United States", 
+      "longitude": "-78.4766781", 
+      "state": "Virginia", 
+      "latitude": "38.0293059", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "412", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Hot Springs (Va.)", 
+      "country": "United States", 
+      "longitude": "-79.831587", 
+      "state": "Virginia", 
+      "latitude": "37.9993993", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "116", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Beaufort Arms, Tintern (Wales)", 
+      "country": "United Kingdom", 
+      "longitude": "-2.6813226", 
+      "state": "Wales", 
+      "latitude": "51.6980172", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "18", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Sweet Springs", 
+      "country": "United States", 
+      "longitude": "-80.2414", 
+      "state": "West Virginia", 
+      "latitude": "37.6285", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "96", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Monroe County (W. Va.)", 
+      "country": "United States", 
+      "longitude": "-80.5882803", 
+      "state": "West Virginia", 
+      "latitude": "37.5601958", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "191", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Greenbrier County (W. Va.)", 
+      "country": "United States", 
+      "longitude": "-80.543845", 
+      "state": "West Virginia", 
+      "latitude": "38.0198478", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "213", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "White Sulphur Springs (W. Va.)", 
+      "country": "United States", 
+      "longitude": "-80.2975704", 
+      "state": "West Virginia", 
+      "latitude": "37.7965107", 
+      "continent": "North America"
+    }
+  }, 
+  {
+    "pk": "257", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Munich (Germany)", 
+      "country": "Germany", 
+      "longitude": "11.5819806", 
+      "state": "Bayern", 
+      "latitude": "48.1351253", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "206", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Reichenbach (Switzerland)", 
+      "country": "Switzerland", 
+      "longitude": "7.69409", 
+      "state": "Bern", 
+      "latitude": "46.62544", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "269", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Oberhofen (Switzerland)", 
+      "country": "Switzerland", 
+      "longitude": "7.6693742", 
+      "state": "Bern", 
+      "latitude": "46.730555", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "396", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Giessbach (Switzerland)", 
+      "country": "Switzerland", 
+      "longitude": "8.02563", 
+      "state": "Bern", 
+      "latitude": "46.73553", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "209", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Naples (Italy)", 
+      "country": "Italy", 
+      "longitude": "14.2681244", 
+      "state": "Campania", 
+      "latitude": "40.8517746", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "122", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Geneva (Switzerland)", 
+      "country": "Switzerland", 
+      "longitude": "6.1422961", 
+      "state": "Gen?ve", 
+      "latitude": "46.1983922", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "36", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Paris", 
+      "country": "France", 
+      "longitude": "2.3522219", 
+      "state": "?le-de-France", 
+      "latitude": "48.856614", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "67", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Paris (France)", 
+      "country": "France", 
+      "longitude": "2.3522219", 
+      "state": "?le-de-France", 
+      "latitude": "48.856614", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "27", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Rome", 
+      "country": "Italy", 
+      "longitude": "12.4801802", 
+      "state": "Lazio", 
+      "latitude": "41.8723889", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "127", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Rome (Italy)", 
+      "country": "Italy", 
+      "longitude": "12.4801802", 
+      "state": "Lazio", 
+      "latitude": "41.8723889", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "335", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Hotel Suisse, Via Veneto, Rome, Italy", 
+      "country": "Italy", 
+      "longitude": "12.4801802", 
+      "state": "Lazio", 
+      "latitude": "41.8723889", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "208", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Genoa (Italy)", 
+      "country": "Italy", 
+      "longitude": "8.946256", 
+      "state": "Liguria", 
+      "latitude": "44.4056499", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "30", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Courbance(?)", 
+      "country": "France", 
+      "longitude": "2.213749", 
+      "state": "Limousin", 
+      "latitude": "46.227638", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "37", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "The Reuissemont", 
+      "country": "France", 
+      "longitude": "2.213749", 
+      "state": "Limousin", 
+      "latitude": "46.227638", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "280", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Courbance (France)", 
+      "country": "France", 
+      "longitude": "2.213749", 
+      "state": "Limousin", 
+      "latitude": "46.227638", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "246", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Riffelberg (Switzerland); Milan (Italy); Lucerne (Switzerland)", 
+      "country": "Switzerland", 
+      "longitude": "8.3089295", 
+      "state": "Luzern", 
+      "latitude": "47.0500376", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "219", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Grenille (France)", 
+      "country": "France", 
+      "longitude": "5.724524", 
+      "state": "Rh?ne-Alpes", 
+      "latitude": "45.188529", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "19", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Frohburg", 
+      "country": "Germany", 
+      "longitude": "12.5581919", 
+      "state": "Sachsen", 
+      "latitude": "51.0585516", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "20", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Reichenbach", 
+      "country": "Germany", 
+      "longitude": "12.3", 
+      "state": "Sachsen", 
+      "latitude": "50.616667", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "204", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Frohburg (Germany)", 
+      "country": "Germany", 
+      "longitude": "12.5581919", 
+      "state": "Sachsen", 
+      "latitude": "51.0585516", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "21", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Lugano", 
+      "country": "Switzerland", 
+      "longitude": "8.9523121", 
+      "state": "Ticino", 
+      "latitude": "46.0065117", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "205", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Lugano (Switzerland)", 
+      "country": "Switzerland", 
+      "longitude": "8.9523121", 
+      "state": "Ticino", 
+      "latitude": "46.0065117", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "23", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Florence", 
+      "country": "Italy", 
+      "longitude": "11.2480006", 
+      "state": "Toscana", 
+      "latitude": "43.7710332", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "35", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Camaldoli", 
+      "country": "Italy", 
+      "longitude": "11.8203778", 
+      "state": "Toscana", 
+      "latitude": "43.7944916", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "84", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Florence (Italy)", 
+      "country": "Italy", 
+      "longitude": "11.2480006", 
+      "state": "Toscana", 
+      "latitude": "43.7710332", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "391", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Camaldoli (Italy)", 
+      "country": "Italy", 
+      "longitude": "11.8203778", 
+      "state": "Toscana", 
+      "latitude": "43.7944916", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "75", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Lausanne (Switzerland)", 
+      "country": "Switzerland", 
+      "longitude": "6.6335971", 
+      "state": "Vaud", 
+      "latitude": "46.5199617", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "34", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Venice", 
+      "country": "Italy", 
+      "longitude": "12.3155151", 
+      "state": "Veneto", 
+      "latitude": "45.4408474", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "163", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Cortina d'Ampezzo (Italy)", 
+      "country": "Italy", 
+      "longitude": "12.1356524", 
+      "state": "Veneto", 
+      "latitude": "46.5404711", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "178", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Venice (Italy)", 
+      "country": "Italy", 
+      "longitude": "12.3155151", 
+      "state": "Veneto", 
+      "latitude": "45.4408474", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "39", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "The Hague", 
+      "country": "Netherlands", 
+      "longitude": "4.3006999", 
+      "state": "Zuid-Holland", 
+      "latitude": "52.0704978", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "174", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Hague (Netherlands)", 
+      "country": "Netherlands", 
+      "longitude": "4.3006999", 
+      "state": "Zuid-Holland", 
+      "latitude": "52.0704978", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "263", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Zurich, Switzerland", 
+      "country": "Switzerland", 
+      "longitude": "8.5391825", 
+      "state": "Z?rich", 
+      "latitude": "47.3686498", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "265", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Zurich (Switzerland)", 
+      "country": "Switzerland", 
+      "longitude": "8.5391825", 
+      "state": "Z?rich", 
+      "latitude": "47.3686498", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "26", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Cannes", 
+      "country": "France", 
+      "longitude": "7.017369", 
+      "state": "Provence-Alpes-C?te d'Azur", 
+      "latitude": "43.552847", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "121", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Cannes (France)", 
+      "country": "France", 
+      "longitude": "7.017369", 
+      "state": "Provence-Alpes-C?te d'Azur", 
+      "latitude": "43.552847", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "207", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Menton (France)", 
+      "country": "France", 
+      "longitude": "7.49754", 
+      "state": "Provence-Alpes-C?te d'Azur", 
+      "latitude": "43.774481", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "256", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Nice (France)", 
+      "country": "France", 
+      "longitude": "7.2619532", 
+      "state": "Provence-Alpes-C?te d'Azur", 
+      "latitude": "43.7101728", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "323", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Alhambra Hotel, Cimiez-Nice, France", 
+      "country": "France", 
+      "longitude": "7.2619532", 
+      "state": "Provence-Alpes-C?te d'Azur", 
+      "latitude": "43.7101728", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "316", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Caen (France)", 
+      "country": "France", 
+      "longitude": "-0.370679", 
+      "state": "Basse-Normandie", 
+      "latitude": "49.182863", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "7", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Liverpool", 
+      "country": "United Kingdom", 
+      "longitude": "-2.9915726", 
+      "state": "England", 
+      "latitude": "53.4083714", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "8", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "London", 
+      "country": "United Kingdom", 
+      "longitude": "-0.1277583", 
+      "state": "England", 
+      "latitude": "51.5073509", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "13", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Lake Windermere", 
+      "country": "United Kingdom", 
+      "longitude": "-2.9361", 
+      "state": "England", 
+      "latitude": "54.3583", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "24", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Ashbourne", 
+      "country": "United Kingdom", 
+      "longitude": "-1.732179", 
+      "state": "England", 
+      "latitude": "53.016626", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "45", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "England", 
+      "country": "United Kingdom", 
+      "longitude": "-1.1743197", 
+      "state": "England", 
+      "latitude": "52.3555177", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "80", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Sunnyside, Mayfield, near Ashbourne, England", 
+      "country": "United Kingdom", 
+      "longitude": "-1.1743197", 
+      "state": "England", 
+      "latitude": "52.3555177", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "81", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "London, England", 
+      "country": "United Kingdom", 
+      "longitude": "-1.1743197", 
+      "state": "England", 
+      "latitude": "52.3555177", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "109", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Coalbrookdale (England)", 
+      "country": "United Kingdom", 
+      "longitude": "-2.489425", 
+      "state": "England", 
+      "latitude": "52.63612", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "117", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Rugby", 
+      "country": "United Kingdom", 
+      "longitude": "-1.265032", 
+      "state": "England", 
+      "latitude": "52.370878", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "134", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Liverpool (England)", 
+      "country": "United Kingdom", 
+      "longitude": "-2.9915726", 
+      "state": "England", 
+      "latitude": "53.4083714", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "151", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Kensington", 
+      "country": "United Kingdom", 
+      "longitude": "-0.1932952", 
+      "state": "England", 
+      "latitude": "51.5009945", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "171", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "London (England)", 
+      "country": "United Kingdom", 
+      "longitude": "-0.1277583", 
+      "state": "England", 
+      "latitude": "51.5073509", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "175", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Shropshire (England)", 
+      "country": "United Kingdom", 
+      "longitude": "-2.7037501", 
+      "state": "England", 
+      "latitude": "52.5864845", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "183", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Chester (England)", 
+      "country": "United Kingdom", 
+      "longitude": "-2.893075", 
+      "state": "England", 
+      "latitude": "53.193392", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "184", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Tottenham (England)", 
+      "country": "United Kingdom", 
+      "longitude": "-0.0722785", 
+      "state": "England", 
+      "latitude": "51.6049674", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "187", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Lynton (England)", 
+      "country": "United Kingdom", 
+      "longitude": "-3.840102", 
+      "state": "England", 
+      "latitude": "51.2296539", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "189", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "York (England)", 
+      "country": "United Kingdom", 
+      "longitude": "-1.0872979", 
+      "state": "England", 
+      "latitude": "53.9599651", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "190", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Windermere (England)", 
+      "country": "United Kingdom", 
+      "longitude": "-2.906785", 
+      "state": "England", 
+      "latitude": "54.380685", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "210", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Cambridge (England)", 
+      "country": "United Kingdom", 
+      "longitude": "0.121817", 
+      "state": "England", 
+      "latitude": "52.205337", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "225", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Olney", 
+      "country": "United Kingdom", 
+      "longitude": "-0.7013779", 
+      "state": "England", 
+      "latitude": "52.154738", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "241", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Harrogate", 
+      "country": "United Kingdom", 
+      "longitude": "-1.541812", 
+      "state": "England", 
+      "latitude": "53.99212", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "244", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Lyme Regis", 
+      "country": "United Kingdom", 
+      "longitude": "-2.936639", 
+      "state": "England", 
+      "latitude": "50.725156", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "255", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Bristol", 
+      "country": "United Kingdom", 
+      "longitude": "-2.58791", 
+      "state": "England", 
+      "latitude": "51.454513", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "262", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Mells (England)", 
+      "country": "United Kingdom", 
+      "longitude": "-2.387315", 
+      "state": "England", 
+      "latitude": "51.239021", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "266", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Stockport (England)", 
+      "country": "United Kingdom", 
+      "longitude": "-2.158843", 
+      "state": "England", 
+      "latitude": "53.406754", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "283", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Royal Mail Ship Gallia; Liverpool, England", 
+      "country": "United Kingdom", 
+      "longitude": "-1.1743197", 
+      "state": "England", 
+      "latitude": "52.3555177", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "288", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Lichfield (England)", 
+      "country": "United Kingdom", 
+      "longitude": "-1.831672", 
+      "state": "England", 
+      "latitude": "52.681602", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "336", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Woodford, England", 
+      "country": "United Kingdom", 
+      "longitude": "-1.1743197", 
+      "state": "England", 
+      "latitude": "52.3555177", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "361", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "London; Paris", 
+      "country": "United Kingdom", 
+      "longitude": "-0.2704021", 
+      "state": "England", 
+      "latitude": "51.4018669", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "381", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Hereford (England)", 
+      "country": "United Kingdom", 
+      "longitude": "-2.715974", 
+      "state": "England", 
+      "latitude": "52.056398", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "395", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Avebury (England)", 
+      "country": "United Kingdom", 
+      "longitude": "-1.853046", 
+      "state": "England", 
+      "latitude": "51.429456", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "398", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Swallowfield", 
+      "country": "United Kingdom", 
+      "longitude": "-0.96065", 
+      "state": "England", 
+      "latitude": "51.379406", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "400", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Keswick (Cumbria, England)", 
+      "country": "United Kingdom", 
+      "longitude": "-1.1743197", 
+      "state": "England", 
+      "latitude": "52.3555177", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "235", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "name": "Bonchurch (Isle of Wight)", 
+      "country": "United Kingdom", 
+      "longitude": "-1.1952449", 
+      "state": "England", 
+      "latitude": "50.598447", 
+      "continent": "Europe"
+    }
+  }, 
+  {
+    "pk": "42", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "54.5259614", 
+      "name": "Euro-trippedthrough6 Europeancountries", 
+      "longitude": "15.2551187"
+    }
+  }, 
+  {
+    "pk": "181", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "39.7466168", 
+      "name": "Conowingo Reservoir (Md. and Pa.)", 
+      "longitude": "-76.2421185"
+    }
+  }, 
+  {
+    "pk": "217", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "37.0004248", 
+      "name": "Old Point Comfort (Va.)", 
+      "longitude": "-76.3113315"
+    }
+  }, 
+  {
+    "pk": "229", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "35.746512", 
+      "name": "Mary Powell (ship)", 
+      "longitude": "-39.462891"
+    }
+  }, 
+  {
+    "pk": "388", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "54.5259614", 
+      "name": "Europe", 
+      "longitude": "15.2551187"
+    }
+  }, 
+  {
+    "pk": "4", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Catskills", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "14", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Edinborough", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "16", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Sulfur Springs", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "22", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Mentone/Menton", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "28", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Chemindela Tour", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "29", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Avebury", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "32", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Wildmere", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "33", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Augustine", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "40", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Oban", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "63", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "New York, NY", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "73", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Connymeade?", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "86", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Westtown[?] (Pa.)", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "88", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Atlantic Ocean", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "99", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Weston", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "100", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "New Garden Boarding School", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "110", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Montrose", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "111", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Awbury", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "112", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Westtown", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "113", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Connymede", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "114", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Connymeade", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "115", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Fellsworth", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "118", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Lodore", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "120", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Overbrook", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "123", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Marblehead Neck", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "128", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Bloomsdale", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "141", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Penn College", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "143", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Woodbourne", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "145", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Weston School", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "188", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Overlook (N.Y.)", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "194", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Surf House", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "195", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "School House Lane", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "196", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Devon Inn", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "202", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Profile House", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "221", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Airdrie", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "222", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Blythewood", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "234", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Middletown", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "240", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Cherrelyn", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "242", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Streshire", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "243", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Cliff House", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "247", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Chamounix (Switzerland); Martigny (Germany)", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "248", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Meadow Farm", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "249", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Washington St.", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "251", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Ivy Lodge Cottage", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "254", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Wheeling (VA)", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "261", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Burlington", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "264", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Kingwood", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "268", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Mauch Church", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "275", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Magnolia", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "278", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Highland House", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "286", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "11 Place Reine Mathilde", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "290", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Burlinton, N.J.", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "299", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Lancaster", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "317", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Surf Haven", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "328", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Bliss Cottage", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "329", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Prospect St.", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "330", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "6 Cavendish Crescent", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "352", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Mulford", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "366", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Mossgiel (R.I.)", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "367", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Mossgiel", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "369", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Overlook", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "377", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Asticou", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "407", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Lakewood", 
+      "longitude": "0"
+    }
+  }, 
+  {
+    "pk": "417", 
+    "model": "CopeEvans.Place", 
+    "fields": {
+      "latitude": "0", 
+      "name": "Awbury?", 
+      "longitude": "0"
+    }
+  }
+]

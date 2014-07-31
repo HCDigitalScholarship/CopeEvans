@@ -1,0 +1,109 @@
+#myBook {
+position:relative;
+width: 604px;
+height:362px;
+float:left;
+}
+.imBookPage {
+position:absolute;
+left:0px;
+top:0px;
+width: 300px;
+height:360px;
+color:#fff;
+overflow:hidden;
+border: solid 1px #000;
+}
+.navbar {
+z-index:100;
+position:fixed;
+width:100%;
+}
+
+#left-sidebar {
+margin-top:50px;
+}
+
+.content-wrapper {
+background-color:rgba(0, 0, 0, 0.6);
+}
+
+.spacer {
+height:50px;
+width:100%;
+    @media (min-width:768px) {
+	height:0px;
+    }
+}
+
+.menu {
+}
+
+.menu li {
+list-style-type:none;
+}
+
+.menu li:hover {
+background-color:lightgrey;
+font-size:20px;
+}
+
+.menu a:hover {
+color:black;
+}
+
+.person {
+cursor:pointer;
+}
+
+.section-wrapper {
+margin-bottom:30px;
+}
+
+.container-fluid {
+background-color:black;
+}
+
+.navbar-default
+.container-fluid
+.navbar-nav>li>a {
+color:white;
+}
+
+.tooltip-mine {
+text-decoration:underline;
+cursor:pointer;
+}
+
+.tooltip-mine .ttip {
+cursor:auto;
+position:absolute;
+background-color:rgba(0, 0, 0, 0.39);
+border-radius:10px;
+}
+
+.tooltip-mine .ttip ul {
+padding:10px;
+}
+
+.tooltip-mine .ttip li {
+list-style-type;none;
+background-color:white;
+display:block;
+padding:10px;
+margin:0px;
+border-radius:0px;
+border:1px solid black;
+text-align:center;
+}
+
+.tooltip-mine .ttip li a {
+font-size:20px;
+color:black;
+padding-top:0px;
+cursor:pointer;
+}
+.tooltip-mine .ttip li:hover {
+background-color:lightgrey;
+}
+

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>The Cope Evans Project </title>
+    {% include "top_links.html" %}
+  </head>
+    {% include "menu.html" %}
+  <body>
+
+    <!-- background image overlay (semi transparent dark background image overlay) -->
+    <!-- comment or remove if you don't want the overlay on top of the image -->
+    <div class="background-image-overlay"></div>
+
+    <!-- outer background container - the element from where the default page background image is set, and the element which changes its background when scrolling through other sections (.section-wrapoer) that have attribute "data-custom-background-img" set. 
+     - data-default-background-img attr is required for sections (.section-wrapper) below that have no custom background defined.
+     - use same image in the backstretch.js code in the footer for IE8 or less browsers -->
+    <div id="outer-background-container" data-default-background-img="{{STATIC_URL}}images/other_images/White-Background-Xtra.jpg" style="background-image:url({{STATIC_URL}}images/other_images/White-Background-Xtra.jpg);"></div>
+    <!-- end: #outer-background-container -->    
+
+    <!-- Outer Container -->
+    <div id="outer-container">
+
+      <!-- Left Sidebar -->
+      <section id="left-sidebar">
+        <!-- Menu Icon for smaller viewports -->
+        <div id="mobile-menu-icon" class="visible-xs" onClick="toggle_main_menu();"><span class="glyphicon glyphicon-th"></span></div>
+
+        <!-- ==================================================================
+        MAIN MENU 
+        ==================================================================  -->
+        <!-- Each menu item links to a section (<article class="section-wrapper...") in the main content below.
+             - set each <li> id to this format: "menu-item-[the id of the .section-wrapper to link to]".
+             - set href of each <a> to the id of the .section-wrapper to link to -->
+        <ul id="main-menu">
+          <li id="menu-item-intro" class="menu-item scroll"><a href="#intro">Quaker Lifestyle</a></li>
+          <li id="menu-item-text" class="menu-item scroll"><a href="#text">Clementine Cope</a></li>
+          <li id="menu-item-sweet" class="menu-item scroll"><a href="#sweet">Networks and Travels</a></li>
+          <li id="menu-item-cool" class="menu-item scroll"><a href="#cool">Guarded Education</a></li>
+          <li id="menu-item-hi" class="menu-item scroll"><a href="#hi">Education</a></li>
+          <!-- to include a link which doesn't scroll to a section inside the page, remove the .scroll class from the <li> - example below -->
+          <!-- <li id="menu-item-alt-page" class="menu-item"><a href="http://www.link.com">Outer Link</a></li> -->
+        </ul><!-- #main-menu -->
+        <!-- ==================== END: MAIN MENU ==================== -->
+
+      </section><!-- #left-sidebar -->
+      <!-- end: Left Sidebar -->
+
+      <!-- ==================================================================
+      MAIN CONTENT
+      ==================================================================  -->
+      <!-- all the website sections are contained in the <article> tag with class ".section-wrapper" and a unique id.
+           - to edit / remove / create website sections, you have to handle the content contained in these <article> tags -->
+      <section id="main-content" class="clearfix">
+        
+        <!-- ==================== SECTION TYPE: Intro Text ==================== -->
+        <!-- This type of section should contain heading and intro paragraph. It can also include links to other sections -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="intro" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/cope evans_0049.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              <!-- Start: Section content to edit -->
+
+                <!-- <p> text in .feature-text is larger  -->
+                <section class="feature-text">
+                  <h1>Changing Quaker Lifestyle</h1>
+                  <p>Insert subtitle here</p>
+                  <!-- to add scrolling effects to links linking to same page section, add .link-scroll class -->
+                  <p><a href="#text" class="link-scroll btn btn-outline-inverse btn-lg">find out more</a></p>
+                </section>
+
+              <!-- End: Section content to edit -->
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Intro Text ==================== -->
+
+        <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="text" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/hsc0161_01a.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              <!-- Start: Section content to edit -->
+
+                <h1 class="section-title"><span id="10" class="tooltip-mine">Clementine Cope</span></h1>
+
+                <p class="feature-paragraph"><img data-img-src="{{STATIC_URL}}images/other_images/transp-image5b.png" class="lazy pull-right" alt="Lorem Ipsum">Clemenentine Cope text/virtual scrapbook here</p>
+		<div id="myBook">			
+		    <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/000001.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/000002.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/000003.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/000004.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/000005.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/000006.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/000007.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/000008.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/000009.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000010.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000011.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000012.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000013.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000014.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000015.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000016.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000017.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000018.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000019.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000020.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000021.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000022.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000023.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000024.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000025.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000026.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000027.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000028.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000029.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000030.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000031.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000032.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000033.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000034.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000035.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000036.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000037.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000038.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000039.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000040.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000041.jpg)")></div>
+		    
+		</div>
+                <p></p>
+                <!-- to make a popup/modal link add an onClick function call to the function: 
+                     - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+
+                
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+                     - it is important to set a unique id -->
+                <div class="content-to-populate-in-modal" id="modal-content-1">
+                  <h1>Lorem Ipsum</h1>
+                  <p><img data-img-src="{{STATIC_URL}}images/other_images/transp-image4.png" class="lazy rounded_border hover_effect pull-right" alt="Lorem Ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in urna vel ante mollis tincidunt. Donec nec magna condimentum tortor laoreet lobortis. Nunc accumsan sapien eu tortor fringilla, et condimentum metus pellentesque. Maecenas rhoncus tortor nec mi congue aliquet. Integer eu turpis scelerisque, iaculis magna non, tempor sem. Quisque consectetur nisi eu felis euismod, sit amet faucibus justo molestie. Ut pretium sapien dui, id facilisis metus interdum pharetra.</p>
+                  <p>Etiam scelerisque lacus tempor, rhoncus diam vel, gravida felis. Fusce tristique sem et leo aliquam vulputate. Ut eget orci in sapien commodo fringilla. Ut luctus faucibus viverra. Quisque ut ante eget libero rutrum imperdiet. Morbi in diam bibendum, venenatis arcu sed, consequat libero. Nulla imperdiet, ipsum et adipiscing pulvinar, nibh metus porta mauris, et vestibulum dolor sapien sit amet justo. In dignissim leo nec erat faucibus volutpat.</p>
+                  <h3>Duis dictum lorem metus, vitae dapibus</h3>
+                  <p><img data-img-src="{{STATIC_URL}}images/other_images/transp-image3.png" class="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum">Sed auctor urna mi, sed fringilla felis vulputate nec. Cras eu nibh id quam pretium convallis. Donec ante enim, placerat nec sagittis sit amet, tempor in velit. Maecenas ultricies commodo lacus id porta. Suspendisse eros elit, lacinia vitae erat vitae, egestas accumsan nunc. Maecenas dictum odio ipsum, non volutpat erat consequat tempor. Pellentesque sed malesuada turpis. Quisque eget lacus sit amet dui feugiat molestie sit amet eget purus. Morbi eget neque nec lectus tempus sagittis nec at ante. </p>
+                  <p>Etiam scelerisque lacus tempor, rhoncus diam vel, gravida felis. Fusce tristique sem et leo aliquam vulputate. Ut eget orci in sapien commodo fringilla. Ut luctus faucibus viverra. Quisque ut ante eget libero rutrum imperdiet. Morbi in diam bibendum, venenatis arcu sed, consequat libero. Nulla imperdiet, ipsum et adipiscing pulvinar, nibh metus porta mauris, et vestibulum dolor sapien sit amet justo. In dignissim leo nec erat faucibus volutpat.</p>
+                </div><!-- #modal-content-1 -->
+
+              <!-- End: Section content to edit --> 
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
+                  
+        <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="sweet" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/Saranak_and_Tuscarora.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              <!-- Start: Section content to edit -->
+
+                <h1 class="section-title">Networks and Travels</h1>
+
+                <p class="feature-paragraph"><img data-img-src="{{STATIC_URL}}images/other_images/Jonathan_Evans_Germantown.jpg" class="lazy pull-right" alt="Lorem Ipsum">Our visualizations and statistical analysis of the Cope Evans collection clearly shows that there was an increase in the exchange of letters. What makes this difficult to claim and to prove our point that networks were intensified, is that this data and analysis are seemingly dependent on how the letters were collected, or how the letters were saved and passed down within the family, or even how they were donated to Haverford, rather than there serving as proof of a larger trend of increased communication
+<a href="#carousel"></p>
+
+                
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+                     - it is important to set a unique id -->
+                <div class="content-to-populate-in-modal" id="modal-content-1">
+                  <h1>Lorem Ipsum</h1>
+                  <p><img data-img-src="{{STATIC_URL}}images/other_images/transp-image4.png" class="lazy rounded_border hover_effect pull-right" alt="Lorem Ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in urna vel ante mollis tincidunt. Donec nec magna condimentum tortor laoreet lobortis. Nunc accumsan sapien eu tortor fringilla, et condimentum metus pellentesque. Maecenas rhoncus tortor nec mi congue aliquet. Integer eu turpis scelerisque, iaculis magna non, tempor sem. Quisque consectetur nisi eu felis euismod, sit amet faucibus justo molestie. Ut pretium sapien dui, id facilisis metus interdum pharetra.</p>
+                  <p>Etiam scelerisque lacus tempor, rhoncus diam vel, gravida felis. Fusce tristique sem et leo aliquam vulputate. Ut eget orci in sapien commodo fringilla. Ut luctus faucibus viverra. Quisque ut ante eget libero rutrum imperdiet. Morbi in diam bibendum, venenatis arcu sed, consequat libero. Nulla imperdiet, ipsum et adipiscing pulvinar, nibh metus porta mauris, et vestibulum dolor sapien sit amet justo. In dignissim leo nec erat faucibus volutpat.</p>
+                  <h3>Duis dictum lorem metus, vitae dapibus</h3>
+                  <p><img data-img-src="{{STATIC_URL}}images/other_images/transp-image3.png" class="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum">Sed auctor urna mi, sed fringilla felis vulputate nec. Cras eu nibh id quam pretium convallis. Donec ante enim, placerat nec sagittis sit amet, tempor in velit. Maecenas ultricies commodo lacus id porta. Suspendisse eros elit, lacinia vitae erat vitae, egestas accumsan nunc. Maecenas dictum odio ipsum, non volutpat erat consequat tempor. Pellentesque sed malesuada turpis. Quisque eget lacus sit amet dui feugiat molestie sit amet eget purus. Morbi eget neque nec lectus tempus sagittis nec at ante. </p>
+                  <p>Etiam scelerisque lacus tempor, rhoncus diam vel, gravida felis. Fusce tristique sem et leo aliquam vulputate. Ut eget orci in sapien commodo fringilla. Ut luctus faucibus viverra. Quisque ut ante eget libero rutrum imperdiet. Morbi in diam bibendum, venenatis arcu sed, consequat libero. Nulla imperdiet, ipsum et adipiscing pulvinar, nibh metus porta mauris, et vestibulum dolor sapien sit amet justo. In dignissim leo nec erat faucibus volutpat.</p>
+                </div><!-- #modal-content-1 -->
+
+              <!-- End: Section content to edit --> 
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
+
+               <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="cool" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/hsc0355_01.jpeg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              <!-- Start: Section content to edit -->
+
+                <h1 class="section-title">Guarded Education</h1>
+
+                <p class="feature-paragraph"><img data-img-src="{{STATIC_URL}}images/other_images/hsc0352_01.tif" class="lazy pull-right" alt="Lorem Ipsum">Quaker Education before the 19th century, which would later continue in the form of guarded education, was constructed to mirror traditions of simplicity that was foundational to humble Christian beginnings and necessary for a proper communication with God. This value rejected worldly influence and prevented adapting styles, seeing them as unnecessary aberrations, while relying on curricula in favor of traditional teachings to shelter children from evil influences that ultimately engendered a static and cloistered lifestyle throughout adulthood.</p>
+                <p>Quaker schools were first aimed to create a sheltered environment where the child would be away from “evil influences”.  As a result, the dress and curriculum of these schools reflected values and appearances of an approved lifestyle within the isolated Quaker community (Oxford Encyclopedia). The schools warned the young against “vain fashion, bad company, and other excesses” …” “dancing, music, novel reading , and lotteries, or attending stage plays, horse races and other vain sports” (Benjamin 8).  The Orthodox required Monthly Meetings to have schools with a guarded education. In the tradition of guarded education focus was taken away from the arts (music, drama, dance, etc.) because they were “vain”. This was a primary obligation because it was to assure the youth would be brought up in the faith properly, meaning that they wouldn’t be interfered with by outside, corrupting influences, and so the faith could survive in its traditional form and members (Benjamin).  
+</p>
+                <h4>George Fox, the founder of Quakerism, maintained that dress and fashion reflected the values of the person, the religion, and influenced how one behaved and experienced life</h4>
+                <p>"Friends, keep out of the vain fashions of the world; let not your eyes, minds, and spirits run after every fashion (in attire) of the nations; for that will lead you from the solid life into unity with that spirit that leads to follow the fashions of the nations, after every fashion of apparel that gets up: but mind that which is sober and modest, and keep to your plain fashions, that you may judge the World, . . ."</p>   
+                <p>From A Collection of Many Select and Christian Epistles, Letters, and Testimonies (London 1698)"</p>
+                <!-- to make a popup/modal link add an onClick function call to the function: 
+                     - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+                <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-17');" class="btn btn-outline-inverse btn-sm">read more</a></p>
+                
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+                     - it is important to set a unique id -->
+                <div class="content-to-populate-in-modal" id="modal-content-17">
+                  <h1>Title</h1>
+                  <p><img data-img-src="{{STATIC_URL}}images/other_images/transp-image4.png" class="lazy rounded_border hover_effect pull-right" alt="Lorem Ipsum">But due to an increase need to engage and interact with the rapidly globalizing world during the Second Industrial Age, the adoption of worldliness into the Quaker education and culture induced theological and social disputes that potentially had contributing effects in producing the 1827 Separation the Wilburite and Gurneyite schism.
+</p>
+                  <p>In the wake of these divisions, Quaker education became increasingly influenced by the world outside the Quaker community through the 19th century and early 20th century, while at the same time opposite forces attempted to entrench and insert guarded education into mainstream Quaker culture and education, as observed in the strong Quietist revival, and exemplified in the microcosms of Quaker institutions like the Westtown School, Haverford, Swarthmore, and Bryn Mawr founded during the Second Industrial Age. Examining administrative policies, curricula, and campus life, yields another dimension into how education was influenced by this new world and how it help produce more extensive and diversified networks by impelling new interactions and travel.
+</p>
+                  <h3>Duis dictum lorem metus, vitae dapibus</h3>
+                  <p><img data-img-src="{{STATIC_URL}}images/other_images/transp-image3.png" class="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum">Sed auctor urna mi, sed fringilla felis vulputate nec. Cras eu nibh id quam pretium convallis. Donec ante enim, placerat nec sagittis sit amet, tempor in velit. Maecenas ultricies commodo lacus id porta. Suspendisse eros elit, lacinia vitae erat vitae, egestas accumsan nunc. Maecenas dictum odio ipsum, non volutpat erat consequat tempor. Pellentesque sed malesuada turpis. Quisque eget lacus sit amet dui feugiat molestie sit amet eget purus. Morbi eget neque nec lectus tempus sagittis nec at ante. </p>
+                  <p>Etiam scelerisque lacus tempor, rhoncus diam vel, gravida felis. Fusce tristique sem et leo aliquam vulputate. Ut eget orci in sapien commodo fringilla. Ut luctus faucibus viverra. Quisque ut ante eget libero rutrum imperdiet. Morbi in diam bibendum, venenatis arcu sed, consequat libero. Nulla imperdiet, ipsum et adipiscing pulvinar, nibh metus porta mauris, et vestibulum dolor sapien sit amet justo. In dignissim leo nec erat faucibus volutpat.</p>
+                </div><!-- #modal-content-1 -->
+
+              <!-- End: Section content to edit --> 
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
+
+   
+        <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="hi" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/Members_of_the_class_of_1868.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              <!-- Start: Section content to edit -->
+
+                <h1 class="section-title">Progressive Education</h1>
+
+                <p class="feature-paragraph"><img data-img-src="{{STATIC_URL}}images/other_images/hsc1167_01.jpg" class="lazy pull-right" alt="Lorem Ipsum">Progressive education text
+<a href="#carousel"></p>
+                <h4></h4>
+                <p></p>
+                <!-- to make a popup/modal link add an onClick function call to the function: 
+                     - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+                <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-1');" class="btn btn-outline-inverse btn-sm">read more</a></p>
+                
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+                     - it is important to set a unique id -->
+                <div class="content-to-populate-in-modal" id="modal-content-1">
+                  <h1>Lorem Ipsum</h1>
+                  <p><img data-img-src="{{STATIC_URL}}images/other_images/transp-image4.png" class="lazy rounded_border hover_effect pull-right" alt="Lorem Ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in urna vel ante mollis tincidunt. Donec nec magna condimentum tortor laoreet lobortis. Nunc accumsan sapien eu tortor fringilla, et condimentum metus pellentesque. Maecenas rhoncus tortor nec mi congue aliquet. Integer eu turpis scelerisque, iaculis magna non, tempor sem. Quisque consectetur nisi eu felis euismod, sit amet faucibus justo molestie. Ut pretium sapien dui, id facilisis metus interdum pharetra.</p>
+                  <p>Etiam scelerisque lacus tempor, rhoncus diam vel, gravida felis. Fusce tristique sem et leo aliquam vulputate. Ut eget orci in sapien commodo fringilla. Ut luctus faucibus viverra. Quisque ut ante eget libero rutrum imperdiet. Morbi in diam bibendum, venenatis arcu sed, consequat libero. Nulla imperdiet, ipsum et adipiscing pulvinar, nibh metus porta mauris, et vestibulum dolor sapien sit amet justo. In dignissim leo nec erat faucibus volutpat.</p>
+                  <h3>Duis dictum lorem metus, vitae dapibus</h3>
+                  <p><img data-img-src="{{STATIC_URL}}images/other_images/transp-image3.png" class="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum">Sed auctor urna mi, sed fringilla felis vulputate nec. Cras eu nibh id quam pretium convallis. Donec ante enim, placerat nec sagittis sit amet, tempor in velit. Maecenas ultricies commodo lacus id porta. Suspendisse eros elit, lacinia vitae erat vitae, egestas accumsan nunc. Maecenas dictum odio ipsum, non volutpat erat consequat tempor. Pellentesque sed malesuada turpis. Quisque eget lacus sit amet dui feugiat molestie sit amet eget purus. Morbi eget neque nec lectus tempus sagittis nec at ante. </p>
+                  <p>Etiam scelerisque lacus tempor, rhoncus diam vel, gravida felis. Fusce tristique sem et leo aliquam vulputate. Ut eget orci in sapien commodo fringilla. Ut luctus faucibus viverra. Quisque ut ante eget libero rutrum imperdiet. Morbi in diam bibendum, venenatis arcu sed, consequat libero. Nulla imperdiet, ipsum et adipiscing pulvinar, nibh metus porta mauris, et vestibulum dolor sapien sit amet justo. In dignissim leo nec erat faucibus volutpat.</p>
+                </div><!-- #modal-content-1 -->
+
+              <!-- End: Section content to edit --> 
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
+
+      </section><!-- #main-content -->
+      <!-- ==================== END: MAIN CONTENT ==================== -->
+
+      <!-- Footer -->
+      <section id="footer">
+
+        <!-- Go to Top -->
+        <div id="go-to-top" onclick="scroll_to_top();"><span class="icon glyphicon glyphicon-chevron-up"></span></div>
+
+        <!-- ==================================================================
+        SOCIAL ICONS
+        ==================================================================  -->
+        <!-- Each social icon item consists of the following:
+             - Link to the social page in href of <a>
+             - social icon in the <img> - a list of social icons options are found in the directory {{STATIC_URL}}images/theme_images/social_icons/ -->
+        <ul class="social-icons">
+          <li><a href="#" target="_blank" title="Facebook"><img src="{{STATIC_URL}}images/theme_images/social_icons/facebook.png" alt="Facebook"></a></li>
+          <li><a href="#" target="_blank" title="Twitter"><img src="{{STATIC_URL}}images/theme_images/social_icons/twitter.png" alt="Twitter"></a></li>
+          <li><a href="#" target="_blank" title="Google+"><img src="{{STATIC_URL}}images/theme_images/social_icons/googleplus.png" alt="Google+"></a></li>
+        </ul>
+        <!-- ==================== END: Social Icons ==================== -->
+
+        <!-- copyright text -->
+        <div class="footer-text-line">&copy; 2014 Twilli | Air</div>
+      </section>
+      <!-- end: Footer -->      
+
+    </div><!-- #outer-container -->
+    <!-- end: Outer Container -->
+
+    <!-- Modal -->
+    <!-- DO NOT MOVE, EDIT OR REMOVE - this is needed in order for popup content to be populated in it -->
+    <div class="modal fade" id="common-modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <div class="modal-body">
+          </div><!-- .modal-body -->
+        </div><!-- .modal-content -->
+      </div><!-- .modal-dialog -->
+    </div><!-- .modal -->    
+    {% include "bottom_javascript.html" %}
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>Cope Evan's Family Project</title>
+    {% include "top_links.html" %}
+    <link href="{{STATIC_URL}}css/index.css" rel="stylesheet" type="text/css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+	$(document).ready(function() {
+	    $(window).scroll(function() {
+		if ($("nav").offset().top - $(window).scrollTop() < 0) {
+		    $("nav").css("position","fixed");
+		    $("nav").css("top","0");
+		}
+		else if ($(window).scrollTop() < 150) {
+		    $("nav").css("position","relative");
+		}
+	    });
+	});
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+	<div id="title">
+	The Cope Evans Project:
+	</div>
+	<div id="subtitle">
+	A History of Quaker Movement During Times of Change
+	</div>
+    </div>
+    {% include "menu.html" %}
+    <div id="content">
+    <h3>The Cope and Evans family papers</h3>
+</body>
+</html>

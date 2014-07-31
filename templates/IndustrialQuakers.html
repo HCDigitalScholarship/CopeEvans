@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>The Cope Evans Project | The Industrial Age</title>
+    {% include "top_links.html" %}
+  </head>
+  <body>
+    {% include "menu.html" %}
+    <!-- background image overlay (semi transparent dark background image overlay) -->
+    <!-- comment or remove if you don't want the overlay on top of the image -->
+    <div class="background-image-overlay"></div>
+
+    <!-- outer background container - the element from where the default page background image is set, and the element which changes its background when scrolling through other sections (.section-wrapoer) that have attribute "data-custom-background-img" set. 
+     - data-default-background-img attr is required for sections (.section-wrapper) below that have no custom background defined.
+     - use same image in the backstretch.js code in the footer for IE8 or less browsers -->
+    <div id="outer-background-container" data-default-background-img="{{STATIC_URL}}images/other_images/White-Background-Xtra.jpg" style="background-image:url({{STATIC_URL}}images/other_images/White-Background-Xtra.jpg);"></div>
+    <!-- end: #outer-background-container -->    
+
+    <!-- Outer Container -->
+    <div id="outer-container">
+
+      <!-- Left Sidebar -->
+      <section id="left-sidebar">
+
+        <!-- Menu Icon for smaller viewports -->
+        <div id="mobile-menu-icon" class="visible-xs" onClick="toggle_main_menu();"><span class="glyphicon glyphicon-th"></span></div>
+
+        <!-- ==================================================================
+        MAIN MENU 
+        ==================================================================  -->
+        <!-- Each menu item links to a section (<article class="section-wrapper...") in the main content below.
+             - set each <li> id to this format: "menu-item-[the id of the .section-wrapper to link to]".
+             - set href of each <a> to the id of the .section-wrapper to link to -->
+        <ul id="main-menu">
+          <li id="menu-item-intro" class="menu-item scroll"><a href="#intro">Industrial Quakers</a></li>
+          <li id="menu-item-word" class="menu-item scroll"><a href="#word">Thomas Pim Cope</a></li>
+          <li id="menu-item-text" class="menu-item scroll"><a href="#text">Political Engagement</a></li>
+          <li id="menu-item-roar" class="menu-item scroll"><a href="#roar">Economic Engagement</a></li>
+          <li id="menu-item-okay" class="menu-item scroll"><a href="#okay">Important Quaker Events</a></li>
+          <!-- to include a link which doesn't scroll to a section inside the page, remove the .scroll class from the <li> - example below -->
+          <!-- <li id="menu-item-alt-page" class="menu-item"><a href="http://www.link.com">Outer Link</a></li> -->
+        </ul><!-- #main-menu -->
+        <!-- ==================== END: MAIN MENU ==================== -->
+
+      </section><!-- #left-sidebar -->
+      <!-- end: Left Sidebar -->
+
+      <!-- ==================================================================
+      MAIN CONTENT
+      ==================================================================  -->
+      <!-- all the website sections are contained in the <article> tag with class ".section-wrapper" and a unique id.
+           - to edit / remove / create website sections, you have to handle the content contained in these <article> tags -->
+      <section id="main-content" class="clearfix">
+        
+        <!-- ==================== SECTION TYPE: Intro Text ==================== -->
+        <!-- This type of section should contain heading and intro paragraph. It can also include links to other sections -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="intro" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/cope evans_0058.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              <!-- Start: Section content to edit -->
+
+                <!-- <p> text in .feature-text is larger  -->
+                <section class="feature-text">
+                  <h1>Quakers in The Industrial Age</h1>
+                  <p>The Industrial Age provided conditions that engendered increased interconnectivity and demanded Quakers, most generally wealthy Quakers, to engage in the world politically and economically, causing previous tenets expressed by these once cloistered communities to be challenged. 
+By balking at previous practices of isolationism and by further engaging with the outside world, these industrious Quakers marshaled a transformation that fundamentally changed the networks and appearance of the Quaker community.</p>
+                  <!-- to add scrolling effects to links linking to same page section, add .link-scroll class -->
+        
+              <!-- End: Section content to edit -->
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Intro Text ==================== -->
+
+        <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="word" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/hsc0240_01a.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+              <!-- Start: Section content to edit -->
+
+                <h1 class="section-title"><span id="41" class="tooltip-mine">Thomas Pim Cope</span></h1>
+
+                <p class="feature-paragraph"><img data-img-src="{{STATIC_URL}}images/other_images/tpc.png" class="lazy pull-right" alt="Lorem Ipsum">Thomas Pim Cope, one of the major patriarchs of the Cope family, was born in 1768 to Caleb and Mary Cope in Lancaster, PA. He found “Lancaster too narrow a theatre for his active and ardent spirit” so he moved to Philadelphia at the age of 17, the year 1784, under the condition that he would receive no pecuniary assistance from his father. He worked for his uncle, Thomas Mendenhall, for a year before his father begrudgingly offered him monetary assistance, but Thomas Pim Cope refused to accept it. Thomas Pim Cope would take over his uncle’s company and prove to become successful in the import-export trade, specifically providing tobacco and cotton from the Southern colonies to England. Both he and his line of packet ships traveled extensively, establishing and expanding networks of travel and trade. Thomas Pim Cope forms the perfect example of the industrious iconoclast that emerged in the beginning of the Industrial Age, that represented a revival of Quakers who engaged with the outside world politically and economically
+		<div class="menu" style="display:none;">
+		    <ul>
+		    	<li><a href="/letterNetwork/41/">Letters Map</a></li>
+			<li><a href="/mapFrequency/41/">Letter Frequency (place)</a></li>
+			<li><a href="/frequency/41/">Letter Frequency (time)</a></li>
+			<li><a href="/dendro/41/">Family Dendrogram</a></li>
+		    </ul>
+		</div>
+                 
+<a href="#carousel"></p>
+                <h4></h4>
+                <p></p>
+                <!-- to make a popup/modal link add an onClick function call to the function: 
+                     - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+
+                
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+                     - it is important to set a unique id -->
+                <div class="content-to-populate-in-modal" id="modal-content-1">
+                  <h1>Title Here</h1>
+                  <p><img data-img-src="{{STATIC_URL}}images/other_images/transp-image4.png" class="lazy rounded_border hover_effect pull-right" alt="Lorem Ipsum">
+</h3>
+                  <p><img data-img-src="{{STATIC_URL}}images/other_images/transp-image3.png" class="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum"></p>
+                  <p></p>
+                </div><!-- #modal-content-1 -->
+
+              <!-- End: Section content to edit --> 
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
+          
+        <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="text" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/hsc1122_01.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              <!-- Start: Section content to edit -->
+
+                <h1 class="section-title">Political Engagement</h1>
+
+                <p class="feature-paragraph"><img data-img-src="{{STATIC_URL}}images/other_images/hsc0064_01.jpg" class="lazy pull-right" alt="Lorem Ipsum">Initially, Quakers values of political engagement supported friends holding political offices. The most prolific example of Quakers advocating public service was the holy experiment that was William Penn’s colony of Pennsylvania.
+              </p> <p>
+Despite its values during its inception, at the start and throughout most of the 18th century, Quakers were compelled to revoke previous engagements with the outside world because it was thought that “Quaker participation in the government caused intolerable compromises in Quaker belief” (Barbour and Frost).  As a result,  the first half of the 18th century saw friends abdicating their political positions in favor of stringent practices thought to uphold Quaker principles and prevent the threat of religious and communal secularization (Barbour and Frost).  
+</p>
+<p>
+This political non-engagement was reinforced during the Revolution as Quakers were urged to avoid political participation and revolutionary action. This insistence to adhere to this rigid code not only established the value of political non-engagement, but enforced it. By the end of 1775, 163 Friends had been investigated and 65 were disowned, and from 1776 through 1778 close to 353 more friends were disowned (qtd. in Philadelphia: 300 years, 132). As a result, many Quakers had become more insistent to return to the “original simplicities of the faith, by living more plainly and withdrawing as much as possible from worldly influences” (Philadelphia:300 years, 132). 
+Political involvement first re-emerged outside the formal institutions of politics growing within Quaker meetings. Coming out of this inactivity and born in Yearly meetings was the Quaker-led political movement petitioning Congress in 1783 for the abolition of slavery. This would prove to be the starting point for the re-engagement of Quakers, primarily wealthy, in the political sphere during the Industrial Age. These political activists would be engaged with presidential policies, the War of 1812, the National Bank, abolition, the Civil War, Reconstruction, and even presidential assassinations. 
+  
+<a href="#carousel"></p>
+                <h4></h4>
+                <p></p>
+                <!-- to make a popup/modal link add an onClick function call to the function: 
+                     - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+   
+                
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+                     - it is important to set a unique id -->
+                <div class="content-to-populate-in-modal" id="modal-content-1">
+                  <h1>Title Here</h1>
+                  <p><img data-img-src="{{STATIC_URL}}images/other_images/transp-image4.png" class="lazy rounded_border hover_effect pull-right" alt="Lorem Ipsum">
+                  <p><img data-img-src="{{STATIC_URL}}images/other_images/transp-image3.png" class="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum"></p>
+                  <p></p>
+                </div><!-- #modal-content-1 -->
+
+              <!-- End: Section content to edit --> 
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
+
+        <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="roar" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/hsc5256_1.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              <!-- Start: Section content to edit -->
+
+                <h1 class="section-title">Economic Engagement</h1>
+
+                <p class="feature-paragraph"><img data-img-src="{{STATIC_URL}}images/other_images/hsc5256_1.jpg" class="lazy pull-right" alt="Lorem Ipsum">The Quaker moral philosophy of austerity prevalent at the time seemingly prevented economic growth, but in Philadelphia, Quakers were met with great success as merchants in the import-export trade, in their investments in land, early iron manufacturing, banking, and the development of new transportation such as innovative shipping practices and the installment of railroads (Benjamin 50). The prominence in which they gained from economic success established certain groups of Quakers the ability to “shape the civic and institutional life of the city” (Philadelphia: 300 years).
+</p>
+                <p>
+<a href="#carousel"></p>
+                <h4></h4>
+                <p></p>
+                <!-- to make a popup/modal link add an onClick function call to the function: 
+                     - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+ 
+                
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+                     - it is important to set a unique id -->
+                <div class="content-to-populate-in-modal" id="modal-content-20">
+                  <h1>Technological Changes produced by the Industrial Age</h1>
+                  <p><img data-img-src="{{STATIC_URL}}images/other_images/transp-image4.png" class="lazy rounded_border hover_effect pull-right" alt="Lorem Ipsum">Insert Visualizualation Here
+</p>
+                  <p>Read more about these developments on the next slide!</h3>
+                  <p><img data-img-src="{{STATIC_URL}}images/other_images/transp-image3.png" class="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum"></p>
+                  <p></p>
+                </div><!-- #modal-content-1 -->
+
+              <!-- End: Section content to edit --> 
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
+
+            <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="okay" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/hsc0994_01.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              <!-- Start: Section content to edit -->
+
+                <h1 class="section-title">Important Quaker Events</h1>
+
+                <p class="feature-paragraph"><img data-img-src="{{STATIC_URL}}images/other_images/hsc0463_01.tif" class="lazy pull-right" alt="Lorem Ipsum">During the unique moment of the Industrial Ages, outward pressures were heavily imposed on the Quaker religion to secularize and culturally assimilate to the increasingly heterogeneous culture of this period (Benjamin). The anachronistic Pre-Industrial  lifestyle and quietism of traditional Quakers directly opposed the modern lifestyles of Industrial Age liberal Quakers, and in effect forced a series of revolutionary separations. These rigid divisions, first seen in the 1827 Separation of Orthodox and Hicksite, and then again in the splintering of the Orthodox faction into the Wilburite and Gurneyites sects, were motivated by a desire to define the Quaker religion to a corresponding lifestyle that mirrored an interpretation of how Quakers ought to participate with God, themselves, and the world around them.  
+</p>
+                <p>
+<a href="#carousel"></p>
+                <h4></h4>
+                <p></p>
+                <!-- to make a popup/modal link add an onClick function call to the function: 
+                     - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+
+                
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+                     - it is important to set a unique id -->
+                <div class="content-to-populate-in-modal" id="modal-content-19">
+                  <h1>The 1790 National Census</h1>
+                  <p><img data-img-src="{{STATIC_URL}}images/other_images/transp-image4.png" class="lazy rounded_border hover_effect pull-right" alt="Lorem Ipsum">The Project’s definition of the Industrial Age, in starting at 1790, was produced by an almost silent perception of a change in generational attitude mostly established by Thomas Pim Cope’s enterprising move from Lancaster to Philadelphia in that same year. Coincidentally, that same year included the first national census as established by the ratification of the United States Constitution. Conceptually, the inception of a census is foundational to this projects argument. Political and economic reasoning notwithstanding, a census is principally based on the movement of people and intended to study and record occupants, out of the knowledge that people must be immigrating or migrating, conceivably at new, more-often frequencies.  
+</p>
+                  <p></h3>
+                  <p><img data-img-src="{{STATIC_URL}}images/other_images/transp-image3.png" class="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum"></p>
+                  <p></p>
+                </div><!-- #modal-content-1 -->
+
+              <!-- End: Section content to edit --> 
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
+        
+      </section><!-- #main-content -->
+      <!-- ==================== END: MAIN CONTENT ==================== -->
+
+      <!-- Footer -->
+      <section id="footer">
+
+        <!-- Go to Top -->
+        <div id="go-to-top" onclick="scroll_to_top();"><span class="icon glyphicon glyphicon-chevron-up"></span></div>
+
+        <!-- ==================================================================
+        SOCIAL ICONS
+        ==================================================================  -->
+        <!-- Each social icon item consists of the following:
+             - Link to the social page in href of <a>
+             - social icon in the <img> - a list of social icons options are found in the directory {{STATIC_URL}}images/theme_images/social_icons/ -->
+        <ul class="social-icons">
+          <li><a href="#" target="_blank" title="Facebook"><img src="{{STATIC_URL}}images/theme_images/social_icons/facebook.png" alt="Facebook"></a></li>
+          <li><a href="#" target="_blank" title="Twitter"><img src="{{STATIC_URL}}images/theme_images/social_icons/twitter.png" alt="Twitter"></a></li>
+          <li><a href="#" target="_blank" title="Google+"><img src="{{STATIC_URL}}images/theme_images/social_icons/googleplus.png" alt="Google+"></a></li>
+        </ul>
+        <!-- ==================== END: Social Icons ==================== -->
+
+        <!-- copyright text -->
+        <div class="footer-text-line">&copy; 2014 Twilli | Air</div>
+      </section>
+      <!-- end: Footer -->      
+
+    </div><!-- #outer-container -->
+    <!-- end: Outer Container -->
+
+    <!-- Modal -->
+    <!-- DO NOT MOVE, EDIT OR REMOVE - this is needed in order for popup content to be populated in it -->
+    <div class="modal fade" id="common-modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <div class="modal-body">
+          </div><!-- .modal-body -->
+        </div><!-- .modal-content -->
+      </div><!-- .modal-dialog -->
+    </div><!-- .modal -->    
+    {% include "bottom_javascript.html" %}
+  </body>
+</html>
