@@ -39,6 +39,9 @@ def bubble(request):
 def pageRank(request):
     return render(request, "pageRank.html")
 
+def subjectChart(request):
+    return render(request, "subjectBarChart.html")
+
 def letterFrequencyMap(request, person):
     if not person == 'all':
 	person = Person.objects.filter(id=person)[0]

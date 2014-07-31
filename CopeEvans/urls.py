@@ -19,4 +19,5 @@ urlpatterns = patterns('',
     url(r'^mapFrequency/(?P<person>\d+)/$', 'CopeEvans.views_viz.letterFrequencyMap', name='mapFrequency'),
     url(r'^bubblePageRank/$', 'CopeEvans.views_viz.bubble', name='Bubble PageRank'),
     url(r'^PageRank/$', 'CopeEvans.views_viz.pageRank', name='PageRank'),
+    url(r'^SubjectChart/$', 'CopeEvans.views_viz.subjectChart', name='subjectChart'),
 )
