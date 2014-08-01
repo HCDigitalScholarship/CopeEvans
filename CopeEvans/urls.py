@@ -20,4 +20,5 @@ urlpatterns = patterns('',
     url(r'^bubblePageRank/$', 'CopeEvans.views_viz.bubble', name='Bubble PageRank'),
     url(r'^PageRank/$', 'CopeEvans.views_viz.pageRank', name='PageRank'),
     url(r'^SubjectChart/$', 'CopeEvans.views_viz.subjectChart', name='subjectChart'),
+    url(r'^FamilyTravels/$', 'CopeEvans.views_viz.travels', name='Family Travels'),
 )
