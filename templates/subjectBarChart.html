@@ -1,14 +1,23 @@
 <html>
 <head>
     <title>Letters graph</title>
+    {% include "top_links.html" %}
     <link href="{{STATIC_URL}}css/barChart/main.css" rel="stylesheet" type="text/css">
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
     <script src="{{STATIC_URL}}js/barChart/graph.js" rel="javascript"></script>
+    <style>
+    select {
+    font-family:Arial;
+    color:black;
+    }
+    </style>
 </head>
 <body>
+    {% include "menu.html" %}
+    <div class="spacer"></div>
     <svg id="graph">
 
     </svg>
