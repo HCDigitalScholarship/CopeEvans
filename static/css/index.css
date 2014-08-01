@@ -1,7 +1,7 @@
 body {
 padding:0px;
 margin:0px;
-background-color:rgb(194, 194, 194);
+background-color:black;
 height:2000px;
 }
 
@@ -111,3 +111,9 @@ left:1000px;
 background-image:url("../images/WilliamPenn-Good-End1.png");
 bottom:200px;
 }
+
+#content {
+margin:auto;
+width:80%;
+}
+
