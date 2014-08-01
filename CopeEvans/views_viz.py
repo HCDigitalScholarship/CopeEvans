@@ -28,9 +28,11 @@ def viz(request, person):
 
 def map(request, person):
     if not person == 'all':
+	# If there is a person selected, we need all of that person's information
 	person = Person.objects.filter(id=person)[0]
 	return render(request, "letterMap.html", {"person":person})
     else:
+	# if not just pass an empty string so that the javascript will know to show the full map
 	return render(request, "letterMap.html", {"person":""})
 
 def bubble(request):
@@ -46,6 +48,9 @@ def travels(request):
     return render(request, "familyTravels.html")
 
 def letterFrequencyMap(request, person):
+    # if a person is selected then we need to get all of their letters and the places within those letters
+    # then look up all of those places latitudes and longitudes
+    # this information is all passed on to the template as a json file
     if not person == 'all':
 	person = Person.objects.filter(id=person)[0]
 	letters_sent = Letter.objects.filter(author=person)
@@ -94,19 +99,23 @@ def dendro(request, person):
     if not person == 'all':
 	person = Person.objects.filter(id=person)[0]
 	final = findChildren(person)
+	# If the person has a known partner, the try will work
 	try:
 	    partner = Partner.objects.filter(partner_1=person)[0]
 	    starter = {"Cope Member":person.name, "Partner":partner.partner_2.name, "children":final, "id":person.id}
+	# Otherwise partner will be filled in as unknown
 	except:
 	    starter = {"Cope Member":person.name, "Partner":"Unkown", "children":final, "id":person.id}
-	
+	# Need the depth to know how tall to make the svg, otherwise some trees are too spread out and others are too close together	
 	depth = findDepth(starter,0)
 	
 	final_json = dumps(starter, indent=2)
 	return render(request, "dendro.html", {"treeFile": final_json,"depth":depth})
     else:
 	return render(request, "dendro.html")
-	
+
+################ HELPER FUNCTIONS FOR DENDROGRAM ########################
+# recursive function to find the depth of the family tree that is a dendrogram
 def findDepth(root,current_depth):
     max_depth = current_depth
     if not root["children"] == []:
@@ -116,6 +125,7 @@ def findDepth(root,current_depth):
 		max_depth = temp_depth
     return max_depth
 
+# recursive function to locate all of the children underneath the given parent node
 def findChildren(root):
     children_list = Children.objects.filter(parent=root.pk)
     temp_list = []
@@ -131,7 +141,11 @@ def findChildren(root):
 
     return temp_list
 
+############ END DENDROGRAM HELPER FUNCTIONS ############################
 def frequency(request, person):
+    # First grabs all of the letters written by the given person
+    # Then stores them in a dictionary based on what year they are written
+    # The program finally sends a json with this information to the appropriate template
     final = {}
     max_date = "1700"
     min_date = "2000"
