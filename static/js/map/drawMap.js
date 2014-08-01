@@ -7,8 +7,9 @@ var person_filter = parseInt($("#person:hidden").text());
 var STATIC_URL = $("#url:hidden").text()
 var filterDict = {"age":[],"gender":[],"family":[],"transcript":[],"subject":[], "author":[],"date":[]};
 // If there is a Person selected initially, set that person to be drawn
-if (person_filter != "") { filterDict["author"] = [person_filter]; }
+if (person_filter != "" && !(isNaN(person_filter))) { filterDict["author"] = [person_filter]; }
 // var zoom_dict = {"Continent":{},"Country":{},"Subregion":{}, "State":{}};
+console.log("filter dict: ", filterDict)
 var info_list = [];
 var brush;
 var places_data;
