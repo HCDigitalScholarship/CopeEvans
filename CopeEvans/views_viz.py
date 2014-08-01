@@ -42,6 +42,9 @@ def pageRank(request):
 def subjectChart(request):
     return render(request, "subjectBarChart.html")
 
+def travels(request):
+    return render(request, "familyTravels.html")
+
 def letterFrequencyMap(request, person):
     if not person == 'all':
 	person = Person.objects.filter(id=person)[0]

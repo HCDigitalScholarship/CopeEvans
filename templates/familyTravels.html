@@ -1,0 +1,95 @@
+<html>
+<head>
+    <title>Travel Map</title>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <link href="{{STATIC_URL}}css/travels/brush.css" type="text/css" rel="stylesheet">
+    <script>
+      $(function() {
+          $( document ).tooltip();
+      });
+    </script>
+    <style>
+    #Travelers {
+    float:left;
+    margin:10px;
+    height:600px;
+    overflow-y:scroll;
+    }
+    .traveler {
+    padding:7px;
+    }
+    .traveler:hover {
+    cursor:pointer;
+    }
+    #usMap {
+    float:left;
+    }
+    #europeMap {
+    float:left;
+    }
+    #timeline {
+    width:800px;
+    padding:20px;
+    margin:auto;
+    margin-bottom:20px;
+    background-color:lightgrey;
+    }		
+    </style>
+    <script type="text/javascript">
+	var data = [
+	{"id":1, "x":400 ,"y":63 , "name":"Newport", "map":"us"},
+	{"id":2,"x":419 ,"y":67 , "name":"MountDesert", "map":"us"},
+	{"id":3,"x":413 ,"y":76 , "name":"BarHarbor", "map":"us"},
+	{"id":4,"x":375 ,"y":90 , "name":"Franconia", "map":"us"},
+	{"id":5,"x":372 ,"y":85 , "name":"LakeWinnipisseogee", "map":"us"},
+	{"id":6,"x":334 ,"y":101 , "name":"LakePlacid", "map":"us"},
+	{"id":7,"x":335 ,"y":118 , "name":"CaldwellLakeGeorge", "map":"us"},
+	{"id":8,"x":346 ,"y":148 , "name":"Catskills", "map":"us"},
+	{"id":9,"x":397 ,"y":137 , "name":"Boston", "map":"us"},
+	{"id":10,"x":351 ,"y":173 , "name":"WestPoint", "map":"us"},
+	{"id":11,"x":340 ,"y":186 , "name":"Hopatcong", "map":"us"},
+	{"id":12,"x":331 ,"y":217 , "name":"Philadelphia", "map":"us"},
+	{"id":13,"x":297 ,"y":242 , "name":"WashingtonDC", "map":"us"},
+	{"id":14,"x":248 ,"y":283 , "name":"SulfurSprings", "map":"us"},
+	{"id":15,"x":247 ,"y":292 , "name":"SweetSprings", "map":"us"},
+	{"id":16,"x":270 ,"y":290 , "name":"Lynchburg", "map":"us"},
+	{"id":17,"x":290 ,"y":290 , "name":"Farmville", "map":"us"},
+	{"id":18,"x":294 ,"y":333 , "name":"ChalybeateSprings", "map":"us"},
+	{"id":19,"x":270 ,"y":413 , "name":"Charleston", "map":"us"},
+	{"id":20,"x":259 ,"y":486 , "name":"Augustine", "map":"us"},
+	{"id":21,"x":271 ,"y":510 , "name":"Wildmere", "map":"us"},
+	{"id":22,"x":121 ,"y":243 , "name":"Oban", "map":"europe"},
+	{"id":23,"x":140 ,"y":258 , "name":"Edinborough" , "map":"europe"},
+	{"id":24,"x":127 ,"y":271 , "name":"LakeWindermere" , "map":"europe"},
+	{"id":25,"x":133 ,"y":293 , "name":"Liverpool" , "map":"europe"},
+	{"id":26,"x":146 ,"y":305 , "name":"Ashbourne" , "map":"europe"},
+	{"id":27,"x":154 ,"y":328 , "name":"London" , "map":"europe"},
+	{"id":28,"x":131 ,"y":328 , "name":"Avebury" , "map":"europe"},
+	{"id":29,"x":196 ,"y":330 , "name":"TheHague" , "map":"europe"},
+	{"id":30,"x":175 ,"y":373 , "name":"Paris" , "map":"europe"},
+	{"id":31,"x":202 ,"y":456 , "name":"Cannes" , "map":"europe"},
+	{"id":32,"x":213 ,"y":452 , "name":"Mentone/Menton" , "map":"europe"},
+	{"id":33,"x":261 ,"y":449 , "name":"Florence" , "map":"europe"},
+	{"id":34,"x":275 ,"y":455 , "name":"Camaldoli" , "map":"europe"},
+	{"id":35,"x":279 ,"y":486 , "name":"Rome" , "map":"europe"},
+	{"id":36,"x":238 ,"y":414 , "name":"Lugano" , "map":"europe"},
+	{"id":37,"x":271 ,"y":430 , "name":"Venice" , "map":"europe"},
+	{"id":38,"x":269 ,"y":342 , "name":"Frohburg" , "map":"europe"},
+	{"id":39,"x":286 ,"y":334 , "name":"Reichenbach" , "map":"europe"}
+	];  
+    </script>
+</head>
+<body>
+    <script src="{{STATIC_URL}}js/travels/maps.js" type="text/javascript"></script>
+    <script src="{{STATIC_URL}}js/travels/brush.js"></script>
+    <div id="timeline2">
+
+    </div>	
+    <div id="Travelers">
+
+    </div>
+</body>
+</html>
