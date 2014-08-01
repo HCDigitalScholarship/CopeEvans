@@ -1,8 +1,14 @@
 <!DOCTYPE html>
+<html>
+<head>
+    <title>Page Rank</title>
     <meta charset="utf-8">
+    {% include "top_links.html" %}
     <link rel="stylesheet" href="{{STATIC_URL}}css/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
     <link href="{{STATIC_URL}}css/pageRank/main.css" rel="stylesheet" type="text/css">
+</head>
 <body>
+    {% include "menu.html" %}
     <!-- Add jQuery library -->
     <div id="select">Select People</div>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -13,3 +19,4 @@
     <script src="{{STATIC_URL}}js/pageRank/peopleInteract.js"></script>
     <div id="people"></div>
 </body>
+</html>

@@ -1,6 +1,7 @@
 <html>
 <head>
     <title>Travel Map</title>
+    {% include "top_links.html" %}
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
@@ -20,6 +21,7 @@
     }
     .traveler {
     padding:7px;
+    color:black;
     }
     .traveler:hover {
     cursor:pointer;
@@ -83,6 +85,7 @@
     </script>
 </head>
 <body>
+    {% include "menu.html" %}
     <script src="{{STATIC_URL}}js/travels/maps.js" type="text/javascript"></script>
     <script src="{{STATIC_URL}}js/travels/brush.js"></script>
     <div id="timeline2">
