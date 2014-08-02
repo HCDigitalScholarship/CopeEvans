@@ -111,3 +111,11 @@ cursor:pointer;
 background-color:lightgrey;
 }
 
+.quote-mine {
+font-family:Arial;
+font-style:italic;
+font-size:15px;
+width:90%;
+margin:auto;
+}
+
