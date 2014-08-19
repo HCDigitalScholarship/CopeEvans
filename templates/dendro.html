@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Cope Family Tree</title>
+    <link href="{{STATIC_URL}}css/misc/bootstrap.min.css" rel="stylesheet">
+    <link href="{{STATIC_URL}}css/misc/custom.css" type="text/css" rel="stylesheet">
+    <link href="{{STATIC_URL}}css/dendro/main.css" type="text/css" rel="stylesheet">
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+</head>
+<body>
+    {% include "menu.html" %}
+    <div id="json" style="display:none;">{{ treeFile }}</div> 
+    <div id="depth" style="display:none;">{{ depth }}</div> 
+    <h1>Family Tree</h1>
+    <div id="info">Info</div>
+    <script src="{{STATIC_URL}}js/misc/custom.js" type="text/javascript" rel="javascript"></script>
+    <script src="{{STATIC_URL}}js/dendro/family.js" type="text/javascript" rel="javascript"></script>
+
+</body>
+</html>

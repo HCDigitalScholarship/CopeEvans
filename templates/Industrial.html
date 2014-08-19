@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>The Cope Evans Project </title>
+    {% include "top_links.html" %}
+  </head>
+   {% include "menu.html" %}
+  <body>
+
+    <!-- background image overlay (semi transparent dark background image overlay) -->
+    <!-- comment or remove if you don't want the overlay on top of the image -->
+    <div class="background-image-overlay"></div>
+
+    <!-- outer background container - the element from where the default page background image is set, and the element which changes its background when scrolling through other sections (.section-wrapoer) that have attribute "data-custom-background-img" set. 
+     - data-default-background-img attr is required for sections (.section-wrapper) below that have no custom background defined.
+     - use same image in the backstretch.js code in the footer for IE8 or less browsers -->
+    <div id="outer-background-container" data-default-background-img="{{STATIC_URL}}images/other_images/White-Background-Xtra.jpg" style="background-image:url({{STATIC_URL}}images/other_images/White-Background-Xtra.jpg);"></div>
+    <!-- end: #outer-background-container -->    
+
+    <!-- Outer Container -->
+    <div id="outer-container">
+
+      <!-- Left Sidebar -->
+      <section id="left-sidebar">
+
+        <!-- Menu Icon for smaller viewports -->
+        <div id="mobile-menu-icon" class="visible-xs" onClick="toggle_main_menu();"><span class="glyphicon glyphicon-th"></span></div>
+
+        <!-- ==================================================================
+        MAIN MENU 
+        ==================================================================  -->
+        <!-- Each menu item links to a section (<article class="section-wrapper...") in the main content below.
+             - set each <li> id to this format: "menu-item-[the id of the .section-wrapper to link to]".
+             - set href of each <a> to the id of the .section-wrapper to link to -->
+        <ul id="main-menu">
+          <li id="menu-item-intro" class="menu-item scroll"><a href="#intro">Industrial Revolution</a></li>
+          <li id="menu-item-text" class="menu-item scroll"><a href="#text">Industrial Revolution Timeline</a></li>
+          <li id="menu-item-roar" class="menu-item scroll"><a href="#roar">Technology</a></li>
+          <li id="menu-item-okay" class="menu-item scroll"><a href="#okay">Philadelphia</a></li>
+          <li id="menu-item-featured" class="menu-item scroll"><a href="#featured">Philadelphia Timelapse</a></li>
+            <li id="menu-item-lol" class="menu-item scroll"><a href="#lol">1790 National Census</a></li>
+          <!-- to include a link which doesn't scroll to a section inside the page, remove the .scroll class from the <li> - example below -->
+          <!-- <li id="menu-item-alt-page" class="menu-item"><a href="http://www.link.com">Outer Link</a></li> -->
+        </ul><!-- #main-menu -->
+        <!-- ==================== END: MAIN MENU ==================== -->
+
+      </section><!-- #left-sidebar -->
+      <!-- end: Left Sidebar -->
+
+      <!-- ==================================================================
+      MAIN CONTENT
+      ==================================================================  -->
+      <!-- all the website sections are contained in the <article> tag with class ".section-wrapper" and a unique id.
+           - to edit / remove / create website sections, you have to handle the content contained in these <article> tags -->
+      <section id="main-content" class="clearfix">
+        
+        <!-- ==================== SECTION TYPE: Intro Text ==================== -->
+        <!-- This type of section should contain heading and intro paragraph. It can also include links to other sections -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="intro" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/hsc0777_01.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              <!-- Start: Section content to edit -->
+
+                <!-- <p> text in .feature-text is larger  -->
+                <section class="feature-text">
+                  <h1>The  Industrial Age</h1>
+                  <p>
+A concept important to the success of this academic project is that during the Industrial Age relationships and roles, and subsequently values and behaviors were shaken, revised, and altered. Select examples of such relationships are people:technology, people:economy, people:politics,  people:city, people:religion, and people:people. Finally, these new values and systems brought  groups in contact with influences that they had not been previously in contact with. 
+
+ </p>
+
+                </section>
+
+              <!-- End: Section content to edit -->
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Intro Text ==================== -->
+
+        <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="text" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/hsc5256_1.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              <!-- Start: Section content to edit -->
+
+                <h1 class="section-title">Industrial Revolution Timeline</h1>
+
+                <p class="feature-paragraph"><img data-img-src="" class="lazy pull-right" alt="">Move through this timeline to understand the many revolutionary inventions that changed the way of life during the Industrial Age.
+                <iframe src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0AhM8cb9G345IdFotR1JObGgtYnJKSzFUV1otZy1vV2c&font=Bevan-PotanoSans&maptype=toner&lang=en&height=650' width='100%' height='650' frameborder='0'></iframe></p>
+                <p>
+<a href="#carousel"></p>
+                <h4></h4>
+                <p></p>
+                <!-- to make a popup/modal link add an onClick function call to the function: 
+                     - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+    
+                
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+                     - it is important to set a unique id -->
+                <div class="content-to-populate-in-modal" id="modal-content-1">
+                  <h1>More Information</h1>
+                  <p><img data-img-src="{{STATIC_URL}}images/other_images/transp-image4.png" class="lazy rounded_border hover_effect pull-right" alt="Lorem Ipsum">More Information
+</p>
+                  <p>Read more about these developments on the next slide!</h3>
+                  <p><img data-img-src="{{STATIC_URL}}images/other_images/transp-image3.png" class="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum"></p>
+                  <p></p>
+                </div><!-- #modal-content-1 -->
+
+              <!-- End: Section content to edit --> 
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
+
+        <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="roar" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/cope evans_0047.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              <!-- Start: Section content to edit -->
+
+                <h1 class="section-title">Technology</h1>
+
+                <p class="feature-paragraph"><img data-img-src="{{STATIC_URL}}images/other_images/industrialplant250.jpg" class="lazy pull-right" alt="Lorem Ipsum">During the Industrial Age, an explosion of novel technologies provided the proper mechanism to extend, accelerate, and intensify networks that were previously established. These technologies were integral in causing interactions that  influenced how people, social groups, and society as a whole developed new values and relationships. 
+</p>
+                <p>
+<a href="#carousel"></p>
+                <h4></h4>
+                <p></p>
+                <!-- to make a popup/modal link add an onClick function call to the function: 
+                     - populate_and_open_modal(event, '[id of popup content container - see below]') -
+                
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+                     - it is important to set a unique id -->
+                <div class="content-to-populate-in-modal" id="modal-content-20">
+                  <h1>Technological Changes produced by the Industrial Age</h1>
+                  <p><img data-img-src="{{STATIC_URL}}images/other_images/transp-image4.png" class="lazy rounded_border hover_effect pull-right" alt="Lorem Ipsum">Insert Visualizualation Here
+</p>
+                  <p>Read more about these developments on the next slide!</h3>
+                  <p><img data-img-src="{{STATIC_URL}}images/other_images/transp-image3.png" class="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum"></p>
+                  <p></p>
+                </div><!-- #modal-content-1 -->
+
+              <!-- End: Section content to edit --> 
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
+
+            <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="okay" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/hsc1122_01.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              <!-- Start: Section content to edit -->
+
+                <h1 class="section-title">Philadelphia</h1>
+
+                <p class="feature-paragraph"><img data-img-src="{{STATIC_URL}}images/other_images/hsc1186_01.jpg" class="lazy pull-right" alt="Lorem Ipsum">Philadelphia will provide the exemplary microcosm to reveal the uniquely mutated society formed as a byproduct of these inventions and the larger forces driving and reacting to these rapid changes, while coincidentally allowing this project the necessary lense to intersect the Quaker religion through its historical roots and radical transformation.
+                    
+ <p>
+        	New forms of transportation such as bridges,turnpikes, canals, steamboats, and railroad, were adopted by the city in the 19th century. By 1821 eighty-five turnpikes had been chartered in the state. A network of paved tolls were develop leading from the city to New York, Reading, Harrisburg, Lancaster, Baltimore, and into New Jersey (Philadelphia:300, 230).
+
+</p>
+                <p>
+<a href="#carousel"></p>
+                <h4></h4>
+                <p></p>
+                <!-- to make a popup/modal link add an onClick function call to the function: 
+                     - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+                
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+                     - it is important to set a unique id -->
+                <div class="content-to-populate-in-modal" id="modal-content-19">
+                  <h1>The 1790 National Census</h1>
+                  <p><img data-img-src="{{STATIC_URL}}images/other_images/hsc0855_01.jpg" class="lazy rounded_border hover_effect pull-right" alt="Lorem Ipsum">
+The year 1790, is theoretically foundational in defining the milieu of the Industrial Age. This year   included the first national census as established by the ratification of the United States Constitution. <p>Conceptually, the inception of a census is integral to this project’s argument. Political and economic reasoning notwithstanding, a census may be principally based on the movement of people and intended to study and record occupants, out of the knowledge that people must be immigrating or migrating, conceivably at new, more-often frequencies.  In our project, we attempt to chart the networks that develop from these travels, and show how those networks were influenced or changed by the conditions of the Industrial Age. We first come to perceive how movement is symptomatic in a changing generational attitude, as seen by by Thomas Pim Cope’s enterprising move from Lancaster to Philadelphia year 1784, a few years  before the landmark year of 1790.
+
+</p>
+            
+                  <p><img data-img-src="{{STATIC_URL}}images/other_images/hsc1122_01.jpg" class="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum"></p>
+                  <p></p>
+                </div><!-- #modal-content-1 -->
+
+              <!-- End: Section content to edit --> 
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
+        
+        <!-- ==================== SECTION TYPE: Featured Items ==================== -->
+        <!-- This type of section should contain a max. of 3 items each consisting of an image and text. Each item may be linked -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="featured" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/hsc1186_01.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-11 pull-right">
+
+              <!-- Start: Section content to edit -->
+
+                <h1 class="section-title">Philadelphia Timelapse</h1>
+              <iframe width="640" height="360" src="//www.youtube.com/embed/e-ktnJ6-EkI" frameborder="0" allowfullscreen></iframe>
+
+              <!-- End: Section content to edit -->
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Featured Items ==================== -->
+        
+        <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="lol" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/hsc0855_01.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              <!-- Start: Section content to edit -->
+
+                <h1 class="section-title">1790 National Census</h1>
+
+                <p class="feature-paragraph"><img data-img-src="{{STATIC_URL}}images/other_images/hsc1122_01.jpg" class="lazy pull-right" alt="Lorem Ipsum">The year 1790, is theoretically foundational in defining the milieu of the Industrial Age. This year   included the first national census as established by the ratification of the United States Constitution. <p>Conceptually, the inception of a census is integral to this project’s argument. Political and economic reasoning notwithstanding, a census may be principally based on the movement of people and intended to study and record occupants, out of the knowledge that people must be immigrating or migrating, conceivably at new, more-often frequencies.  In our project, we attempt to chart the networks that develop from these travels, and show how those networks were influenced or changed by the conditions of the Industrial Age. We first come to perceive how movement is symptomatic in a changing generational attitude, as seen by by Thomas Pim Cope’s enterprising move from Lancaster to Philadelphia year 1784, a few years  before the landmark year of 1790.</p>
+
+</p>
+                <p>
+<a href="#carousel"></p>
+                <h4></h4>
+                <p></p>
+                <!-- to make a popup/modal link add an onClick function call to the function: 
+                     - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+
+
+                  
+                 
+                  <p></p>
+                </div><!-- #modal-content-1 -->
+
+              <!-- End: Section content to edit --> 
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
+
+      </section><!-- #main-content -->
+      <!-- ==================== END: MAIN CONTENT ==================== -->
+
+      <!-- Footer -->
+      <section id="footer">
+
+        <!-- Go to Top -->
+        <div id="go-to-top" onclick="scroll_to_top();"><span class="icon glyphicon glyphicon-chevron-up"></span></div>
+
+        <!-- ==================================================================
+        SOCIAL ICONS
+        ==================================================================  -->
+        <!-- Each social icon item consists of the following:
+             - Link to the social page in href of <a>
+             - social icon in the <img> - a list of social icons options are found in the directory {{STATIC_URL}}images/theme_images/social_icons/ -->
+        <ul class="social-icons">
+          <li><a href="#" target="_blank" title="Facebook"><img src="{{STATIC_URL}}images/theme_images/social_icons/facebook.png" alt="Facebook"></a></li>
+          <li><a href="#" target="_blank" title="Twitter"><img src="{{STATIC_URL}}images/theme_images/social_icons/twitter.png" alt="Twitter"></a></li>
+          <li><a href="#" target="_blank" title="Google+"><img src="{{STATIC_URL}}images/theme_images/social_icons/googleplus.png" alt="Google+"></a></li>
+        </ul>
+        <!-- ==================== END: Social Icons ==================== -->
+
+        <!-- copyright text -->
+        <div class="footer-text-line">&copy; 2014 Twilli | Air</div>
+      </section>
+      <!-- end: Footer -->      
+
+    </div><!-- #outer-container -->
+    <!-- end: Outer Container -->
+
+    <!-- Modal -->
+    <!-- DO NOT MOVE, EDIT OR REMOVE - this is needed in order for popup content to be populated in it -->
+    <div class="modal fade" id="common-modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <div class="modal-body">
+          </div><!-- .modal-body -->
+        </div><!-- .modal-content -->
+      </div><!-- .modal-dialog -->
+    </div><!-- .modal -->    
+  {% include "bottom_javascript.html" %} 
+  </body>
+</html>

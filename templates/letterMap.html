@@ -1,0 +1,62 @@
+{% load staticfiles %}
+<html>
+<head>
+    <title>Letters Map</title>
+    <link href="{{STATIC_URL}}css/misc/bootstrap.min.css" rel="stylesheet">
+    <link href="{{STATIC_URL}}css/misc/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <link href="{{STATIC_URL}}css/map/map.css" rel="stylesheet" type="text/css">
+    <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.css' rel='stylesheet' />
+    <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/arc.js/v0.1.0/arc.js'></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script type="text/javascript" src="{{STATIC_URL}}js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    </script>
+    <script type="text/javascript" src="{{STATIC_URL}}js/map/filter.js"></script>
+</head>
+<body>
+    {% include "menu.html" %}
+    <div id="person" style="display:none;">{{ person.id }}</div>
+    <div id="url" style="display:none;">{{STATIC_URL}}</div>
+    <div id="file" style="display:none;">{{ file }} </div>
+    <div id="place_file" style="display:none;">{{ places }} </div>
+    <div id="guide">
+    Cope Evans Family Papers
+    </div>
+    <div id="map">
+    <script src="{{STATIC_URL}}js/map/drawMap.js" type="text/javascript"></script>
+    </div>
+    <div id="footer-transparent"></div>
+    <div id="footer">
+	<div id="footer-wrapper">
+	    <ul>
+		<li id="timeline-button">Time Line</li>
+		<li id="filters-button">Categories</li>
+		<li id="reset-button">Show all</li>
+	    </ul>
+	</div>
+	<div id="timeline">
+	   <div id="timeline-inside">
+
+	   </div>
+	</div>
+	<div id="filter">
+	   <div id="filter-list">
+		<div class="col">
+		    <div id="age" class="filter-button">Author's Age</div>
+		    <div id="gender" class="filter-button">Author's Gender</div>
+		    <div id="family" class="filter-button">Author's Family</div>
+		</div>
+		<div class="col">
+		    <div id="transcript" class="filter-button">Transcript</div>
+		    <div id="author" class="filter-button">Author</div>
+		</div>
+		<div class="col" id="options">
+
+		</div>
+	    </div>
+	</div>
+    </div>
+</body>
+</html>
