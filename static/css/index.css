@@ -1,7 +1,7 @@
 body {
 padding:0px;
 margin:0px;
-background-color:black;
+background-color:white;
 }
 
 .navbar-default {
@@ -29,7 +29,7 @@ padding:10px 50px;
 border:3px solid white;
 border-bottom:none;
 font-size:37px;
-color:white;
+color:black;
 text-decoration:none;
 margin:auto;
 cursor:pointer;
@@ -38,20 +38,20 @@ border-radius:20px 20px 0px 0px;
 
 #explore:hover {
 opacity:.7;
-background-color:white;
-color:lightgrey;
+background-color:black;
+color:black;
 }
 
 #title {
 font-size:60px;
-color:white;
+color:black;
 margin:auto;
 }
 
 #subtitle {
 font-size:45px;
 font-style: italic;
-color:white;
+color:black;
 padding:10px;
 margin:auto;
 }
@@ -113,6 +113,14 @@ bottom:200px;
 
 #content {
 margin:auto;
+color:black;
 width:80%;
 }
 
+a {
+color:black;
+}
+
+a:hover {
+color:lightgrey;
+}
