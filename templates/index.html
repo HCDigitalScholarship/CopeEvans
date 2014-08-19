@@ -31,23 +31,67 @@
     <div id="content">
     <h3>What is The Cope Evans Project?</h3>
 </body>
-  <blockquote> The Cope Evans Project is a Digital Humanities project sponsored by Haverford Libaries through the Special Collections and Digital Scholarship Departments. This academic project is based on a collection of family papers, The Cope Evans Papers, that was generously donated to the school's Special Collections. </blockquote>
-    <p>Rather than writing an academic paper or digitizing more material,we set out to make a virtual exhibit of our research, data visualizations, and analyses. Throughout these pages you will see images of the collection's materials, most notably the letterheads that are featured as some of the backgrounds. Other imporatant attributes of this project are data visualizations that were developed from data collected within the digitized collection. 
+  <blockquote>The Cope Evans Project is an undergraduate Digital Humanities project supported by Haverford Libraries through the Quaker & Special Collections and Digital Scholarship Departments. This academic project is based on a collection of family papers, The Cope Evans Papers, that was generously donated to the school's Quaker & Special Collections. </blockquote>
+    <p>Rather than writing an academic paper or digitizing more material, we set out to make a virtual exhibit of our research, data visualizations, and analyses. Throughout these pages you will see images of the collection's materials, most notably the letterheads that are featured as some of the backgrounds. Other important attributes of this project are data visualizations that were developed from data collected within the digitized collection. 
      </p>   <p>
-These visualizations are both exploratory and argumentative, so please feel free to click on the visualizations and play around!  While you are navigating through the website, you will notice that most names are underlined. If you click on one of these names, a drop down menu will appear underneath their name with a list of visualizations that are connected to that person. To select a visualization, simply click on the name within the menu. This functionality carries on even within visualizations in order to make navigation between visualizations easier. Our hope is that while exploring the site, you will begin to create your own narrative about the Cope and Evans family, as you begin to recognize all the members of the Cope Evans family, and see just how intertwined each actor is to the larger story.</p>
+These visualizations are both exploratory and argumentative, so please feel free to click on the visualizations and play around!  While you are navigating through the website, you will notice that most names are underlined. If you click on one of these names, a drop down menu will appear underneath their name with a list of visualizations that are connected to that person. To select a visualization, simply click on the name within the menu. This functionality carries on even within visualizations in order to make navigation between visualizations easier. Our hope is that while exploring the site, you will begin to create your own narrative about the Cope and Evans family, as you begin to recognize all the members of the Cope and Evans families, and see just how intertwined each actor is to the larger story.</p>
     
     
   <p> <h3>Features</h3>    
 <p> <p> 
 <h6>Visualizations:</h6></p> 
- <p>  <st> <a href="/cope/PageRank/">Important People Network</a></st> - Uses a PageRank formula to shows the major actors and their importance in the letter network</p>
-	
-  <p>  <st> <a href="/cope/SubjectChart/">Letter Bar Chart by Letter Subeject</a></st>- Uses texual analysis to shows the subjects of letters over each decade</p>
-	
-   <p> <st><a href="/cope/FamilyTravels/">Family Travels Map</a></st> - Uses data collected through mentions of travel in the collection's of letters and the post cards in Clementine Cope's scrapbook, while plotting them over each decade</p>
-	
- <p>   <st><a href="/cope/letterNetwork/">Letter Map</st></a> Uses geographical data of each writer and recipient of the letter and plots it on a map to show the complete breadth of this extensive network. </p>
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+			<div class="row">
+				<a href="/cope/letterNetwork/"><img name="letter-map" class="img-responsive" src="{{STATIC_URL}}images/other_images/letterNetwork.png"></a>
+			</div>
+			<div class="row">
+				<p>   <st><a href="/cope/letterNetwork/">Letter Map</st></a> Uses geographical data of each writer and recipient of the letter and plots it on a map to show the complete breadth of this extensive network. </p>
  
+			</div>
+		</div>
+		<div class="col-md-6" name="small-vizzes">
+			<div class="row">
+				<div class="col-md-6">
+					<a href="/cope/SubjectChart/"><img name="subject-chart" class="img-responsive" src="{{STATIC_URL}}images/other_images/SubjectChart.png"></a>
+				</div>
+				<div class="col-md-6">
+					<a href="/cope/FamilyTravels/"><img name="family-travels" class="img-responsive" src="{{STATIC_URL}}images/other_images/familyTravels.png"></a>
+				</div>
+			</div> <!-- small-vizzes row 1 -->
+			<div class="row">
+				<div class="col-md-6">
+					 <p>  <st> <a href="/cope/SubjectChart/">Letter Bar Chart by Letter Subeject</a></st>- Uses texual analysis to shows the subjects of letters over each decade</p>
+				</div>
+				<div class="col-md-6">
+					<p> <st><a href="/cope/FamilyTravels/">Family Travels Map</a></st> - Uses data collected through mentions of travel in the collection of letters and the post cards in Clementine Cope's scrapbook, while plotting them over each decade</p>
+				</div>
+			</div> <!-- small-vizzes row 2 -->
+			<div class="row">
+				<div class="col-md-6">
+					Small viz 3	img
+				</div>
+				<div class="col-md-6">
+					Small viz 4 img
+				</div>
+			</div> <!-- small-vizzes row 3 -->			
+			<div class="row">
+				<div class="col-md-6">
+					Small viz 3 desc
+				</div>
+				<div class="col-md-6">
+					Small viz 4 desc
+				</div>
+			</div> <!-- small-vizzes row 4 -->			
+		</div> <!-- small-vizzes -->
+	</div> <!-- row -->
+</div> <!-- container -->
+ 
+  <p>  <st> <a href="/cope/PageRank/">Important People Network</a></st> - Uses a PageRank formula to shows the major actors and their importance in the letter network</p>
+	
+ 	
+    
 <p>   <st><a href="/cope/dendro/364/">Family Tree</st></a> - A horizontally oriented representation of the Cope family tree.</p>
 	
   </p>  
