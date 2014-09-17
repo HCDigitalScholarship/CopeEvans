@@ -38,7 +38,7 @@ function lookup(item, list) {
     return false;
 }
 
-d3.json("/static/json/pageRank.json", function(error, graph) {
+d3.json("/static/json/pageRank3.json", function(error, graph) {
   console.log(error)
   var links = [];
   var multiple = {};
@@ -86,10 +86,11 @@ d3.json("/static/json/pageRank.json", function(error, graph) {
 		    d3.select("#people").append("a")
 			.html(d.name)
 			.attr("class","person")
-			.attr("href","test.html")
+			.attr("href","/viz/"+d.id+"/")
 			.attr("id","show"+d.index.toString())
 			.attr("rel","group")
-			.attr("data-fancybox-type","iframe");
+			.attr("data-fancybox-type","iframe")
+			.style("color","black");
 		    selected[d.name] = true;
 		}
 	    }
@@ -129,7 +130,7 @@ d3.json("/static/json/pageRank.json", function(error, graph) {
 		d3.select("#people").append("a")
 		    .html(d.name)
 		    .attr("class","person")
-		    .attr("href","test.html")
+		    .attr("href","/viz/"+d.id+"/")
 		    .attr("rel","group")
 		    .attr("id","show"+d.index.toString())
 		    .attr("data-fancybox-type","iframe");
@@ -163,3 +164,4 @@ d3.json("/static/json/pageRank.json", function(error, graph) {
 function keyflip() {
   shiftKey = d3.event.shiftKey || d3.event.metaKey;
 }
+

@@ -1,5 +1,8 @@
 Welcome to the Cope Evan's Project files
 
+Cope Evans super user login:
+Username: Cope
+Password: Evans
 The backend of this site uses the Django framework (documentation can be found at https://www.djangoproject.com/).
 The fontend of this site uses a bootstrap template. The documentation for bootstrap can be found at http://getbootstrap.com/, and the template that we used in making the frontend is at https://wrapbootstrap.com/theme/twilli-air-minimalist-one-page-theme-WB0196957. 
 
