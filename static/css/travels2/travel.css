@@ -1,0 +1,40 @@
+body {
+margin:0px;
+padding:0px;
+}
+
+#map { 
+position:absolute; 
+top:0; 
+bottom:100px; 
+width:80%; 
+}
+
+#people {
+position:absolute;
+top:0;
+bottom:0;
+right:0;
+width:20%;
+}
+
+.person {
+margin:5px;
+padding:4px;
+margin-left:0px;
+margin-right:0px;
+padding-left:10px;
+}
+
+.person:hover {
+background-color:lightgrey;
+cursor:pointer;
+}
+
+#timeline {
+position:absolute;
+bottom:0;
+height:100px;
+width:80%;
+margin-top:20px;
+}

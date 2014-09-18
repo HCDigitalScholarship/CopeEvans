@@ -60,7 +60,7 @@ def subjectChart(request):
 
 def travels(request):
     if request.user.is_authenticated():
-	return render(request, "familyTravels.html")
+	return render(request, "travelMap.html")
     else:
 	return HttpResponse('<h1>I\'m sorry, you must be authenticated to view this page</h1><p>Please login and then try again</p>')
 
