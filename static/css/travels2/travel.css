@@ -5,17 +5,19 @@ padding:0px;
 
 #map { 
 position:absolute; 
-top:0; 
+top:50px; 
 bottom:100px; 
 width:80%; 
 }
 
 #people {
 position:absolute;
-top:0;
+top:50px;
 bottom:0;
 right:0;
-width:20%;
+width:18%;
+height:90%;
+overflow-y:scroll;
 }
 
 .person {
@@ -34,7 +36,22 @@ cursor:pointer;
 #timeline {
 position:absolute;
 bottom:0;
-height:100px;
+height:80px;
 width:80%;
 margin-top:20px;
+}
+
+#timeline text {
+stroke:white;
+}
+
+#info {
+position:absolute;
+bottom:110px;
+background-color:steelblue;
+left:10px;
+padding:5px 20px;
+font-weight:bold;
+border-radius:10px;
+color:white;
 }

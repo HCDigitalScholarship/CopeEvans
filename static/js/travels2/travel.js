@@ -130,7 +130,7 @@ d3.csv("/static/CSVs/travel_coordinates.csv", function(error, data) {
 
 	    var svg = d3.select("#timeline").append("svg")
 		.attr("width", width + margin.left + margin.right)
-		.attr("height", height + margin.top + margin.bottom)
+		.attr("height", 80)
 	      .append("g")
 		.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
