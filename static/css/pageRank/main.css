@@ -1,10 +1,18 @@
 #select {
+width:200px;
+}
+
+#info {
+width:100px;
+}
+
+.button-top {
+display:inline-block;
 background-image:none;
 font-size:20px;
 background-color:steelblue;
 border-radius:5px;
 text-align:center;
-width:200px;
 margin:10px;
 padding:5px;
 cursor:pointer;
