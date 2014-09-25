@@ -2,6 +2,14 @@
 //    d3.csv("subject_year.csv", function(error, sub_data) {
 var data = $("#info:hidden").text();
 data = JSON.parse(data);
+//#####################THIS IS A HACK, NEED TO FIX ENTRY IN DATABASE###########
+//Not exactly sure how to record this letter at the moment, so did a quick hack to fix it
+var person = $("#person-name:hidden").text();
+console.log("person:",person)
+if (person == "22"){
+    data.splice(46,1);
+}
+//############## END HACK ###################################
 console.log("data: ", data)
 var max_count = 0;
 for (var i=0; i<data.length; i++) {
@@ -72,7 +80,7 @@ function renderGraph(data) {
 	.data(data)
       .enter().append("rect")
 	.attr("class", "bar")
-	.attr("x", function(d) { 
+	.attr("x", function(d) {
 	    if (!(isNaN(x(new Date(d.year, 1, 1))))) {
 		return x(new Date(d.year, 1, 1))+margin.left;
 	    }   

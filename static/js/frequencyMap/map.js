@@ -30,3 +30,10 @@ $(".place").click(function(d) {
         }
     }
 });
+
+$(document).ready(function() {
+    $("#vis-info").click(function() {
+	var text = "<h2>About This Map</h2><p>This map is a representation of the volume of letters sent from different places, for an individual person. The radius of each circle is representative of the number of letters sent from that place and to see the actual number, you can simply click on the circle. A complete listing of all the places that the individual has sent letters from is in the right hand panel. If you want to see where that place is, click on the name of the place and the map will zoom to that location.</p>";
+	$.fancybox.open(text);
+    });
+});

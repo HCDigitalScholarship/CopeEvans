@@ -209,7 +209,7 @@ def frequency(request, person):
 
 	    data = dumps(final_list, indent=2)
 	    
-	    return render(request, "frequency.html",{"graph_info":data})
+	    return render(request, "frequency.html",{"graph_info":data,"person":person})
 
 	return False
     else:

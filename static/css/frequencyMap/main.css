@@ -29,3 +29,18 @@ cursor:pointer;
 .place:hover {
 background-color:lightgrey;
 }
+
+#vis-info {
+position:absolute;
+bottom:10px;
+left:10px;
+background-image:none;
+font-size:20px;
+background-color:steelblue;
+border-radius:5px;
+text-align:center;
+margin:10px;
+padding:5px;
+cursor:pointer;
+width:100px;
+}

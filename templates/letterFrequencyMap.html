@@ -5,10 +5,12 @@
     <link href="{{STATIC_URL}}css/misc/bootstrap.min.css" rel="stylesheet">
     <link href="{{STATIC_URL}}css/misc/custom.css" type="text/css" rel="stylesheet">
     <link href="{{STATIC_URL}}css/frequencyMap/main.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.js'></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.css' rel='stylesheet' />
+    <script type="text/javascript" src="{{STATIC_URL}}js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 </head>
 <body>
     {% include "menu.html" %}
@@ -20,5 +22,6 @@
 	{% endfor %}
     </div>
     <script src="{{STATIC_URL}}js/frequencyMap/map.js"></script>
+    <div id="vis-info">Info</div>
 </body>
 </html>

@@ -1,6 +1,7 @@
 <html>
 <head>
     <title>{{ person.name }} Letter Frequency</title>
+    {% include "top_links.html" %}
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
@@ -8,9 +9,12 @@
     <link href="{{STATIC_URL}}css/frequency/main.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-<div id="info" style="display:none;">{{ graph_info }}</div>
-<svg id="graph">
+    {% include "menu.html" %}
+    <div id="info" style="display:none;">{{ graph_info }}</div>
+    <div id="person-name" style="display:none;">{{ person.id }}</div>
+    <svg id="graph">
 
-</svg>
+    </svg>
+    <div id="year"></div>
     <script src="{{STATIC_URL}}js/frequency/graph.js" type="text/javascript" rel="javascript"></script>
 </body>
