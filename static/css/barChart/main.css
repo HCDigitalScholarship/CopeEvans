@@ -40,3 +40,15 @@ float:left;
 select {
 float:left;
 }
+
+#info {
+background-image:none;
+font-size:20px;
+background-color:steelblue;
+border-radius:5px;
+text-align:center;
+width:100px;
+margin:10px;
+padding:5px;
+cursor:pointer;
+}

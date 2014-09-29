@@ -3,10 +3,12 @@
     <title>Letters graph</title>
     {% include "top_links.html" %}
     <link href="{{STATIC_URL}}css/barChart/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{{STATIC_URL}}css/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script type="text/javascript" src="{{STATIC_URL}}js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
     <script src="{{STATIC_URL}}js/barChart/graph.js" rel="javascript"></script>
     <style>
     select {
@@ -17,7 +19,7 @@
 </head>
 <body>
     {% include "menu.html" %}
-    <div class="spacer"></div>
+    <div id="info">Info</div>
     <svg id="graph">
 
     </svg>

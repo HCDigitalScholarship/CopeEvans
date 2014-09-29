@@ -109,3 +109,19 @@ d3.csv("/static/CSVs/year_letter.csv", function(error, data) {
     renderGraph(data);
 });
 });
+
+$(document).ready(function() {
+    $("#info").click(function() {
+	var text = "<h2>About the Graph</h2><p>The bar graph initially shows how many letters were written in any given year between 1800 and 1911, within our collection. To see the exact year and number, hover your mouse over each bar and the year and number of letters will appear on the right hand side. However, to fully understand what each of these letters were about, you can choose to view their frequency by subject. The subjects of each letter was determined by their subject tagging within the original database. An algorithm than divided the letters in to larger subject categories, by looking for different keywords in the subject taggings. See the list below to view, what keywords designated a certain letter as belonging to that category.</p>";
+	text = text + "<ul><li> travel keywords = travel, voyage, ocean, transportation, voyages, travels, railroad, railroads, business, steamboats, shipping, sailing</li>";
+	text = text + "<li>education keywords = school, college, haverford, education, college, university</li>";
+	text = text +"<li>love keywords = Love, love</li>";
+	text = text +"<li>health keywords = health, disease, diseases, fever, dysentery</li>";
+	text = text +"<li>family keywords = family, pets, death, vacation, deeds, suicide, housing, home, vacations</li>";
+	text = text +"<li>religion keywords = faith, quaker, quakers, quakerism, spiritual, spirituality, religious, religion, god, friends</li>";
+	text = text +"<li>political keywords = lincoln, event, government, pennsylvania, united, states, war, wars, politics, political</li>";
+	text = text +"<li>lifestyle keywords = children, clothes, dress, life, ornithology, letter, finance, tax, music, dreams, land, nature, birthdays, birthday, weather, outdoor, literature, sympathy, entertaining, child, letters, gossip, trusts, legal, cards</li>";
+	text = text +"</ul>";	
+	$.fancybox.open(text);
+    });
+});
