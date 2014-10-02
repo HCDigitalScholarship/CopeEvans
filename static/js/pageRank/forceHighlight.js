@@ -20,7 +20,7 @@ var force = d3.layout.force()
     .linkDistance(20)
     .size([width, height]);
 
-var svg = d3.select("body")
+var svg = d3.select("#graph")
     .attr("tabindex", 1)
     .on("keydown.brush", keyflip)
     .on("keyup.brush", keyflip)

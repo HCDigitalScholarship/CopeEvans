@@ -1,3 +1,7 @@
+#graph:focus {
+outline:none;
+}
+
 #select {
 width:200px;
 }

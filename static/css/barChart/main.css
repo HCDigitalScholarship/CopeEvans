@@ -39,6 +39,8 @@ float:left;
 
 select {
 float:left;
+font-family:Arial;
+color:black;
 }
 
 #info {

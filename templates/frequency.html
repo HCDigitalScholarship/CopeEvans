@@ -2,10 +2,9 @@
 <head>
     <title>{{ person.name }} Letter Frequency</title>
     {% include "top_links.html" %}
-    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    {% include "libraries.html" %}
     <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js" defer></script>
     <link href="{{STATIC_URL}}css/frequency/main.css" type="text/css" rel="stylesheet">
 </head>
 <body>
@@ -16,5 +15,5 @@
 
     </svg>
     <div id="year"></div>
-    <script src="{{STATIC_URL}}js/frequency/graph.js" type="text/javascript" rel="javascript"></script>
+    <script src="{{STATIC_URL}}js/frequency/graph.js" type="text/javascript" rel="javascript" defer></script>
 </body>

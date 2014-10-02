@@ -4,20 +4,16 @@
     <title>Page Rank</title>
     <meta charset="utf-8">
     {% include "top_links.html" %}
-    <link rel="stylesheet" href="{{STATIC_URL}}css/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    {% include "libraries.html" %}
     <link href="{{STATIC_URL}}css/pageRank/main.css" rel="stylesheet" type="text/css">
+    <script src="{{STATIC_URL}}js/pageRank/forceHighlight.js" defer></script>
+    <script src="{{STATIC_URL}}js/pageRank/peopleInteract.js" defer></script>
 </head>
 <body>
     {% include "menu.html" %}
-    <!-- Add jQuery library -->
     <div class="button-top" id="select">Select People</div>
     <div class="button-top" id="info">Info</div>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="http://d3js.org/d3.v3.min.js"></script>
-    <!-- Add fancyBox -->
-    <script type="text/javascript" src="{{STATIC_URL}}js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-    <script src="{{STATIC_URL}}js/pageRank/forceHighlight.js"></script>
-    <script src="{{STATIC_URL}}js/pageRank/peopleInteract.js"></script>
+    <div id="graph"></div>
     <div id="people"></div>
 </body>
 </html>
