@@ -6,6 +6,8 @@ var map = L.mapbox.map('map', 'mzarafonetis.idm8dak7')
 var person_filter = parseInt($("#person:hidden").text());
 var STATIC_URL = $("#url:hidden").text()
 var filterDict = {"age":[],"gender":[],"family":[],"transcript":[],"subject":[], "author":[],"date":[]};
+// Change the below to determine how thick each of the letter lines is
+var line_thickness = 5;
 // If there is a Person selected initially, set that person to be drawn
 if (person_filter != "" && !(isNaN(person_filter))) { filterDict["author"] = [person_filter]; }
 // var zoom_dict = {"Continent":{},"Country":{},"Subregion":{}, "State":{}};
@@ -14,6 +16,7 @@ var info_list = [];
 var brush;
 var places_data;
 var letters_data;
+var people_data;
 // ################### End Global variables #########################
 
 // ######## Load in all of the data that is needed for the map ######
@@ -429,9 +432,9 @@ function addLine(origin, destination, line_json) {
 	    var generator = new arc.GreatCircle(start, end, { name: origin});
 	    var line_arc = generator.Arc(100,{offset: 10, weight: 3});
 	    var line_geojson = line_arc.json();
-	    var line = L.polyline(line_geojson.geometry.coordinates, {color:'rgb(47, 53, 77)', weight:3}).addTo(map);
+	    var line = L.polyline(line_geojson.geometry.coordinates, {color:'rgb(47, 53, 77)', weight:line_thickness}).addTo(map);
 	} else {
-	    line = L.polyline([or_latlng,dest_latlng],{color:'rgb(47, 53, 77)', weight:3}).addTo(map);
+	    line = L.polyline([or_latlng,dest_latlng],{color:'rgb(47, 53, 77)', weight:line_thickness}).addTo(map);
 	}
     	var info = "<head><link href=\""+STATIC_URL+"css/misc/custom.css\" rel=\"stylesheet\" type=\"text/css\">";
     	info = info + "<script src=\""+STATIC_URL+"js/misc/custom.js\" type=\"text/javascript\"></script></head>";
