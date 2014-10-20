@@ -10,7 +10,7 @@ https://gist.github.com/mbostock/1667139
 */
 
 var width = 960,
-    height = 600,
+    height = 550,
     shiftKey;
 
 var color = d3.scale.category20();
@@ -84,13 +84,12 @@ d3.json("/static/json/pageRank3.json", function(error, graph) {
 		node.style("fill","red");
 		if(!selected[d.name]) {
 		    d3.select("#people").append("a")
-			.html(d.name)
+			.html(d.name.split(/(?=[A-Z])/).join(" "))
 			.attr("class","person")
 			.attr("href","/viz/"+d.id+"/")
 			.attr("id","show"+d.index.toString())
 			.attr("rel","group")
 			.attr("data-fancybox-type","iframe")
-			.style("color","black");
 		    selected[d.name] = true;
 		}
 	    }
@@ -128,7 +127,7 @@ d3.json("/static/json/pageRank3.json", function(error, graph) {
 	    if(!selected[d.name]) {
 	    	node.style("fill","red");
 		d3.select("#people").append("a")
-		    .html(d.name)
+		    .html(d.name.split(/(?=[A-Z])/).join(" "))
 		    .attr("class","person")
 		    .attr("href","/viz/"+d.id+"/")
 		    .attr("rel","group")

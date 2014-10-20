@@ -1,15 +1,16 @@
+html {
+min-height:100%;
+position:relative;
+}
+
 body {
 margin:0px;
 padding:0px;
+background-color:darkgrey;
 }
 
 h1, h2 {
 text-align:center;
-}
-
-h3 {
-float:left;
-width:100%;
 }
 
 .letter-div {
@@ -18,24 +19,86 @@ width:80%;
 }
 
 .letter {
-width:43%;
-float:left;
-border:1px solid black;
-margin:20px;
+color:white;
+width:100%;
+margin-top:20px;
 padding:10px;
+background-color:rgb(95, 92, 92);
+}
+
+.letter:hover {
+background-color:rgb(48, 45, 45);
 }
 
 ul {
-margin:auto;
+margin:0 auto;
 width:80%;
+padding:0px;
+text-align:center;
 }
 
 li {
 list-style-type:none;
 display:inline-block;
-padding:10px;
-margin:20px;
-background-color:lightblue;
-width:130px;
+padding:20px;
+margin:10px;
+background-color:rgb(95, 92, 92);
+width:150px;
+height:150px;
 text-align:center;
+font-size:30px;
+border-radius:10px;
+}
+
+li:hover {
+background-color:rgb(48, 45, 45);
+}
+
+a {
+color:white;
+display:inline-block;
+}
+
+/* STYLING TO ALLOW FOR THE NAVIGATION BUTTONS */
+#main {
+width:80%;
+margin:auto;
+}
+
+.slide {
+width:10%;
+position:absolute;
+top:0px;
+bottom:0px;
+background-color:;
+}
+
+#previous-slide {
+background-color:rgb(155, 70, 70);
+left:0px;
+}
+
+#next-slide {
+background-color:rgb(75, 155, 70);
+right:0px;
+}
+
+.rotate {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+
+  /* also accepts left, right, top, bottom coordinates; not required, but a good idea for styling */
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+
+  /* Should be unset in IE9+ I think. */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  font-size:40px;
+  color:white;
 }
