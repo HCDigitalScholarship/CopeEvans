@@ -24,6 +24,17 @@ def viz(request, person):
 	    p = Person.objects.filter(id=person)[0]
 	    letters_sent = Letter.objects.filter(author=person)
 	    letters_received = Letter.objects.filter(recipient=person)
+	    base_link = "http://165.106.6.73/utils/getthumbnail/collection/cope/id/"
+	    for letter in letters_sent:
+		link = letter.url
+		letter_id = link.split("id/")[1]
+		letter.picture = base_link + letter_id
+
+	    for letter in letters_received:
+		link = letter.url
+		letter_id = link.split("id/")[1]
+		letter.picture = base_link + letter_id
+
 	return render(request, "viz.html", {"person":p, "letters_sent":letters_sent, "letters_received":letters_received})
     else:
 	return HttpResponse('<h1>I\'m sorry, you must be authenticated to view this page</h1><p>Please login and then try again</p>')

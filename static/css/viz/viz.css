@@ -23,11 +23,17 @@ color:white;
 width:100%;
 margin-top:20px;
 padding:10px;
+height:140px;
 background-color:rgb(95, 92, 92);
 }
 
 .letter:hover {
 background-color:rgb(48, 45, 45);
+}
+
+.info {
+max-width:350px;
+float:left;
 }
 
 ul {
@@ -90,7 +96,7 @@ right:0px;
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg);
 
-  /* also accepts left, right, top, bottom coordinates; not required, but a good idea for styling */
+  /* also accepts left, right, top, bottom coordinates; not required, but a good idea for styling*/
   -webkit-transform-origin: 50% 50%;
   -moz-transform-origin: 50% 50%;
   -ms-transform-origin: 50% 50%;
@@ -99,6 +105,6 @@ right:0px;
 
   /* Should be unset in IE9+ I think. */
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-  font-size:40px;
+  font-size:50px;
   color:white;
 }

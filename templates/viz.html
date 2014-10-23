@@ -2,44 +2,52 @@
 <head>
     <title>{{ person.name }}'s Page</title>
     <link href="{{STATIC_URL}}css/viz/viz.css" type="text/css" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="{{STATIC_URL}}js/viz/viz.js" type="text/javascript" rel="javascript"></script>
 </head>
 <body>
-<div class="slide" id="previous-slide"><div class="rotate">Previous</div></div>
+<div class="slide" id="previous-slide"><div style="height:200px;"></div><div class="rotate">Previous</div></div>
 <div id="main">
   <h1>{{ person.name }}'s Visualizations</h1>
   <ul>
-    <a href="cope/letterNetwork/{{ person.id }}/"><li>Letter Network</li></a>
-    <a href="cope/frequency/{{ person.id }}/"><li>Letter Frequency</li></a>
-    <a href="cope/mapFrequency/{{ person.id }}/"><li>Map Frequency</li></a>
-    <a href="#"><li>Family Travel</li></a>
-    <a href="cope/dendro/{{ person.id }}/"><li>Family Dendrogram</li></a>
+    <a href="/cope/letterNetwork/{{ person.id }}/"><li>Letter Network</li></a>
+    <a href="/cope/frequency/{{ person.id }}/"><li>Letter Frequency</li></a>
+    <a href="/cope/mapFrequency/{{ person.id }}/"><li>Map of Frequency</li></a>
+    <a href="/cope/FamilyTravels/"><li>Family Travel</li></a>
+    <a href="/cope/dendro/{{ person.id }}/"><li>Family Dendrogram</li></a>
   </ul>
   <h2>Letters</h2>
   <div class="letter-div">
   <h3>Letters Sent</h3>
   {% for letter in letters_sent %}
   <div class="letter">
-    <div class="author">Author: {{ letter.author.name }}</div>
-    <div class="recipient">Recipient: {{ letter.recipient.name }}</div>
-    <div class="origin">Origin: {{ letter.origin.name }}</div>
-    <div class="destination">Destination: {{ letter.destination.name }}</div>
-    <div class="date">Date Sent: {{ letter.date }}</div>
-    <div class="link-div">Link: <a class="letter-link" href="{{ letter.url }}">{{ letter.url }}</a></div>
+    <div class="info">
+      <div class="author">Author: {{ letter.author.name }}</div>
+      <div class="recipient">Recipient: {{ letter.recipient.name }}</div>
+      <div class="origin">Origin: {{ letter.origin.name }}</div>
+      <div class="destination">Destination: {{ letter.destination.name }}</div>
+      <div class="date">Date Sent: {{ letter.date }}</div>
+      <div class="link-div">Link: <a class="letter-link" href="{{ letter.url }}">{{ letter.url }}</a></div>
+    </div>
+    <img style="float:right;" src={{ letter.picture }}></img>
   </div>
   {% endfor %}
   <h3>Letters Received</h3>
   {% for letter in letters_received %}
   <div class="letter">
-    <div class="author">Author: {{ letter.author.name }}</div>
-    <div class="recipient">Recipient: {{ letter.recipient.name }}</div>
-    <div class="origin">Origin: {{ letter.origin.name }}</div>
-    <div class="destination">Destination: {{ letter.destination.name }}</div>
-    <div class="date">Date Sent: {{ letter.date }}</div>
-    <div class="link-div">Link: <a class="letter-link" href="{{ letter.url }}">{{ letter.url }}</a></div>
+    <div class="info">
+      <div class="author">Author: {{ letter.author.name }}</div>
+      <div class="recipient">Recipient: {{ letter.recipient.name }}</div>
+      <div class="origin">Origin: {{ letter.origin.name }}</div>
+      <div class="destination">Destination: {{ letter.destination.name }}</div>
+      <div class="date">Date Sent: {{ letter.date }}</div>
+      <div class="link-div">Link: <a class="letter-link" href="{{ letter.url }}">{{ letter.url }}</a></div>
+    </div>
+    <img style="float:right;" src={{ letter.picture }}></img>
   </div>
   {% endfor %}
   </div>
 </div>
-<div class="slide" id="next-slide"></div>
+<div class="slide" id="next-slide"><div style="height:200px;"></div><div class="rotate">Next</div></div>
 </body>
 </html>
