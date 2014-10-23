@@ -50,7 +50,7 @@ padding:20px;
 margin:10px;
 background-color:rgb(95, 92, 92);
 width:150px;
-height:150px;
+height:100px;
 text-align:center;
 font-size:30px;
 border-radius:10px;
@@ -76,16 +76,14 @@ width:10%;
 position:absolute;
 top:0px;
 bottom:0px;
-background-color:;
+background-color:rgb(48, 45, 45);
 }
 
 #previous-slide {
-background-color:rgb(155, 70, 70);
 left:0px;
 }
 
 #next-slide {
-background-color:rgb(75, 155, 70);
 right:0px;
 }
 
