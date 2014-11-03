@@ -50,10 +50,8 @@ var svg = d3.select("body").append("svg")
 	    }
 	    if ($(this)[0].getAttribute("class") != "selected") {
 		highlightChildren(d);
-		console.log($(this)[0].getAttribute("class"))
 	    }
 	    else {
-		console.log("here");
 		$(this)[0].removeClass("selected");
 	    }
 	    $("#info").html(text);
