@@ -1,5 +1,3 @@
-// d3.csv("year_letter.csv", function(error, data) {
-//    d3.csv("subject_year.csv", function(error, sub_data) {
 var data = $("#info:hidden").text();
 data = JSON.parse(data);
 //#####################THIS IS A HACK, NEED TO FIX ENTRY IN DATABASE###########
@@ -97,28 +95,6 @@ function renderGraph(data) {
 	    text = text + "Letters: " + d.count;
 	    d3.select("#year").html(text);
 	});
-}
-
-$(document).ready(function() {
-    $("#selectMe").click(function() {
-	var subject = $("#selectMe").find(":selected").text();
-	changeGraph(subject);
-    });
-});
-
-function changeGraph(subject) {
-    if (subject == "All") {
-	renderGraph(data);
-    }
-    else {
-	var toRender = [];
-	for(var i=0; i<sub_data.length; i++) {
-	    var year = sub_data[i]["year"];
-	    var count = sub_data[i][subject];
-	    toRender.push({"year":year,"letters":count});
-	}
-	renderGraph(toRender);
-    }
 }
 
 renderGraph(data);

@@ -23,22 +23,6 @@ d3.csv("/static/CSVs/travel_coordinates.csv", function(error, data) {
 	    
 	    circle.addTo(map);
 	}
-	/*
-	This is used to show all of the lines, which is not necessarily what
-	is needed right now. Need to make the decision for later on
-
-	for (var j=0; j<travels.length; j++) {
-	    var trips = travels[j]["Trips"];
-	    for (var k=0; k<trips.length; k++) {
-		var start = [39.9500,-75.1667];
-		var end = findLocation(trips[k]["Place"]);
-		if (end) {
-		    var latlngs = [start,end];
-		    var line = L.polyline(latlngs, {color: 'green', weight:3}).addTo(map);
-		}
-	    }
-	}
-	*/
 	function findLocation(place) {
 	    place = place.split(/(?=[A-Z])/);
 	    for (var i=0; i<data.length; i++) {
