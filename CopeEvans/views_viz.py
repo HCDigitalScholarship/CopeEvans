@@ -1,5 +1,4 @@
 from django.http import HttpResponse
-
 from django.template import RequestContext, loader
 from django.shortcuts import render
 from json import dumps,dump
