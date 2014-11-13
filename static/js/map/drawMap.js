@@ -259,7 +259,7 @@ function showFilterOptions(name){
 	optionsBox.append("<div class=\"col\" id=\"authorSelect\">");
 	var current =$("#authorSelect");
 	current.append("<a href=\"PageRank.html\" data-fancybox-type=\"iframe\" class=\"people-select\"><div class=\"options-button\" id=\"AboutPR\">About the Network</div></a>");
-	current.append("<a href=\"/PageRank/\" data-fancybox-type=\"iframe\" id=\"authorsFrame\" class=\"people-select\"><div class=\"options-button\" id=\"selectAuthor\">Select authors</div></a>");
+	current.append("<a href=\"/cope/PageRank/\" data-fancybox-type=\"iframe\" id=\"authorsFrame\" class=\"people-select\"><div class=\"options-button\" id=\"selectAuthor\">Select authors</div></a>");
 	updateNameBox();
 	optionsBox.append("</div>");
     }
