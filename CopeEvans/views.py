@@ -11,34 +11,38 @@ from models import Children
 from models import Letter
 from models import Partner
 
+authenticate = False
+
 def index(request):
-    if request.user.is_authenticated():
-	return render(request, 'index.html')
+    if request.user.is_authenticated() or not authenticate:
+	return render(request, 'CopeEvansHOME.html')
     else:
 	return HttpResponse('<h1>I\'m sorry, you must be authenticated to view this page</h1><p>Please login and then try again</p>')
 
 def page(request, page_id):
-    if request.user.is_authenticated():
+    if request.user.is_authenticated() or not authenticate:
 	print page_id
-	if page_id == "1":
-	    return render(request, 'Introduction.html')
-	elif page_id == "2":
-	    return render(request, 'Project.html')
-	elif page_id == "3":
-	    return render(request, 'Industrial.html')
-	elif page_id == "4":
-	    return render(request, 'IndustrialQuakers.html')
-	elif page_id == "5":
-	    return render(request, 'QuakerLifestyle.html')
-	elif page_id == "6":
-	    return render(request, 'Conclusion.html')
+	if page_id == "home":
+	    return render(request, 'CopeEvansHOME.html')
+	elif page_id == "family":
+	    return render(request, 'CopeEvansFAMILY.html')
+	elif page_id == "philadelphia":
+	    return render(request, 'CopeEvansPHILLY.html')
+	elif page_id == "transformation":
+	    return render(request, 'CopeEvansTRANSFORMATION.html')
+	elif page_id == "life":
+	    return render(request, 'CopeEvansDOMESTIC.html')
+	elif page_id == "political":
+	    return render(request, 'CopeEvansPOLITICAL.html')
+	elif page_id == "bibliography":
+	    return render(request, 'CopeEvansBIBLIO.htm')
 	else:
-	    return HttpResponseNotFound('<h1>I\'m sorry. We could not loctae the page at this time. May the force be with you</h1>')
+	    return HttpResponseNotFound('<h1>I\'m sorry. We could not locate the page at this time</h1>')
     else:
 	return HttpResponse('<h1>I\'m sorry, you must be authenticated to view this page</h1><p>Please login and then try again</p>')
 
 def pageRank(request):
-    if request.user.is_authenticated():
+    if request.user.is_authenticated() or not authenticate:
 	return render(request, 'bubble.html')
     else:
 	return HttpResponse('<h1>I\'m sorry, you must be authenticated to view this page</h1><p>Please login and then try again</p>')

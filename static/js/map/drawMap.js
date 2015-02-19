@@ -333,6 +333,7 @@ function getKeysUsed() {
 }
 
 function filterMap() {
+    $("path").remove(); // Clear the map of previous lines
     console.log(filterDict)
     var keys = ["age","gender","family","transcript","subject","author","date"];
     var placesToAdd = [];

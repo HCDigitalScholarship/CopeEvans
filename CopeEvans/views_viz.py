@@ -11,13 +11,15 @@ from models import Letter
 from models import Partner
 from models import Place
 
+authenticate = False
+
 def index(request):
     people = Person.objects.all()
 
     return render(request, 'index.html', {"people":people})
 
 def viz(request, person):
-    if request.user.is_authenticated():
+    if request.user.is_authenticated() or not authenticate:
 	p = "all"
 	if not person == "all":
 	    all_people = Person.objects.all()
@@ -40,7 +42,7 @@ def viz(request, person):
 	return HttpResponse('<h1>I\'m sorry, you must be authenticated to view this page</h1><p>Please login and then try again</p>')
 
 def map(request, person):
-    if request.user.is_authenticated():
+    if request.user.is_authenticated() or not authenticate:
 	if not person == 'all':
 	    # If there is a person selected, we need all of that person's information
 	    person = Person.objects.filter(id=person)[0]
@@ -52,31 +54,31 @@ def map(request, person):
 	return HttpResponse('<h1>I\'m sorry, you must be authenticated to view this page</h1><p>Please login and then try again</p>')
 
 def bubble(request):
-    if request.user.is_authenticated():
+    if request.user.is_authenticated() or not authenticate:
 	return render(request, "bubble.html")
     else:
 	return HttpResponse('<h1>I\'m sorry, you must be authenticated to view this page</h1><p>Please login and then try again</p>')
 
 def pageRank(request):
-    if request.user.is_authenticated():
+    if request.user.is_authenticated() or not authenticate:
 	return render(request, "pageRank.html")
     else:
 	return HttpResponse('<h1>I\'m sorry, you must be authenticated to view this page</h1><p>Please login and then try again</p>')
 
 def subjectChart(request):
-    if request.user.is_authenticated():
+    if request.user.is_authenticated() or not authenticate:
 	return render(request, "subjectBarChart.html")
     else:
 	return HttpResponse('<h1>I\'m sorry, you must be authenticated to view this page</h1><p>Please login and then try again</p>')
 
 def travels(request):
-    if request.user.is_authenticated():
+    if request.user.is_authenticated() or not authenticate:
 	return render(request, "travelMap.html")
     else:
 	return HttpResponse('<h1>I\'m sorry, you must be authenticated to view this page</h1><p>Please login and then try again</p>')
 
 def letterFrequencyMap(request, person):
-    if request.user.is_authenticated():
+    if request.user.is_authenticated() or not authenticate:
 	# if a person is selected then we need to get all of their letters and the places within those letters
 	# then look up all of those places latitudes and longitudes
 	# this information is all passed on to the template as a json file
@@ -127,7 +129,7 @@ def letterFrequencyMap(request, person):
 	return HttpResponse('<h1>I\'m sorry, you must be authenticated to view this page</h1><p>Please login and then try again</p>')
 
 def dendro(request, person):
-    if request.user.is_authenticated():
+    if request.user.is_authenticated() or not authenticate:
 	if not person == 'all':
 	    person = Person.objects.filter(id=person)[0]
 	    final = findChildren(person)
@@ -177,7 +179,7 @@ def findChildren(root):
 
 ############ END DENDROGRAM HELPER FUNCTIONS ############################
 def frequency(request, person):
-    if request.user.is_authenticated():
+    if request.user.is_authenticated() or not authenticate:
 	# First grabs all of the letters written by the given person
 	# Then stores them in a dictionary based on what year they are written
 	# The program finally sends a json with this information to the appropriate template
