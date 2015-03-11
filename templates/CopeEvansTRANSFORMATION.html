@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>The Cope Evans Project </title>
+{% include 'top_links.html' %}
+  </head>
+{% include 'menu.html' %}
+  <body>
+    <!-- background image overlay (semi transparent dark background image overlay) -->
+    <!-- comment or remove if you don't want the overlay on top of the image -->
+    <div class="background-image-overlay"></div>
+    <!-- outer background container - the element from where the default page background image is set, and the element which changes its background when scrolling through other sections (.section-wrapoer) that have attribute "data-custom-background-img" set. 
+     - data-default-background-img attr is required for sections (.section-wrapper) below that have no custom background defined.
+     - use same image in the backstretch.js code in the footer for IE8 or less browsers -->
+    <div id="outer-background-container" data-default-background-img="{{STATIC_URL}}images/other_images/White-Background-Xtra.jpg" style="background-image:url({{STATIC_URL}}images/other_images/White-Background-Xtra.jpg);"></div>
+    <!-- end: #outer-background-container -->    
+
+    <!-- Outer Container -->
+    <div id="outer-container">
+
+      <!-- Left Sidebar -->
+      <section id="left-sidebar">
+
+        <!-- Menu Icon for smaller viewports -->
+        <div id="mobile-menu-icon" class="visible-xs" onClick="toggle_main_menu();"><span class="glyphicon glyphicon-th"></span></div>
+
+        <!-- ==================================================================
+        MAIN MENU 
+        ==================================================================  -->
+        <!-- Each menu item links to a section (<article class="section-wrapper...") in the main content below.
+             - set each <li> id to this format: "menu-item-[the id of the .section-wrapper to link to]".
+             - set href of each <a> to the id of the .section-wrapper to link to -->
+        <ul id="main-menu">
+	  <li id="menu-item-intro" class="menu-item scroll"><a href="#intro">Transformation and Response</a>
+          <li id="menu-item-split" class="menu-item scroll"><a href="#split">Orthodox Friends and the Hicksite Split of 1827</a></li>
+          <li id="menu-item-education" class="menu-item scroll"><a href="#education">Educational Reform</a></li>
+          <li id="menu-item-text" class="menu-item scroll"><a href="#text">Text Analysis</a></li>
+          <li id="menu-item-philanthropy" class="menu-item scroll"><a href="#philanthropy">Philanthropy and Social Reform</a></li>
+          <li id="menu-item-relief" class="menu-item scroll"><a href="#relief">Pennsylvania Freedman's Relief Association</a></li>
+          <li id="menu-item-economic" class="menu-item scroll"><a href="#economic">Economic Engagement</a></li>
+          <!-- to include a link which doesn't scroll to a section inside the page, remove the .scroll class from the <li> - example below -->
+          <!-- <li id="menu-item-alt-page" class="menu-item"><a href="http://www.link.com">Outer Link</a></li> -->
+        </ul><!-- #main-menu -->
+        <!-- ==================== END: MAIN MENU ==================== -->
+
+      </section><!-- #left-sidebar -->
+      <!-- end: Left Sidebar -->
+
+      <!-- ==================================================================
+      MAIN CONTENT
+      ==================================================================  -->
+      <!-- all the website sections are contained in the <article> tag with class ".section-wrapper" and a unique id.
+           - to edit / remove / create website sections, you have to handle the content contained in these <article> tags -->
+      <section id="main-content" class="clearfix">
+        
+        <!-- ==================== SECTION TYPE: Intro Text ==================== -->
+        <!-- This type of section should contain heading and intro paragraph. It can also include links to other sections -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="intro" class="section-wrapper clearfix" data-custom-background-img="/static/images/other_images/cope_evans_0050.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              <!-- Start: Section content to edit -->
+
+                <!-- <p> text in .feature-text is larger  -->
+                <section class="feature-text">
+                  <h2>Transformation and Response</h2>
+<p>According to Benjamin, Philadelphia Quakers were a close-knit community during the early nineteenth century. The changes brought about by industrialization and the market economy caused Philadelphia Quakers to vigorously debate how to reconcile their values with the demands of industrial city life (Benjamin, 212-215). Members of Cope and Evans families also took up this debate.</p>
+
+<p>Their letters provide insight into their thoughts and feelings about these problems. Education reform, philanthropy, and business ventures in Philadelphia’s booming economy were some of the most significant ways in which the families engaged with the changing world around them.</p> 
+	
+                  </section><!-- to add scrolling effects to links linking to same page section, add .link-scroll class -->
+              <!-- End: Section content to edit -->
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Intro Text ==================== -->
+
+
+
+        <!-- ==================== SECTION TYPE: Intro Text ==================== -->
+        <!-- This type of section should contain heading and intro paragraph. It can also include links to other sections -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="split" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/cope evans_0047.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              <!-- Start: Section content to edit -->
+
+                <!-- <p> text in .feature-text is larger  -->
+                <h2 class="section-title">Orthodox Friends and the Hicksite Split of 1827</h2>
+
+<p><a href="http://triptych.brynmawr.edu/cdm/ref/collection/SC_Houses/id/6314/rec/21/nl/1" target="_blank"><img src="{{STATIC_URL}}images/other_images/orangestreet.jpg" target="_blank" alt="Orange Street Friends Meeting House. Quaker Meeting Houses. Tri-College Digital Library." class="hover_effect pull-right"></a>
+
+<a href="http://triptych.brynmawr.edu/cdm/singleitem/collection/SC_Houses/id/1618/rec/11" target="_blank"><img src="{{STATIC_URL}}images/other_images/orangestreet2.jpg" target="_blank" alt="Orange Street Friends Meeting House. Quaker Meeting Houses. Tri-College Digital Library." class="hover_effect pull-right"></a></p>
+
+  <p>The Hicksite Split was a result of theological debates among Friends that occurred at the 1827 Philadelphia Yearly Meeting (Hamm, <i>Transformation</i>, 15-20; Barbour and Frost, 169). When the Philadelphia Monthly Meeting for the Southern District was established in 1772, members met at the Quaker Meeting House on Orange Street. After the Hicksite separation, this Meeting remained with the Orthodox Friends, who were distinctive by their attire.</p> 
+<p><a href="http://triptych.brynmawr.edu/cdm/compoundobject/collection/cope/id/14468/rec/1" target="_blank"><img src="{{STATIC_URL}}images/other_images/1834_March_10.jpg" target="_blank" alt="1834 March 10, Philada, to Alfred, Madeira. Cope Evans Family Papers. Tri-College Digital Library." class="hover_effect pull-right"></a></p>
+
+<p><blockquote>Our meeting for worship for First day mornings & afternoons [-----] days have been discontinued at the Pine Street House, & all belonging to the Southern District Monthly Meeting now assemble at the Orange St. House. It has however been concluded by the Monthly Meeting to allow a First day evening meeting to be held in the Pine St. House & last evening it was for the first time so held. It was well attended, was very quiet & several of our friends had service I have no doubt to general satisfaction. How long these evening meetings will be held I don't know but I suppose not after warm weather begins. - Henry Cope to Alfred Cope, March 10, 1834</blockquote></p>
+
+
+<p>While exploring the collection, consider how their Orthodox values may have guided their actions.</p>
+
+                  <!-- to add scrolling effects to links linking to same page section, add .link-scroll class -->
+              <!-- End: Section content to edit -->
+             
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Intro Text ==================== -->
+
+        <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="education" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/hsc0240_01a.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+              <!-- Start: Section content to edit -->
+
+                <h2 class="section-title">Educational Reform</h2>
+
+<p><a href="http://triptych.brynmawr.edu/cdm/singleitem/collection/cope/id/16825/rec/22" target="_blank"><img src="{{STATIC_URL}}images/other_images/Magill_Library.jpg" alt="Magill Library. Cope Evans Family Papers. Tri-College Digital Library." class="hover_effect pull-right"></a>
+                <p>Quaker education had undergone a transformation from the eighteenth century to the Industrial Age. Benjamin describes the curriculum of early Quaker schools as a “guarded education.” Simplicity in dress, the preservation of "the distinctive culture of Friends," and the discouragement of the arts were important characteristics of this education.</p>  
+<a href="http://triptych.brynmawr.edu/cdm/singleitem/collection/cope/id/16824/rec/2" target="_blank"><img src="{{STATIC_URL}}images/other_images/Founders_Hall.jpg" alt="Founders Hall" class="hover_effect pull-right"></a> 
+
+<p>The Westtown boarding school in Chester County, founded in 1799, offered a "guarded education" for students with an emphasis on subjects such as math, science, grammar, writing, and religious instruction. Students who attended Westtown were expected to respect Quaker traditions of simple dress and plain language. After attending Westtown, members of the Cope family attended Haverford for their college education (Benjamin, 26, 35-37).</p>
+     
+<p><a href="" onclick="populate_and_open_modal(event, 'modal-content-4');" class="btn btn-outline-inverse btn-sm">Read More</a></p>
+
+ <div class="content-to-populate-in-modal" id="modal-content-4">
+
+<a href="http://triptych.brynmawr.edu/cdm/singleitem/collection/cope/id/16818/rec/17" target="_blank"><img src="{{STATIC_URL}}images/other_images/Henry_Cope_Class_of_1869.jpg" alt="Henry Cope Class of 1869. Cope Evans Family Papers. Tri-College Digital Library." class="hover_effect pull-left"></a></p>
+
+<p>When writing to his father Henry in October 1837, Francis Reeve Cope described the curriculum at Haverford. "The Council have introduced a new plan of studying Scripture on the 1st day.  The whole school is divided into two classes who recite to D.B. Smith who then delivers a lecture on Ethics..." </p>
+
+<p>The social life of students was another issue that became a source of debate among administrators at Haverford. In 1888, Swarthmore College adopted fraternities. In response Haverford College, stating that "fraternities destroyed the college's community life and Quaker spirit," limited the formation of student societies (Benjamin, 45).</p>
+
+<p><a href="http://triptych.brynmawr.edu/cdm/compoundobject/collection/cope/id/7280/rec/2646" target="_blank"><img src="{{STATIC_URL}}images/other_images/1835_June_30.jpg" alt="1835 June 30, Philadelphia, to Dear Franky, Haverford School. Cope Evans Family Papers. Tri-College Digital Library." class="hover_effect pull-right"></a>
+
+In 1910, Isaac Sharpless, a Quaker and the President of Haverford College from 1887-1917, supported the students’ desire for a more progressive education. The young generation of Friends, he believed, were “more in touch with the world around, ...more open to new ideas, [and] less inclined to accept a conclusive argument for itself that Friends in the past followed certain customs. It is probably no less loyal to fundamental Quakerism; and it is much more hopeful that this will become, not the possession of a slowly dying through very respectable remnant, but a growing and vigorous organism adapting itself to the problems of its environment, and winning strength and confidence by its real efficiency” (Benjamin, 176-177).</p>
+
+                <!-- to make a popup/modal link add an onClick function call to the function: 
+                     - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+
+                
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+                     - it is important to set a unique id -->
+               
+                
+                </div><!-- #modal-content-1 -->
+
+              <!-- End: Section content to edit --> 
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
+          
+
+ <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="text" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/Saranak_and_Tuscarora.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+              <!-- Start: Section content to edit -->
+                <!-- to make a popup/modal link add an onClick function call to the function: 
+                     - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+               
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+                     - it is important to set a unique id -->
+                   
+                   <h2 class="section-title">Text Analysis</h2>
+                  <img data-img-src="{{STATIC_URL}}images/other_images/UseOfThyGraph.png" class="lazy hover_effect pull-left">
+		  <img data-img-src="{{STATIC_URL}}images/other_images/useOfThee.png" class="lazy hover_effect pull-left">
+<p>The use of plain language, such as "thee" and "thy," among Quakers provides one indication of changing traditions from the nineteenth century into the early twentieth century (Hamm, 101-102). These graphs chart the frequency of the use of plain language words “thee” and “thy” within the transcribed Cope Evans letters.</p> 
+<p>In looking at the top graph, one could conjecture that the decreasing frequency in the use of the word “thy” was a reflection of the changing curriculum in Friends' schools, a generational shift away from plain language, or a result of outside cultural influences while traveling abroad. The peaks, perhaps, can be explained by movements towards tradition and re-establishing the use of plain language. Further research in this area could support this hypothesis.</p>
+                    
+                <!-- #modal-content-1 -->
+
+              <!-- End: Section content to edit --> 
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
+
+        <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="philanthropy" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/hsc1122_01.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              <!-- Start: Section content to edit -->
+
+                <h2 class="section-title">Philanthropy and Social Reform</h2>
+		<a href="http://triptych.brynmawr.edu/cdm/singleitem/collection/cope/id/1892/rec/1" target="_blank"><img src="{{STATIC_URL}}images/other_images/1851_September_19.jpg" class="pull-right"></a>
+                <p>Quaker resistance to change initially served as a barrier to participation in philanthropic works required by the industrial city. Beginning in the late nineteenth century and into the early twentieth century, however, Quaker involvement in charities in the city gradually increased (Benjamin, 102). These charities were aimed at helping women, the poor, Native Americans, African Americans, and the mentally ill.</p>
+
+<p>The Cope and Evans families were involved in several social reform efforts in the city. Alfred Cope, Francis Pim Cope, Thomas Pim Cope, Charles Evans, Robert Evans, and William Evans were all members of the Prison Society, which was devoted to improving prison conditions. An expanded reach of philanthropy was documented in an 1851 letter written by Jonathan Pim Cope to Thomas Pim Cope on the condition of his donation of fifty pounds to the Belfast Ladies Relief Association.</p>  
+
+<blockquote>I have to thank thee for again making me the medium of thy bounty to the Belfast "Ladies Relief Association for Connaught." I sent the Fifty pounds on receipt to my friend Mary Murphy, and have the enclosed acknowledgement from her son.  In a few days I hope to receive from her some particulars of the present condition of the Association.</blockquote>
+
+ 
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+                     - it is important to set a unique id -->
+ 
+                <!-- to make a popup/modal link add an onClick function call to the function: 
+                     - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+   
+                
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+                     - it is important to set a unique id -->
+                <!-- #modal-content-1 -->
+              <!-- End: Section content to edit --> 
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
+  
+
+           <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="relief" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/Monongahela.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              <!-- Start: Section content to edit -->
+
+                <h2 class="section-title">Pennsylvania Freedmen's Relief Association</h2>
+
+                <p>Quakers were "pioneers in the crusade against slavery." In the early half of the eighteenth century, Quakers had been slaveowners and actively involved in the slave trade. However, "the emergence of a Quaker stand against slavery" became clear during the Revolutionary period (Hamm, 33-34).</p>
+
+<p><a href="http://triptych.brynmawr.edu/cdm/compoundobject/collection/SC_Broad/id/1904/rec/2" target="_blank"><img src="{{STATIC_URL}}images/other_images/FreedmensRelief.jpg" alt="Dear Friend: The urgent need of the Freed People again compel to renewed activity on their behalf, 1865. Cope Evans Family Papers. Tri-College Digital Library." class="pull-left"></a></p>
+
+<p>According to Benjamin, it was not until late 1863 that Philadelphia Meetings became active in the cause to aid Southern blacks. The Pennsylvania Freedmen’s Relief Association was an effort by six Orthodox Friends who had traveled to the Southern states and reported on the poor health and living conditions of Southern blacks during the Civil War (Benjamin, 128-129). Located on Walnut Street, members of the Freedmen’s Relief Association “appeal[ed] for food, and clothes, and teachers,” the latter proving to be the greatest need. Providing freedmen with an education was the association’s primary goal (Pennsylvania Freedmen’s Relief  Association, 15). Members of the Cope and Evans families were actively involved in the Association as leaders, members, and teachers.</p> 
+
+                  <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-5');" class="btn btn-outline-inverse btn-sm">Read More</a></p>
+                
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+                     - it is important to set a unique id -->
+                <div class="content-to-populate-in-modal" id="modal-content-5">
+                  
+		<p><a href="http://triptych.brynmawr.edu/cdm/compoundobject/collection/cope/id/1888/rec/9" target="_blank"><img src="{{STATIC_URL}}images/other_images/1865_March_27.jpg" alt="1865 March 27 to My dearest children. Cope Evans Family Papers. Tri-College Digital Library." class="pull-right"></a></p>
+                    <p>When Clementine arrived in Baltimore in March 1865, she was ready to take up her three month residency as a teacher under the Freedmen’s Relief Association. She had looked to her cousin Francis Reeve Cope, an active member of the Freedmen’s Relief Association, to secure her position and, in writing to her sister Annette at the end of the month, gave an account of the school’s curriculum:
+
+<blockquote>One of the first points is to get [them] disciplined. Mr Waterman the principal – drills his class just as you wld. soldiers makes them fold their arms put out one foot & finally stand up just as a general wld. his troops, & when school is dismissed they file out in quite an imposing manner. That is to teach them obedience I suppose, wh. is a great point gained. They also teach them a kind of gymnastic exercises by way of recreation. as they have no place to play & consequently no regular recess or almost none. Mine is the next to the smallest class. & only studys reading & spelling in words of 4 or 5 letters wh. is not very interesting. I have’nt discovered that there are any specially smart or Topsy like ones among them. We dont stop to talk or get acquainted much but just keep them doing something or other the whole time. Upon the whole I enjoy the effect of the work very much. & outside of that it is all very pleasant.</blockquote></p>
+
+
+<p>
+<a href="http://triptych.brynmawr.edu/cdm/compoundobject/collection/cope/id/14046/rec/1" target="_blank"><img src="{{STATIC_URL}}images/other_images/1866_March_1.jpg" alt="1866 March 1, Farmville, to Anna. Cope Evans Family Papers. Tri-College Digital Library." class="pull-left"></a>
+
+The next year, Francis Reeve Cope recounted his visits to the schools in Virginia. On March 1, 1866 he wrote, “[w]e have here [in Lynchburg] a school of about 300 scholars in one of the old hospital buildings situated near the edge of the town. Some of the people of the town wish to take charge of it for us but as they want the management of it we want to be well assured that they will keep it up in the right way before we lose control.” Traveling from Lynchburg to Appomattox, he stopped at the school located across from the Appomattox Courthouse. A few days before his arrival, he learned that twenty men had threatened the teachers and told them to leave town on the next train. But “the agent of the Freedmen Bureau...& two of the citizens stopped him at the station & brought him back, saying that the solid men [of] the county...wish the school maintained. How far they really wish this or how far they were influenced by the fear of having the military back I cannot say - but I think they were sincere .” He continued on his journey to Petersburg then Baltimore.
+
+</p>
+
+
+<p>Clementine later traveled to South Carolina. In an excerpt from her letter dated December 16, 1900, Clementine wrote to her cousin from the Hobkirk Inn in Camden, South Carolina regarding the condition of blacks living there.</p>
+
+<blockquote>It is a land of ease & indolence, & no wonder the slave holders missed their faithful attendants, who seem even yet not to have lost the feeling that they were better cared for than they are now.  They look dreadfully poor & degraded, living in miserable cabins without windows (some of them) herded together like animals. It [would] be very depressing if they were not themselves so cheerful.</blockquote>
+
+<p><a href="http://triptych.brynmawr.edu/cdm/compoundobject/collection/cope/id/7579/rec/3" target="_blank"><img src="{{STATIC_URL}}images/other_images/1900_December_16.jpg" alt="1900 December 16, Hobkirk Inn Camden S.C., to My dear Cousin. Cope Evans Family Papers. Tri-College Digital Library." class="pull-right"></a></p>
+
+<p>Would Clementine have considered the efforts of organizations like the Freedman’s Relief Association a success?  What do her observations say about the state of African Americans living in the South decades after Reconstruction?</p>
+                    
+                <!-- to make a popup/modal link add an onClick function call to the function: 
+                     - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+
+                
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+                     - it is important to set a unique id -->
+                </div><!-- #modal-content-1 -->
+
+              <!-- End: Section content to edit --> 
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+     <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
+
+
+
+        <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="economic" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/hsc5256_1.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              <!-- Start: Section content to edit -->
+
+                <h2 class="section-title">Economic Engagement</h2>
+<p>While commercial life in Philadelphia continued to grow, the pursuit of wealth ran counter to the principles of Quakerism. “The Disciplines issued by both Orthodox and Hicksites in the late 1860s and early 1870s required of Friends complete integrity in their dealings with all men, urged them to keep strict accounts of financial transactions, and inveighed against the evils of speculation. An excess of riches constituted as bad a mark against a man as dire poverty” (Benjamin, Philadelphia Quakers, 51).</p>
+
+<p>Those who found economic success were integral to the growth of the "civic and institutional life of the city” (Benjamin, Philadelphia Quakers, 50).</p>
+
+    <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-6');" class="btn btn-outline-inverse btn-sm">Read More</a></p>
+                
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+                     - it is important to set a unique id -->
+                <div class="content-to-populate-in-modal" id="modal-content-6">
+<p>In his diary, Thomas Pim Cope wrote that “An honest man is the noblest work of God” (Harrison, <i>Philadelphia Merchant</i>, 5). His Quaker principles, particularly prudence, guided his political, economic, and social life.</p> 
+
+<p>Thomas Pim Cope, like many Quakers in eighteenth century Philadelphia, found success in the import-export business (Benjamin, Philadelphia Quakers, 52). Thomas P. Cope founded his shipping business in 1821. The ship owned by the Cope family shipped goods across the Atlantic to Liverpool, England, carrying linen, cotton, and wheat. In Liverpool, crews loaded iron, steel, tin, and earthenware onto the ship headed for Philadelphia. Passengers could pay a fee if they desired to travel to and from England (Cope Emlen, Jr., Voyages, 1-3). After eight years, Thomas Pim Cope passed the shipping business on to his sons, Henry and Alfred. In 1880, the sons sold the business. Francis was also set to take over the business, but drowned in 1816 (August 20, 1816.  Cope, <i>Philadelphia Merchant</i>, 307).</p>
+
+<p><a href="http://triptych.brynmawr.edu/cdm/compoundobject/collection/cope/id/14485/rec/1%5DT" target="_blank"><img src="{{STATIC_URL}}images/other_images/1834_January_22.jpg" alt="1834 January 22, Philada, to Brother. Cope Evans Family Papers. Tri-College Digital Library." class="pull-left"></a>
+Brothers Alfred, Henry, and William, exchanged letters that often critiqued the policies of President Andrew Jackson, particularly how Jackson’s vendetta against the National Bank interfered with their import-export trade and packet ship business. The defining issue of debate leading up to the 1832 election was the rechartering of the National Bank. Throughout his presidency (1829-1837), Jackson vetoed all bills related to the bank because he saw it as an corrupt institution. In writing to Alfred from Philadelphia on January 22, 1834, Henry expressed his concern in the falling prices of cotton abroad and the rising interest rates. “I think the scarcity of money cannot last more than a few months, as the decrease in all kinds of business will cause much less to be wanted by traders,” he wrote.  “I see no prospect of relief from Congress, as Jackson is determined to put his veto on any measure that he may think favours the Bk U. States.”</p>
+
+
+<p>Less than a week later, Henry wrote to Alfred again repeating his criticism of Jackson. “The President,” he wrote “seems immovably fixed in his determination to put down the U.S. Bank & I see no prospect of two thirds of both houses of Congress acting in opposition to him.”</p>
+<p><a href="http://triptych.brynmawr.edu/cdm/compoundobject/collection/cope/id/14479/rec/1" target="_blank"><img src="{{STATIC_URL}}images/other_images/1834_January_31.jpg" alt="1834 January 31, Philada, to Brother. Cope Evans Family Papers. Tri-College Digital Library." class="pull-right"></a></p>
+
+<p>The Cope and Evans families were certainly one of the more prosperous families during the industrialization of Philadelphia. What aspects of this narrative might have changed had they not prospered?</p>
+             
+                </div><!-- #modal-content-1 -->
+
+              <!-- End: Section content to edit --> 
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
+       
+      <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+
+              <!-- Start: Section content to edit -->
+
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+                     - it is important to set a unique id -->
+             
+                <!-- to make a popup/modal link add an onClick function call to the function: 
+                     - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+
+                
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+                     - it is important to set a unique id -->
+                
+                <!-- #modal-content-1 -->
+
+              <!-- End: Section content to edit --> 
+
+            <!-- .col-sm-10 -->
+          <!-- .content-wrapper -->
+        <!-- .section-wrapper -->
+     <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
+            <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+       
+              <!-- Start: Section content to edit -->
+
+                <!-- to make a popup/modal link add an onClick function call to the function: 
+                     - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+
+                
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+                     - it is important to set a unique id -->
+                
+               <!-- #modal-content-1 -->
+
+              <!-- End: Section content to edit --> 
+
+            <!-- .col-sm-10 -->
+          <!-- .content-wrapper -->
+        <!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
+        
+      </section><!-- #main-content -->
+      <!-- ==================== END: MAIN CONTENT ==================== -->
+
+      <!-- Footer -->
+      <section id="footer">
+
+        <!-- Go to Top -->
+        <div id="go-to-top" onclick="scroll_to_top();"><span class="icon glyphicon glyphicon-chevron-up"></span></div>
+
+
+        <!-- copyright text -->
+        <div class="footer-text-line">2015 Twilli | Air theme adapted by <a href="http://ds.haverford.edu" target="_blank">Haverford Digital Scholarship</a></div>
+      </section>
+      <!-- end: Footer -->      
+
+    </div><!-- #outer-container -->
+    <!-- end: Outer Container -->
+
+    <!-- Modal -->
+    <!-- DO NOT MOVE, EDIT OR REMOVE - this is needed in order for popup content to be populated in it -->
+    <div class="modal fade" id="common-modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <div class="modal-body">
+          </div><!-- .modal-body -->
+        </div><!-- .modal-content -->
+      </div><!-- .modal-dialog -->
+    </div><!-- .modal -->    
+{% include 'bottom_javascript.html' %}
+  </body>
+</html>

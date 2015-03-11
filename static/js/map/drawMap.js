@@ -258,7 +258,7 @@ function showFilterOptions(name){
     if (name == "author") {
 	optionsBox.append("<div class=\"col\" id=\"authorSelect\">");
 	var current =$("#authorSelect");
-	current.append("<a href=\"PageRank.html\" data-fancybox-type=\"iframe\" class=\"people-select\"><div class=\"options-button\" id=\"AboutPR\">About the Network</div></a>");
+	current.append("<a href=\"/cope/pageRank/info/\" data-fancybox-type=\"iframe\" class=\"people-select\"><div class=\"options-button-null\" id=\"AboutPR\">About the Network</div></a>");
 	current.append("<a href=\"/cope/PageRank/\" data-fancybox-type=\"iframe\" id=\"authorsFrame\" class=\"people-select\"><div class=\"options-button\" id=\"selectAuthor\">Select authors</div></a>");
 	updateNameBox();
 	optionsBox.append("</div>");
@@ -338,69 +338,74 @@ function filterMap() {
     var keys = ["age","gender","family","transcript","subject","author","date"];
     var placesToAdd = [];
     var keys_used = getKeysUsed(keys);
-    $("path.leaflet-clickable[stroke-opacity=\"0.5\"]").remove();
-    var filterNames = {"age":"age_of_author","gender":"gender_of_author","family":"Family","transcript":"transcript","subject":"Subject","author":"author_name", "date":"date"};
-    for (var j=0; j<letters_data.length; j++) {
-	var shouldAdd = true;
-	var line_json = letters_data[j];
-	var family = findFamily(line_json["author_name"])
-	line_json["Family"] = family;
-	for (var k=0; k<keys_used.length;k++) {
-	    var keyAllGood = false;
-	    var myKey = keys_used[k];
-	    if (myKey == "date") {
-		var myYear = getYear(line_json["date"]);
-		if (myYear > filterDict["date"][0] && filterDict["date"][1] > myYear) {
-		    keyAllGood = true;
+    if (keys_used.length == 0 ) {
+	zoom();
+    }
+    else {
+       $("path.leaflet-clickable[stroke-opacity=\"0.5\"]").remove();
+       var filterNames = {"age":"age_of_author","gender":"gender_of_author","family":"Family","transcript":"transcript","subject":"Subject","author":"author_name", "date":"date"};
+       for (var j=0; j<letters_data.length; j++) {
+	var    shouldAdd = true;
+	var    line_json = letters_data[j];
+	var    family = findFamily(line_json["author_name"])
+	line_json["Family"]    = family;
+	for    (var k=0; k<keys_used.length;k++) {
+	       var keyAllGood = false;
+	       var myKey = keys_used[k];
+	       if (myKey == "date") {
+		var    myYear = getYear(line_json["date"]);
+		if    (myYear > filterDict["date"][0] && filterDict["date"][1] > myYear) {
+		       keyAllGood = true;
 		}
-	    }
-	    // For every key besides transcript and date
-	    else if (!(myKey == "transcript")) {
-		for (var m=0; m<filterDict[myKey].length; m++) {
-		    var myValue, keyValue;
-		    if (myKey == "author") {
-			myValue = line_json["author_id"];
-			keyValue = filterDict[myKey][m];
-		    }
-		    else {
-			keyValue = filterDict[myKey][m];
-			myValue = line_json[filterNames[myKey]];
-		    }
+	       }
+	       // For every key besides transcript and date
+	       else if (!(myKey == "transcript")) {
+		for    (var m=0; m<filterDict[myKey].length; m++) {
+		       var myValue, keyValue;
+		       if (myKey == "author") {
+			myValue    = line_json["author_id"];
+			keyValue    = filterDict[myKey][m];
+		       }
+		       else {
+			keyValue    = filterDict[myKey][m];
+			myValue    = line_json[filterNames[myKey]];
+		       }
 
-		    if (myValue == keyValue) {
-			keyAllGood = true;
-		    }
+		       if (myValue == keyValue) {
+			keyAllGood    = true;
+		       }
 		}
-	    }
-	    else {
-		if(line_json["transcript"].split(" ").length < 2 && filterDict[myKey].indexOf("No Transcript") > -1) {
-		    keyAllGood = true;
+	       }
+	       else {
+		if(line_json["transcript"].split("    ").length < 2 && filterDict[myKey].indexOf("No Transcript") > -1) {
+		       keyAllGood = true;
 		}
-		else if(line_json["transcript"].split(" ").length >= 2 && filterDict[myKey].indexOf("Has Transcript") > -1) {
-		    keyAllGood = true;
+		else    if(line_json["transcript"].split(" ").length >= 2 && filterDict[myKey].indexOf("Has Transcript") > -1) {
+		       keyAllGood = true;
 		}
-		else {
-		    keyAllGood = false;
+		else    {
+		       keyAllGood = false;
 		}
-	    }
-	    if (!keyAllGood) {
-		shouldAdd = false;
-	    }
+	       }
+	       if (!keyAllGood) {
+		shouldAdd    = false;
+	       }
 	}
 	
 
-	if(shouldAdd) {
-	    var origin = parseInt(line_json["origin_id"]);
-    	    var destination = parseInt(line_json["destination_id"]);
-	    if (!isNaN(origin) && !isNaN(destination) && origin != -1 && destination != -1) {
+	if(shouldAdd)    {
+	       var origin = parseInt(line_json["origin_id"]);
+       	    var destination = parseInt(line_json["destination_id"]);
+	       if (!isNaN(origin) && !isNaN(destination) && origin != -1 && destination != -1) {
 		addLine(origin,destination,line_json);
-		if (placesToAdd.indexOf(origin) < 0) { placesToAdd.push(origin); }
-		if (placesToAdd.indexOf(destination) < 0) { placesToAdd.push(destination); }
-	    }
+		if    (placesToAdd.indexOf(origin) < 0) { placesToAdd.push(origin); }
+		if    (placesToAdd.indexOf(destination) < 0) { placesToAdd.push(destination); }
+	       }
 	}
-    }
+       }
 
-    drawPlaces(placesToAdd);
+       drawPlaces(placesToAdd);
+    }
 }
 
 function drawPlaces(placesToAdd) {

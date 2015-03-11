@@ -46,3 +46,9 @@ def pageRank(request):
 	return render(request, 'bubble.html')
     else:
 	return HttpResponse('<h1>I\'m sorry, you must be authenticated to view this page</h1><p>Please login and then try again</p>')
+
+def pageRank_info(request):
+    if request.user.is_authenticated() or not authenticate:
+	return render(request, 'PageRank.html')
+    else:
+	return HttpResponse('<h1>I\'m sorry, you must be authenticated to view this page</h1><p>Please login and then try again</p>')

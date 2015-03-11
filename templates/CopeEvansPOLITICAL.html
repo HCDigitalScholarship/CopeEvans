@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+{% include 'top_links.html' %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>The Cope Evans Project</title>
+  </head>
+{% include 'menu.html' %}
+  <body>  
+    <!-- background image overlay (semi transparent dark background image overlay) -->
+    <!-- comment or remove if you don't want the overlay on top of the image -->
+    <div class="background-image-overlay"></div>
+
+    <!-- outer background container - the element from where the default page background image is set, and the element which changes its background when scrolling through other sections (.section-wrapoer) that have attribute "data-custom-background-img" set. 
+     - data-default-background-img attr is required for sections (.section-wrapper) below that have no custom background defined.
+     - use same image in the backstretch.js code in the footer for IE8 or less browsers -->
+    <div id="outer-background-container" data-default-background-img="{{STATIC_URL}}images/other_images/White-Background-Xtra.jpg" style="background-image:url({{STATIC_URL}}images/other_images/White-Background-Xtra.jpg);"></div>
+    <!-- end: #outer-background-container -->    
+
+    <!-- Outer Container -->
+    <div id="outer-container">
+
+      <!-- Left Sidebar -->
+      <section id="left-sidebar">
+        <!-- Menu Icon for smaller viewports -->
+        <div id="mobile-menu-icon" class="visible-xs" onClick="toggle_main_menu();"><span class="glyphicon glyphicon-th"></span></div>
+
+        <!-- ==================================================================
+        MAIN MENU 
+        ==================================================================  -->
+        <!-- Each menu item links to a section (<article class="section-wrapper...") in the main content below.
+             - set each <li> id to this format: "menu-item-[the id of the .section-wrapper to link to]".
+             - set href of each <a> to the id of the .section-wrapper to link to -->
+        <ul id="main-menu">
+          <li id="menu-item-intro" class="menu-item scroll"><a href="#intro">Political Commentary</a></li>
+          <li id="menu-item-civilwar" class="menu-item scroll"><a href="#civilwar">The Civil War</a></li>
+          <li id="menu-item-lincoln" class="menu-item scroll"><a href="#lincoln">Lincoln's Assassination</a></li>
+          <li id="menu-item-recon" class="menu-item scroll"><a href="#recon">Reconstruction and President Andrew Johnson</a></li>
+          <li id="menu-item-mckinley" class="menu-item scroll"><a href="#mckinley">McKinley's Assassination</a></li>
+          <!-- to include a link which doesn't scroll to a section inside the page, remove the .scroll class from the <li> - example below -->
+          <!-- <li id="menu-item-alt-page" class="menu-item"><a href="http://www.link.com">Outer Link</a></li> -->
+        </ul><!-- #main-menu -->
+        <!-- ==================== END: MAIN MENU ==================== -->
+
+      </section><!-- #left-sidebar -->
+      <!-- end: Left Sidebar -->
+
+      <!-- ==================================================================
+      MAIN CONTENT
+      ==================================================================  -->
+      <!-- all the website sections are contained in the <article> tag with class ".section-wrapper" and a unique id.
+           - to edit / remove / create website sections, you have to handle the content contained in these <article> tags -->
+      <section id="main-content" class="clearfix">
+        
+        <!-- ==================== SECTION TYPE: Intro Text ==================== -->
+        <!-- This type of section should contain heading and intro paragraph. It can also include links to other sections -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="intro" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/cope_evans_0050.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              <!-- Start: Section content to edit -->
+
+                <!-- <p> text in .feature-text is larger  -->
+                <section class="feature-text">
+		<h2>Political Commentary</h2>
+               <p>Debates about political figures and news about national events of the late eighteenth and early nineteenth centuries, including the Civil War (1861-1865), the assassination of President Abraham Lincoln (April 1865), President Andrew Johnson's administration, and the assassination of President William McKinley (September 1901), were occassional topics of discussion in the family letters.</p>
+
+<p>These letters demonstrate their engagement in issues that were headline stories in newspapers across the country.</p>
+
+<p><a href="" onclick="populate_and_open_modal(event, 'modal-content-1');" class="btn btn-outline-inverse btn-sm">Read More</a></p>
+		</section><!-- end feature-text -->
+                <div class="content-to-populate-in-modal" id="modal-content-1">
+
+<p>The relief that came with the end of violence following the Civil War, the shock and sadness of President Abraham Lincoln's assassination, and disappointment in President Andrew Johnson’s Reconstruction were all responses the Cope family members shared as they witnessed these national events.</p>
+
+<p>Discussions of national news, however, revealed less about their political participation. In fact, the issue of political participation, particularly officeholding, continued to be a source of debate among Philadelphia Quakers in the late nineteenth century.</p>
+
+<p>According to Philip S. Benjamin, after the Civil War, the attitude of Philadelphia Quakers towards political engagement began to change. "Most Friends," Benjamin argued, "were burdened not only by a traditional hesitancy about political activity but by the thorny question of party loyalty" as Friends from both Hicksite and Orthodox branches began to question whether their traditional stance on the "prohibition of political activity" as stated in the Disciplines limited their ability to engage in political reform. As Benjamin argued, some Philadelphia Quakers felt a moral obligation to participate in reform efforts (Benjamin, 75, 86).</p>
+
+ <p>Further exploration of the Cope Evans Family Papers may reveal more in terms of the family's engagement in politics beyond their responses to national news. </p>
+
+                  <!-- to add scrolling effects to links linking to same page section, add .link-scroll class -->
+             	</div><!-- modal-content-1 -->
+		 <!-- End: Section content to edit -->
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Intro Text ==================== -->
+
+        <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+ <article id="civilwar" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/cope_evans_0050.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+              <!-- Start: Section content to edit -->
+               <h2 class="section-title">The Civil War</h2>
+  
+               <p><a href="http://triptych.brynmawr.edu/cdm/singleitem/collection/cope/id/16831/rec/36" target="_blank">
+<img src="{{STATIC_URL}}images/other_images/1862_August_7.jpg" alt="1862 August 7, Scranton Pa, to Alfred Cope Esq. Cope Evans Family Papers. Tri-College Digital Library." class="hover_effect pull-right"></a> Members of the Cope family followed news regarding the war that divided the nation closely. In August, 1862, Alfred Cope received a letter from his friend Charles Drinker requesing that Cope, perhaps through his business connections, "procure for [him] a situation in the Navy as Captain's Clerk." One year into the war, Drinker wanted to enlist in the Army but "my Mother & Sisters & they object to my doing so."</p>
+
+<p><a href="http://triptych.brynmawr.edu/cdm/compoundobject/collection/cope/id/785/rec/9" target="_blank">
+<img src="{{STATIC_URL}}images/other_images/1864_June_4.jpg" alt="1864 June 4, Rockview Cottage, to Anne. Cope Evans Family Papers. Tri-College Digital Library." class="hover_effect pull-left"></a>Ruthanna Cope received news from her aunt Martha Leeds on the conditions of hospitals near Chattanooga, Tennessee.  "[T]here are about 500 patients now but it is hoped that the large field Hospital at Chattanooga may soon be moved up here and probably two thirds of the patients that would otherwise die might recover I think there had been but four deaths since the Hospital was established."</p>
+                <!-- to make a popup/modal link add an onClick function call to the function: 
+                     - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+          
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+                     - it is important to set a unique id -->
+             <!-- #modal-content-1 -->
+
+
+              <!-- End: Section content to edit -->
+
+           </div><!-- .col-sm-11 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Features Grid ==================== -->
+
+       <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+ <article id="lincoln" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/cope_evans_0050.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+              <!-- Start: Section content to edit -->
+               <h2 class="section-title">Lincoln's Assassination</h2>
+               <p><a href="http://triptych.brynmawr.edu/cdm/singleitem/collection/cope/id/16831/rec/36" target="_blank">
+<img src="{{STATIC_URL}}images/other_images/Abraham_Lincoln.jpg" alt="Abraham Lincoln. Cope Evans Family Papers. Tri-College Digital Library." class="hover_effect pull-right"></a> When President Lincoln’s funeral train arrived in Philadelphia in late April 1865 and his body was on view at Independence Hall, droves of people arrived to pay their respects. Lincoln's funeral train would stop in several major cities, including Baltimore, New York City, Columbus, and Indianapolis, in the journey from Washington D.C. to Springfield, Illinois. The emotional response to his sudden death was evident in the letters from members of the Cope family (Beers, 417-418).</p> 
+
+<p>In a letter dated April 11, 1865, Clementine wrote to her mother and sisters:</p>
+
+<blockquote>I have laid aside my letter for two or three days, for we have all felt so sad since the dreadful news that I [could] not feel like writing about ordinary things [and] there seemed little to say on the one great subject - the presidents dreadful death, which seemed dreadful enough to strike every one dumb with horror [and] astonishment.</blockquote>
+
+<p><a href="" onclick="populate_and_open_modal(event, 'modal-content-11');" class="btn btn-outline-inverse btn-sm">Read More</a></p>
+                <div class="content-to-populate-in-modal" id="modal-content-11">
+
+<a href="http://triptych.brynmawr.edu/cdm/compoundobject/collection/cope/id/722/rec/5" target="_blank"><img src="{{STATIC_URL}}images/other_images/1865_April_11.jpg" alt="1865 April 11, B, to Mother and sisters. Cope Evans Family Papers. Tri-College Digital Library." class="hover_effect pull-right"></a>
+<a href="http://triptych.brynmawr.edu/cdm/compoundobject/collection/cope/id/748/rec/6" target="_blank"><img src="{{STATIC_URL}}images/other_images/1865_April_25.jpg" alt="1865 April 25, Baltimore, to Net. Cope Evans Family Papers. Tri-College Digital Library." class="hover_effect pull-right"></a>
+<p>Clementine had been teaching at the Freedmen's Relief Assocation's school in Baltimore for a month and was writing home to share stories of her time in Baltimore before she dropped her pen. On April 21, the teachers dismissed the students early. Clementine went to a store on Market St. to get a view of the funeral train. She sat perched near a window as "the most touching & mournful procession" passed by. "It will take a long time to forget the grief & horror of this sad event -- but work has to be done" she wrote in a letter to her sister Annette on April 25.</p>
+
+<p> As Clementine returned to her duties at the school, she continued to follow the news of Lincoln's funeral closely and included a newspaper clipping about the funeral train's arrival in New York on April 24, 1865 in her scrapbook.</p> 
+
+
+
+
+                <!-- to make a popup/modal link add an onClick function call to the function: 
+                     - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+          
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+                     - it is important to set a unique id -->
+             </div><!-- #modal-content-1 -->
+
+
+            <!-- End: Section content to edit -->
+
+           </div><!-- .col-sm-11 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Features Grid ==================== -->
+                <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+<article id="recon" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/cope_evans_0050.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+              <!-- Start: Section content to edit -->
+               <h2 class="section-title">Reconstruction and President Andrew Johnson</h2>
+               <p><a href="http://triptych.brynmawr.edu/cdm/compoundobject/collection/cope/id/778/rec/5" target="_blank"><img src="{{STATIC_URL}}images/other_images/1865_May_27.jpg" alt="1865 May 27, Locust Shade, to Annie. Cope Evans Family Papers. Tri-College Digital Library." class="hover_effect pull-right"></a></p>
+
+<p>As President Andrew Johnson was sworn into office on April 15, 1865, many Americans wondered about the fate of the South following the Civil War. "It seems to me we have, every day, reason to mourn death of our own dear good President - Johnson is so different - & if he should get us into a Mexican war it would be so sad." As Ruthanna Cope read the letter addressed to her from Susan Reeve written on May 27, 1865, she may have had the same anxiety about Johnson's character and leadership. "But," Reeve wrote "we can but hope for the best."</p>
+
+<p><a href="http://triptych.brynmawr.edu/cdm/compoundobject/collection/cope/id/14060/rec/3" target="_blank"><img src="{{STATIC_URL}}images/other_images/1866_February_25.jpg" alt="1866 February 25, Richmond, to Chelly. Cope Evans Family Papers. Tri-College Digital Library" class="hover_effect pull-left"></a>
+
+Francis Reeve Cope wrote his criticisms of President Johnson in a letter to his daughter, Rachel Reeve Cope Evans, on February 25, 1866 three days after Johnson had delivered an unpopular speech that ignited further criticisms of his Reconstruction policies.</p>  
+
+
+<blockquote>Our live President, chosen to air the Union men of the South to our side, seems to be doing his best to destroy the good work the chief war engaged in when called from works to rewards. It is the most humiliating thing this nation has had to endure for many years -- worse even than his drunken inauguration speech.</blockquote>
+                <!-- to make a popup/modal link add an onClick function call to the function: 
+                     - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+                
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+                     - it is important to set a unique id -->
+                <!-- #modal-content-1 -->
+
+              <!-- End: Section content to edit --> 
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
+
+
+         <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+<article id="mckinley" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/cope_evans_0050.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+              <!-- Start: Section content to edit -->
+                <h2 class="section-title">McKinley's Assassination</h2>
+		<a href="http://triptych.brynmawr.edu/cdm/compoundobject/collection/cope/id/12285/rec/3" target="_blank"><img src="{{STATIC_URL}}images/other_images/1901_September_16.jpg" alt="1901 September 16, Fowlers' Rocks, to My dear Chellie. Cope Evans Family Papers. Tri-College Digital Library." class="lazy pull-right"></a></p>
+                <p>In 1901, the assassination of President William McKinley at the Pan-American Exposition in Buffalo, New York shocked the nation. While shaking hands with fairgoers, McKinley was shot. Immediate medical attention suggested he may recover. In her letter to Rachel Reeve Cope on September 16, 1901, Anna Cope reported the news of the President's well being. McKinley "was up at Mt Marcy...having been at Buffalo, at first for several days, then left, as the physicians were so much encouraged, and were so decided that he would re--cover, Every body was hopeful for a week."</p>
+
+<p>McKinley died from his wounds on September 14, 1901. Anna expressed her reaction to the news writing that she had "much greeved at the President's death, it is so shocking to think of his being shot, whilst he was welcoming the people in such a personal way." She expressed sympathy to McKinley's wife writing that she "must be a wonderfully calm temperment to have borne up so well."</p>
+
+<p>Upon McKinley's death, Vice President Theodore Roosevelt was sworn into office. "I hope [Theodore] Roosevelt may prove a good ruler," Anna wrote.</p>
+
+
+		<!-- to make a popup/modal link add an onClick function call to the function: 
+                     - populate_and_open_modal(event, '[id of popup content container - see below]') -->                
+                <!-- content which will be shown in the popup/modal when clicking on the above link --> 
+ 
+                <!-- #modal-content-1 -->
+
+              <!-- End: Section content to edit --> 
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+	</section>
+      <!-- ==================== END: MAIN CONTENT ==================== -->
+
+      <!-- Footer -->
+      <section id="footer">
+
+        <!-- Go to Top -->
+        <div id="go-to-top" onclick="scroll_to_top();"><span class="icon glyphicon glyphicon-chevron-up"></span></div>
+
+
+        <!-- copyright text -->
+        <div class="footer-text-line">2015 Twilli | Air theme adapted by <a href="http://ds.haverford.edu" target="_blank">Haverford Digital Scholarship</a></div>
+      </section>
+      <!-- end: Footer -->      
+
+    </div><!-- #outer-container -->
+    <!-- end: Outer Container -->
+
+    <!-- Modal -->
+    <!-- DO NOT MOVE, EDIT OR REMOVE - this is needed in order for popup content to be populated in it -->
+    <div class="modal fade" id="common-modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <div class="modal-body">
+          </div><!-- .modal-body -->
+        </div><!-- .modal-content -->
+      </div><!-- .modal-dialog -->
+    </div><!-- .modal -->   
+{% include 'bottom_javascript.html' %} 
+</body>
+</html>

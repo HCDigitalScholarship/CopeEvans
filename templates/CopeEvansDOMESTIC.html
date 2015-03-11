@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>The Cope Evans Project</title>
+{% include 'top_links.html' %}
+  </head>
+{% include 'menu.html' %}
+  <body>
+
+    <!-- background image overlay (semi transparent dark background image overlay) -->
+    <!-- comment or remove if you don't want the overlay on top of the image -->
+    <div class="background-image-overlay"></div>
+
+    <!-- outer background container - the element from where the default page background image is set, and the element which changes its background when scrolling through other sections (.section-wrapoer) that have attribute "data-custom-background-img" set. 
+     - data-default-background-img attr is required for sections (.section-wrapper) below that have no custom background defined.
+     - use same image in the backstretch.js code in the footer for IE8 or less browsers -->
+    <div id="outer-background-container" data-default-background-img="{{STATIC_URL}}images/other_images/White-Background-Xtra.jpg" style="background-image:url({{STATIC_URL}}images/other_images/White-Background-Xtra.jpg);"></div>
+    <!-- end: #outer-background-container -->    
+
+    <!-- Outer Container -->
+    <div id="outer-container">
+
+      <!-- Left Sidebar -->
+      <section id="left-sidebar">
+        <!-- Menu Icon for smaller viewports -->
+        <div id="mobile-menu-icon" class="visible-xs" onClick="toggle_main_menu();"><span class="glyphicon glyphicon-th"></span></div>
+
+        <!-- ==================================================================
+        MAIN MENU 
+        ==================================================================  -->
+        <!-- Each menu item links to a section (<article class="section-wrapper...") in the main content below.
+             - set each <li> id to this format: "menu-item-[the id of the .section-wrapper to link to]".
+             - set href of each <a> to the id of the .section-wrapper to link to -->
+        <ul id="main-menu">
+          <li id="menu-item-intro" class="menu-item scroll"><a href="#intro">Family Life</a></li>
+          <li id="menu-item-letterbar" class="menu-item scroll"><a href="#letterbar">Letter Bar Chart</a></li>
+          <li id="menu-item-clementine" class="menu-item scroll"><a href="#clementine">Clementine Cope</a></li>
+          <!-- <li id="menu-item-map1" class="menu-item scroll"><a href="#map1">Family Travel Map</a></li> -->
+	  <li id="menu-item-map2" class="menu-item scroll"><a href="#map2">Family Letter Map</a></li>
+          <!-- to include a link which doesn't scroll to a section inside the page, remove the .scroll class from the <li> - example below -->
+          <!-- <li id="menu-item-alt-page" class="menu-item"><a href="http://www.link.com">Outer Link</a></li> -->
+        </ul><!-- #main-menu -->
+        <!-- ==================== END: MAIN MENU ==================== -->
+
+      </section><!-- #left-sidebar -->
+      <!-- end: Left Sidebar -->
+
+      <!-- ==================================================================
+      MAIN CONTENT
+      ==================================================================  -->
+      <!-- all the website sections are contained in the <article> tag with class ".section-wrapper" and a unique id.
+           - to edit / remove / create website sections, you have to handle the content contained in these <article> tags -->
+      <section id="main-content" class="clearfix">
+        
+        <!-- ==================== SECTION TYPE: Intro Text ==================== -->
+        <!-- This type of section should contain heading and intro paragraph. It can also include links to other sections -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="intro" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/cope evans_0049.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              <!-- Start: Section content to edit -->
+
+                <!-- <p> text in .feature-text is larger  -->
+                <section class="feature-text">
+                  <h2>Family Life</h2>
+                  <p>While the bustle of city life served as the arena for business affairs and reform efforts, letters written by the Cope and Evans families from Awbury and Woodbourne captured scenes of life at home. Awbury, the Cope family home for generations, was built by Henry Cope (1793-1865) in the 1850s. Its location in Germantown provided easy access to Philadelphia by train.</p>  
+
+<p>Woodbourne was another family home that was built by William Drinker Cope's son Alexis. Woodbourne served as a retreat for many members of the Cope family who hoped to escape the summer heat in Philadelphia. Located in a remote area, the home also included an orchard. Later, Alexis's son, Francis R. Cope, Jr., would explore his interest in farming and horticulture while living at Woodbourne.</p>
+
+<p><a href="" onclick="populate_and_open_modal(event, 'modal-content-8');" class="btn btn-outline-inverse btn-sm">Read More</a></p>
+
+ <div class="content-to-populate-in-modal" id="modal-content-8">
+<p>Reports on the health of family members (with occasional reference to the nurses who attended them), stories of birthdays and weddings, and details regarding child care and chores were all important subjects in letters written by the women of the households.</p>
+
+<p>Benjamin, exploring the changing roles of Orthodox Quaker women, suggests that while Quakerism embraced egalitarianism and "offered opportunities for women in the ministry," Philadelphia Quakers grappled with the issue of "grant[ing] women equality in the administration of their Meetings." Outside of the Meetings, Quaker women took roles as nurses, teachers, and social workers. Benjamin also notes that "two-fifths of the women in Philadelphia meeting never married" (Benjamin, 148, 164, 148-169). </p>
+
+<p>The families' domestic lives and the experience of their women lead to many more questions of scholarly inquiry. For example, in what ways was Clementine Cope, a Quaker woman who never married and spent time abroad, representative of women during this period? </p>  
+                  <!-- to add scrolling effects to links linking to same page section, add .link-scroll class -->
+                  <!-- <p><a href="#text" class="link-scroll btn btn-outline-inverse btn-lg">find out more</a></p> -->
+                </section>
+
+              <!-- End: Section content to edit -->
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Intro Text ==================== -->
+
+ <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="letterbar" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/hsc0994_01.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              <!-- Start: Section content to edit -->
+
+                <h2 class="section-title">Letter Bar Chart</h2>
+		<a href="/cope/SubjectChart/"><img data-img-src="{{STATIC_URL}}images/other_images/SubjectChart.png" class="lazy"></a>
+
+                <p class="feature-paragraph">The chart above plots the number of letters on the y-axis, against the year the letters were written on the x-axis. To view how the letters are distributed by subject, go to the drop down menu on the side and select which subject you would like to view. The graph will then change to show the letter distribution by subject.  
+
+This visualization is an exploratory tool for the collection. Many of the subjects that you can filter by are related to domestic and every day life of the family members. Filtering by subject areas like family, lifestyle, love, and travel will reveal the frequency of letters on those subjects betweeen 1800 and 1910.
+                </p>  
+                <!-- to make a popup/modal link add an onClick function call to the function: 
+                     - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+
+                
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+                     - it is important to set a unique id -->
+                <!-- #modal-content-1 -->
+
+              <!-- End: Section content to edit --> 
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+     <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
+
+        <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="clementine" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/hsc0161_01a.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              <!-- Start: Section content to edit -->
+
+                <h2 class="section-title"><span id="10" class="tooltip-mine">Clementine Cope</span></h2>
+
+                <p class="feature-paragraph">Clementine Cope’s 1879 diary of her travels around Italy documented her interests in Roman mythology, art and sculpture, and ancient history (Woodbourne Orchards and family of Francis R. Cope Jr. Collection). Her letters addressed to her family were written from cities in Italy. She discussed Renaissance art, art museums, and food to name a few topics.</p>
+
+<p>Her interests in all these subjects were evident in her scrapbook. A gift from her Aunt E.C. Tyson in 1844 when Clementine was nine years old, she filled it with illustrations from magazines such as <i>Harper’s</i>, photographs, poems, sketches and drawing, newspaper article clippings, and obituaries throughout her life. The illustrations certainly reflect a sense of romanticism and captured scenes of domesticity, the lives of royalty, and spiritual life. Newspaper clippings included a copy of Lincoln’s second inaugural address and stories about his assassination and funeral procession. Obituaries of Thomas P. Cope and Henry Cope are also included.</p>
+	<div class="container">
+		<div class="row">
+		<div id="myBook" class="col-sm-12 col-md-12">			
+		    <div class="imBookPage col-md-6 col-sm-12" style="background-image: url({{STATIC_URL}}images/other_images/000001.jpg)")></div>
+            <div class="imBookPage col-md-6 col-sm-12" style="background-image: url({{STATIC_URL}}images/other_images/000002.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/000003.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/000004.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/000005.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/000006.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/000007.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/000008.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/000009.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000010.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000011.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000012.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000013.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000014.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000015.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000016.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000017.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000018.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000019.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000020.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000021.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000022.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000023.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000024.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000025.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000026.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000027.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000028.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000029.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000030.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000031.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000032.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000033.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000034.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000035.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000036.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000037.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000038.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000039.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000040.jpg)")></div>
+            <div class="imBookPage" style="background-image: url({{STATIC_URL}}images/other_images/0000041.jpg)")></div>
+		    
+		</div>
+		</div> <!-- row -->
+	</div> <!-- container -->
+                <p>Click on the images above to flip through select pages of Clementine Cope's Scrapbook.</p>
+
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section 
+        <article id="map1" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/Saranak_and_Tuscarora.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              - Start: Section content to edit  -
+
+                <h2 class="section-title">Family Travel Map</h2>
+                    <a href="/cope/FamilyTravels/"><img  data-img-src="{{STATIC_URL}}images/other_images/familyTravels.png" alt="The Cope Evans Family Travel Map" class="lazy img-responsive"></a>
+                    <p>The interactive map above plots the locations and destinations mentioned in the family letters. Select a range of years on the timeline to see where family members traveled.</p>
+
+              - End: Section content to edit - 
+
+            </div> - .col-sm-10 -
+          </div> - .content-wrapper -
+        </article> - .section-wrapper -
+        - ==================== END: SECTION TYPE: Text / Generic ==================== -->
+        
+          <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+   <article id="map2" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/Saranak_and_Tuscarora.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              <!-- Start: Section content to edit -->
+   <h2 class="section-title">Family Letter Map</h2>
+		<a href="/cope/letterNetwork/"><img data-img-src="{{STATIC_URL}}images/other_images/letterNetwork.png" alt="The Cope Evans Letter Map" class="lazy img-responsive" style="margin:10px;"></a>
+                <p>The map above is compiled from the exchange of the writer or recipient's location pulled from all the digitized letters in the Cope Evans Family Papers.</p>
+
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+                     - it is important to set a unique id -->
+                <!-- <img data-img-src="{{STATIC_URL}}images/other_images/transp-image4.png" class="lazy rounded_border hover_effect pull-right" alt="Lorem Ipsum"> --><!-- #modal-content-1 -->
+
+              <!-- End: Section content to edit --> 
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
+
+               <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+              <!-- Start: Section content to edit -->
+                
+                <!-- to make a popup/modal link add an onClick function call to the function: 
+                     - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+   
+                
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+                     - it is important to set a unique id -->
+                <!-- #modal-content-1 -->
+
+              <!-- End: Section content to edit --> 
+
+           <!-- .col-sm-10 -->
+          <!-- .content-wrapper -->
+     <!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
+
+      </section><!-- #main-content -->
+      <!-- ==================== END: MAIN CONTENT ==================== -->
+
+      <!-- Footer -->
+      <section id="footer">
+
+        <!-- Go to Top -->
+        <div id="go-to-top" onclick="scroll_to_top();"><span class="icon glyphicon glyphicon-chevron-up"></span></div>
+
+        <!-- copyright text -->
+        <div class="footer-text-line">2015 Twilli | Air theme adapted by <a href="http://ds.haverford.edu" target="_blank">Haverford Digital Scholarship</a></div>
+      </section>
+      <!-- end: Footer -->      
+
+    </div><!-- #outer-container -->
+    <!-- end: Outer Container -->
+
+    <!-- Modal -->
+    <!-- DO NOT MOVE, EDIT OR REMOVE - this is needed in order for popup content to be populated in it -->
+    <div class="modal fade" id="common-modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <div class="modal-body">
+          </div><!-- .modal-body -->
+        </div><!-- .modal-content -->
+      </div><!-- .modal-dialog -->
+    </div><!-- .modal -->    
+{% include 'bottom_javascript.html' %}
+  </body>
+</html>

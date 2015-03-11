@@ -101,7 +101,8 @@ padding:10px;
 float:left;
 }
 
-.options-button {
+.options-button,
+.options-button-null {
 text-align:center;
 padding:5px;
 margin-bottom:7px;

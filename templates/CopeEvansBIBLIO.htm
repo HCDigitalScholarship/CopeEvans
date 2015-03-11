@@ -1,0 +1,187 @@
+<!-- <DOCTYPE html> -->
+<html lang="en">
+  <head>
+    {% include 'top_links.html' %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>The Cope Evans Project </title>
+  </head>
+  <body>
+    {% include 'menu.html' %}
+    <!-- background image overlay (semi transparent dark background image overlay) -->
+    <!-- comment or remove if you don't want the overlay on top of the image -->
+    <div class="background-image-overlay"></div>
+    <!-- outer background container - the element from where the default page background image is set, and the element which changes its background when scrolling through other sections (.section-wrapoer) that have attribute "data-custom-background-img" set. 
+     - data-default-background-img attr is required for sections (.section-wrapper) below that have no custom background defined.
+     - use same image in the backstretch.js code in the footer for IE8 or less browsers -->
+    <div id="outer-background-container" data-default-background-img="{{STATIC_URL}}images/other_images/White-Background-Xtra.jpg" style="background-image:url({{STATIC_URL}}images/other_images/White-Background-Xtra.jpg);"></div>
+    <!-- end: #outer-background-container -->    
+
+    <!-- Outer Container -->
+    <div id="outer-container">
+
+      <!-- Left Sidebar -->
+      <section id="left-sidebar">
+
+        <!-- Menu Icon for smaller viewports -->
+        <div id="mobile-menu-icon" class="visible-xs" onClick="toggle_main_menu();"><span class="glyphicon glyphicon-th"></span></div>
+
+        <!-- ==================================================================
+        MAIN MENU 
+        ==================================================================  -->
+        <!-- Each menu item links to a section (<article class="section-wrapper...") in the main content below.
+             - set each <li> id to this format: "menu-item-[the id of the .section-wrapper to link to]".
+             - set href of each <a> to the id of the .section-wrapper to link to -->
+        <ul id="main-menu">
+        	<li id="menu-item-biblio" class="menu-item scroll"><a href="#biblio">Bibliography</a></li>
+          	<li id="menu-item-resources" class="menu-item scroll"><a href="#resources">Additional Resources</a></li>
+		<li id="menu-item-credits" class="menu-item scroll"><a href="#credits">Credits</a></li>
+          <!-- to include a link which doesn't scroll to a section inside the page, remove the .scroll class from the <li> - example below -->
+          <!-- <li id="menu-item-alt-page" class="menu-item"><a href="http://www.link.com">Outer Link</a></li> -->
+        </ul><!-- #main-menu -->
+        <!-- ==================== END: MAIN MENU ==================== -->
+
+      </section><!-- #left-sidebar -->
+      <!-- end: Left Sidebar -->
+
+      <!-- ==================================================================
+      MAIN CONTENT
+      ==================================================================  -->
+      <!-- all the website sections are contained in the <article> tag with class ".section-wrapper" and a unique id.
+           - to edit / remove / create website sections, you have to handle the content contained in these <article> tags -->
+      <section id="main-content" class="clearfix">
+        <article id="biblio" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/hsc0733_02.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              <!-- Start: Section content to edit -->
+
+                <h1 class="section-title">Bibliography </h1>
+                <p class="feature-paragraph"><h2>Primary Sources</h2>
+                <ul style="list-style-type:none">
+                <li><a href="http://triptych.brynmawr.edu/cdm/landingpage/collection/cope">Cope-Evans Family Papers, 1732-1911.</a> Papers. Haverford College Library</li><br>
+                <li><a href="http://triptych.brynmawr.edu/cdm/search/collection/HC_QJournal/searchterm/thomas%20P.%20Cope/field/all/mode/all/conn/and/order/title/ad/asc">Thomas P. Cope Diary.</a> Quaker Journals and Diaries. Haverford College Library.</li><br>
+                <li><a href="http://library.haverford.edu/file-id-973">Woodbourne Orchards and Family of Francis R. Cope Jr.</a> Papers. Haverford College Library.</li><br>
+                <li>Chandler, Joseph R. “Pen and Pencil Sketches of Living Merchants - No. 1 - Thomas P. Cope, Esq. of Philadelphia. By the Hon. Joseph R. Chandler, of Pennsylvania.”<i>The Merchant’s Magazine</i> 20, no. 4 (1849): 355-363.</li>
+</ul></p>
+                <p class="feature-paragraph"><h2>Published Primary Sources</h2>
+                <ul style="list-style-type:none">
+                <li>Cope, Gilbert. <i>A Record of the Cope Family.  As established in America, by Oliver Cope, who came from England to Pennsylvania about the year 1682, with the Residencies, Dates of Birth, Deaths and Marriages of His Descendants as far as Ascertained.</i> Philadelphia: King & Baird Printers, 1861.</li><br>
+                <li>Pennsylvania Freedmen’s Relief Association. <i>Report of the proceedings of a meeting held at Concert hall, Philadelphia, on Tuesday evening, November 3, 1863: to take into consideration the condition of the freed people of the South.</i>. Philadelphia: Merrihew & Thompson, 1863.</li></ul></p>
+                <p class="feature-paragraph"><h2>Secondary Sources</h2>
+                <ul style="list-style-type:none">
+                <li><a href="http://triptych.brynmawr.edu/cdm/compoundobject/collection/cope/id/17465"><i>The Accustomed Message.</i></a> Haverford: Haverford College Quaker and Special Collections, 2009.</li><br>
+               <li>Abernethy, Lloyd M. “Progressivism 1905-1919” in <i>Philadelphia: A 300-Year History</i>, 524-565.</li><br>
+               <li>Barbour, Hugh and Frost, William J. <i>The Quakers.</i> Indiana: Friends United Press, 1988.</li><br>
+               <li>Beers, Dorothy Gondos, “The Centennial City 1865-1876” in <i>Philadelphia: A 300-Year History</i>, 417-471.</li><br>
+               <li>Benjamin, Philip S. <i>The Philadelphia Quakers in the Industrial Age 1865-1920</i>. Philadelphia: Temple University Press, 1976.</li><br>
+               <li>Cope Emlen, Jr., Arthur, “Voyages of the Packet Ship Thomas P. Cope 1839-1846.” Oregon, 1992.</li><br>
+               <li>Cope Harrison, Eliza.  Ed. <i>Philadelphia Merchant: The Diary of Thomas P. Cope 1800-1851.</i> Indiana:    Gateway Editions, 1978.</li><br>
+               <li>Evans, J. Morris. <i>Tapestry Threads: Jonathan & Rachel Cope Evans 1843 to 1911, Their Ancestors & Family.</i> Gwynedd Valley, PA, 1993.</li><br>
+               <li>Hamm, Thomas D. <i>The Quakers in America.</i> New York: Columbia University Press, 2003.</li><br>
+               <li>Hamm, Thomas D. <i>The Transformation of American Quakerism.</i> Indiana University Press, 1988.</li><br>
+	       <li>Richardson, Edgar. "The Athens of America, 1800-1815" in <i>Philadelphia: A 300-Year History</i>, 208-257.</li>
+	</ul></p><br>
+                <div class="content-to-populate-in-modal" id="modal-content-17">
+</p>
+                </div><!-- #modal-content-1 -->
+
+              <!-- End: Section content to edit --> 
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        
+        <article id="resources" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/Saranak_and_Tuscarora.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              <!-- Start: Section content to edit -->
+
+                <h1 class="section-title">Additional Resources</h1>
+		<ul style="list-style-type:none">
+		<li>Angell, Stephen W. and Dandelion, Ben P. <i>The Oxford Handbook of Quaker Studies</i>. Oxford: Oxford University Press, 2013.</li><br>
+               	<li>Baltzell, Edward D. <i>Puritan Boston and Quaker Philadelphia.</i> Seventh Edition. New York: Free Press, 2007.</li><br>
+               	<li>Burt, Nathaniel and Davies, Wallace E. “The Iron Age 1876-1905” in <i>Philadelphia: A 300-Year History</i>, 471-523.</li><br>
+                <li>Lapsansky-Werner, Emma. <i>Quaker Aesthetics: Reflections on a Quaker Ethic in American Design and Consumption</i>. Philadelphia: University of Pennsylvania Press, 2003.</li><br>
+		<li>Freedley, Edwin T. <i>Philadelphia and its Manufactures; a Hand-Book of the Great Manufactories and Representative Mercantile Houses of Philadelphia, in 1867.</i>Philadelphia: Edward Young & Co., 1867.</li><br>
+		</ul>
+
+              <!-- End: Section content to edit -->
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+
+
+	<article id="credits" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/Saranak_and_Tuscarora.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              <!-- Start: Section content to edit -->
+
+                <h1 class="section-title">Credits</h1>
+			<h2>Student Curators</h2>
+                	<ul style="list-style-type:none">
+				<li>Andrew Kafker, Haverford College '17</li>
+                        	<li>Cormac Quinn Rada, Haverford College '17</li>
+				<li>Brandon Smith, Haverford College '16</li>
+			</ul>
+			<h2>Editor</h2>
+			<ul style="list-style-type:none">
+				<li>Stephanie Lampkin, Department of History, University of Delaware</li>
+			</ul>
+			<h2>Additional Contributors</h2>
+			<ul style="list-style-type:none">
+				<li>Laurie Allen, Coordinator for Digital Scholarship and Services</li>
+				<li>Sarah Horowitz, Head of Special Collections</li>
+				<li>Ann Upton, Curator of Quaker Collections</li>
+				<li>Mike Zarafonetis, Digital Scholarship Librarian</li>
+			</ul>
+
+			
+                <!-- to make a popup/modal link add an onClick function call to the function: 
+                     - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+                
+                  
+              <!-- End: Section content to edit --> 
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
+
+      </section><!-- #main-content -->
+      <!-- ==================== END: MAIN CONTENT ==================== -->
+
+      <!-- Footer -->
+      <section id="footer">
+
+        <!-- Go to Top -->
+        <div id="go-to-top" onclick="scroll_to_top();"><span class="icon glyphicon glyphicon-chevron-up"></span></div>
+
+        <!-- copyright text -->
+        <div class="footer-text-line">2015 Twilli | Air theme adapted by <a href="http://ds.haverford.edu" target="_blank">Haverford Digital Scholarship</a></div>
+      </section>
+      <!-- end: Footer -->      
+
+    </div><!-- #outer-container -->
+    <!-- end: Outer Container -->
+
+    <!-- Modal -->
+    <!-- DO NOT MOVE, EDIT OR REMOVE - this is needed in order for popup content to be populated in it -->
+    <div class="modal fade" id="common-modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <div class="modal-body">
+          </div><!-- .modal-body -->
+        </div><!-- .modal-content -->
+      </div><!-- .modal-dialog -->
+    </div><!-- .modal -->    
+    {% include "bottom_javascript.html" %}
+  </body>
+</html>

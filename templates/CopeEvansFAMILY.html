@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>The Cope Evans Project</title>
+{% include 'top_links.html' %} 
+  </head>
+{% include 'menu.html' %}
+  <body>
+    <!-- background image overlay (semi transparent dark background image overlay) -->
+    <!-- comment or remove if you don't want the overlay on top of the image -->
+    <div class="background-image-overlay"></div>
+
+    <!-- outer background container - the element from where the default page background image is set, and the element which changes its background when scrolling through other sections (.section-wrapoer) that have attribute "data-custom-background-img" set. 
+     - data-default-background-img attr is required for sections (.section-wrapper) below that have no custom background defined.
+     - use same image in the backstretch.js code in the footer for IE8 or less browsers -->
+    <div id="outer-background-container" data-default-background-img="{{STATIC_URL}}images/other_images/White-Background-Xtra.jpg" style="background-image:url({{STATIC_URL}}images/other_images/White-Background-Xtra.jpg);"></div>
+    <!-- end: #outer-background-container -->    
+
+    <!-- Outer Container -->
+    <div id="outer-container">
+
+      <!-- Left Sidebar -->
+      <section id="left-sidebar">
+        <!-- Menu Icon for smaller viewports -->
+        <div id="mobile-menu-icon" class="visible-xs" onClick="toggle_main_menu();"><span class="glyphicon glyphicon-th"></span></div>
+
+        <!-- ==================================================================
+        MAIN MENU 
+        ==================================================================  -->
+        <!-- Each menu item links to a section (<article class="section-wrapper...") in the main content below.
+             - set each <li> id to this format: "menu-item-[the id of the .section-wrapper to link to]".
+             - set href of each <a> to the id of the .section-wrapper to link to -->
+        <ul id="main-menu">
+          <li id="menu-item-intro" class="menu-item scroll"><a href="#intro">The Families</a></li>
+          <li id="menu-item-collection" class="menu-item scroll"><a href="#collection">The Collection</a></li>
+          <li id="menu-item-familytree" class="menu-item scroll"><a href="#familytree">Family Tree</a></li>
+            <li id="menu-item-people" class="menu-item scroll"><a href="#people">Important People</a></li>
+          <!-- to include a link which doesn't scroll to a section inside the page, remove the .scroll class from the <li> - example below -->
+          <!-- <li id="menu-item-alt-page" class="menu-item"><a href="http://www.link.com">Outer Link</a></li> -->
+        </ul><!-- #main-menu -->
+        <!-- ==================== END: MAIN MENU ==================== -->
+
+      </section><!-- #left-sidebar -->
+      <!-- end: Left Sidebar -->
+
+      <!-- ==================================================================
+      MAIN CONTENT
+      ==================================================================  -->
+      <!-- all the website sections are contained in the <article> tag with class ".section-wrapper" and a unique id.
+           - to edit / remove / create website sections, you have to handle the content contained in these <article> tags -->
+      <section id="main-content" class="clearfix">
+        
+        <!-- ==================== SECTION TYPE: Intro Text ==================== -->
+        <!-- This type of section should contain heading and intro paragraph. It can also include links to other sections -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="intro" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/cope_evans_0050.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              <!-- Start: Section content to edit -->
+
+                <!-- <p> text in .feature-text is larger  -->
+                <section class="feature-text">
+                  <h2>The Families</h2>
+                  <p><img src="{{STATIC_URL}}images/other_images/copeevansbooklet_final-27.jpg" class="pull-right" alt="Francis Reeve Cope and Anna Stewardson Cope 60th Wedding Anniversary, December 1907.">The Cope and Evans families were two prominent Quaker families in Philadelphia. They were influential in their roles as merchants and businessmen, philanthropists, and educators. Through their letters and other documents we can learn a great deal about how the Copes and Evanses lived through and thought about the political, economic, and cultural changes of the nineteenth and early twentieth centuries.</p>
+
+<p>Refer to the <a href="http://ds.haverford.edu/cope/dendro/364/">Cope Evans Family Tree</a> to learn more about individual members of the Cope and Evans families, and to see connections between family members.</p>
+                  <!-- to add scrolling effects to links linking to same page section, add .link-scroll class -->
+              <!-- End: Section content to edit -->
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Intro Text ==================== -->
+
+       <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="collection" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/hsc0161_01a.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              <!-- Start: Section content to edit -->
+ 
+                <h2 class="section-title">The Collection</h2>
+
+                <p class="feature-paragraph">The Cope Evans Family Papers, 1732-1911 consists of approximately 2,900 items including letters, certificates, photographs, friendship books, and account books. A full description of the collection is available <a href="http://www.haverford.edu/library/special/aids/copeevans/" target="_blank">here</a>.</p>
+<p>Letters by Mary Drinker Cope (1766-1825) to her children are full of affection as well as practical and spiritual advice. Thomas Pim Cope's letters include those to his sons on his business interests. The letters of Anna S. Cope (1822-1916) and Francis R. Cope (1821-1909) discuss home life and children, family and friends activities; many of Anna S. Cope's letters were written from family vacation spots in New England, where she often went to escape the hot summer months in Philadelphia. Letters of Francis R. Cope include letters written while in Virginia on Freedmen's Relief Association business after the Civil War (1861-1865) as well as letters related to estate sales in Washington D.C.</p>
+<p><a href="" onclick="populate_and_open_modal(event, 'modal-content-1');" class="btn btn-outline-inverse btn-sm">Read More</a>
+                <div class="content-to-populate-in-modal" id="modal-content-1">
+<p>The letters of sisters Clementine, Carolina, and Annette Cope include many travel letters from Europe. Clementine Cope's letters also include those written while teaching at a Freedmen's Association School in Baltimore in 1865. There are a number of letters written by children; of particular interest are those written by brothers Henry, Francis, and William D. Cope while at Westtown Bording School in the early 1800s and letters of brothers Francis R. Cope (1812-1909) and Thomas P. Cope (1823-1900) while at Haverford College in the 1830s. Topics within the letters include business, Haverford College and education, national events such as the Civil War, Reconstruction, and the assassinations of Presidents Lincoln and McKinley. A portion of the Cope Evans Family Papers have been digitized and are <a href="http://triptych.brynmawr.edu/cdm/landingpage/collection/cope">available online.</a></p>
+	<p>The subject chart below shows some of the topics that the Cope and Evans families discussed in their letters at various points throughout the nineteenth and twentieth centuries. Click the chart to explore the interactive graph on your own.</p>
+<a href="/cope/SubjectChart/"><img data-img-src="{{STATIC_URL}}images/other_images/SubjectChart.png" class="lazy"></a>
+<a href="#collection"></a></p>
+                 </div>
+                <!-- to make a popup/modal link add an onClick function call to the function: 
+                     - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+          
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+                     - it is important to set a unique id -->
+             <!-- #modal-content-1 -->
+
+
+              <!-- End: Section content to edit -->
+
+            </div><!-- .col-sm-11 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Features Grid ==================== -->
+                <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="familytree" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/hsc0097_01.jpeg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              <!-- Start: Section content to edit -->
+
+                <h2 class="section-title">Family Tree</h2>
+                
+                <p>Explore this family dendogram, a horizontally-oriented family tree, to see the Copes' and Evanses' familial connections. This family tree encompasses thirteen generations of Quakers dating back to the late sixteenth century with the birth of John Cope. In this tree you can see how prominent Quaker families such as the Copes, Evans, and Drinkers are closely connected by marriage.</p>
+                      
+          		<p><a href="http://ds.haverford.edu/cope/dendro/364/"><img src="{{STATIC_URL}}images/other_images/familyTree.png"></a></p>
+          		
+                <!-- to make a popup/modal link add an onClick function call to the function: 
+                     - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+  
+                
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+                     - it is important to set a unique id -->
+                <!-- #modal-content-1 -->
+
+              <!-- End: Section content to edit --> 
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
+
+
+         <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="people" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/cope evans_0054.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              <!-- Start: Section content to edit -->
+
+                <h2 class="section-title">Important People</h2>
+
+
+<a href="http://ds.haverford.edu/cope/PageRank/"><img src="{{STATIC_URL}}images/other_images/pageRank.png" class="hover_effect pull-right"></a>
+                <p>You can learn more about the connections between family members by exploring the interactive visualization to the right. It represents the prominence of family members within the network of letters and the connections between them using a "PageRank" formula.</p>
+
+	<p><strong>Thomas Pim Cope (1768-1854)</strong>, was a prominent Quaker merchant who was actively involved in the economic and social development of Philadelphia.  He was born in 1768 to Caleb and Mary Cope in Lancaster, PA. Thomas P. Cope married Mary Drinker in 1792 and they had seven children: Henry (1793-1865), Francis (1794-1816), Caroline (died in infancy), William (1798-1873), Caroline R. (1802-1873), Alfred (1806-1875), and Eleanor (1807-1847) (refer to the <a href="http://ds.haverford.edu/cope/dendro/364/">Cope Family Tree</a>) (Evans, 144; G. Cope, 51).</p>
+
+			<p><a href="http://triptych.brynmawr.edu/cdm/singleitem/collection/cope/id/17145/rec/2" target="_blank">
+			 <img src="{{STATIC_URL}}images/other_images/Thomas_P_Cope_Sr.jpg" class="hover_effect pull-left" alt="Thomas P. Cope Sr. Cope Evans Family Papers. Tri-College Digital Library.">
+	</a>
+	<p>In late 1785 or early 1786, he arrived in Philadelphia from Lancaster County, Pennsylvania "to commence the acquisition of practical mercantile knowledge" (Chandler, 358). During his life, he served as a member of the Philadelphia City Council, Pennsylvania Legislature, and President of the Mercantile Library Company. Cope found financial success in his import-export business. His line of packet ships expanded networks between Philadelphia and Liverpool, England. Cope also provided financial support for one of the city’s major projects, the Pennsylvania Railroad. Cope identified as an Orthodox Quaker (Baltzell, 501, 440-441, Barbour and Frost, 187).</p>
+
+	 <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-2');" class="btn btn-outline-inverse btn-sm">Read More</a></p>
+	 <div class="content-to-populate-in-modal" id="modal-content-2">
+
+	<p><strong>Francis Reeve Cope (1821-1909)</strong>, the grandson of Thomas Pim Cope, was a merchant and businessman. In 1847, he married Anna Stewardson Brown and they had nine children: Elizabeth (1848-1937), Rachel (1850-1939), Thomas (1852-1944), William (1854-1860), Alfred (1857-1897), Francis (1859-1909), Algernon (1860-1862), Anna (1862-?), Caroline (1865-1953) (refer to the <a href="http://ds.haverford.edu/cope/dendro/3/">Cope Family Tree</a>) (Evans, 144). He was involved with the Pennsylvania Freedmen’s Relief Association, a philanthropic effort established around 1862 to provide education for freed slaves (Benjamin, 76, 140-141, 128).</p>  
+
+	<p><strong>Jonathan Evans (1843-1911)</strong> was the fifth child of Thomas Evans and Katharine [Catharine] Wistar. He married Rachel Reeve Cope (1850-1939), daughter of Francis Reeve Cope, in 1873. They had five children:  Anna (1875-1967), Francis (1878-1946), Edward (1882-1976), Ernest (1884-1911), and Harold (1886-1977) (refer to the <a href="http://ds.haverford.edu/cope/dendro/364/">Cope Family Tree</a>).  All four sons graduated from Haverford College (Evans, 22, 138, 143).</p>
+
+	<p><a href="http://triptych.brynmawr.edu/cdm/singleitem/collection/cope/id/4524/rec/25" target="_blank">
+			 <img src="{{STATIC_URL}}images/other_images/Minutes_of_School_Committee_Reporting_Jonathan_Evans_Death_1.jpg" alt="Minutes of School Committee, Reporting Jonathan Evans' Death. May 11, 1911. Cope Evans Family Papers. Tri-College Digital Library." class="hover_effect pull-right lazy">
+	</a>For nearly thirty years, Evans served on the School Committee at Haverford College. According to his colleagues “his influence stood for conservatism in retaining the best features that differentiate our Friends’ Schools from others; that at the same time he was always ready to adopt plans in accordance with progressive standards in education” (Minutes of School Committee, Reporting Jonathan Evans' Death, 1911; Evans, 138).</p>
+
+	<p><strong>Clementine Cope (1835-1899) </strong> was the oldest child of William D. Cope (1798-1873) and Susan Newbold. She had two brothers, Edgar and Alexis, and had a close relationship with her sisters, Caroline and Annette. Her sister Eleanor died as an infant (refer to the <a href="http://ds.haverford.edu/cope/dendro/69/">Cope Family Tree</a>). Clementine never married (Evans, 144; G. Cope, 112-113).</p>
+			 </div>
+			
+		<!-- to make a popup/modal link add an onClick function call to the function: 
+			     - populate_and_open_modal(event, '[id of popup content container - see below]') -->                
+			<!-- content which will be shown in the popup/modal when clicking on the above link --> 
+	 
+                </div><!-- #modal-content-1 -->
+
+              <!-- End: Section content to edit --> 
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+       
+      <!-- ==================== END: MAIN CONTENT ==================== -->
+
+      <!-- Footer -->
+      <section id="footer">
+
+        <!-- Go to Top -->
+        <div id="go-to-top" onclick="scroll_to_top();"><span class="icon glyphicon glyphicon-chevron-up"></span></div>
+
+
+        <!-- copyright text -->
+      <div class="footer-text-line">2015 Twilli | Air theme
+        adapted by <a href="http://ds.haverford.edu" target="_blank">Haverford Digital Scholarship</a></div>
+</section>
+      <!-- end: Footer -->      
+
+    <!-- #outer-container -->
+    <!-- end: Outer Container -->
+
+    <!-- Modal -->
+    <!-- DO NOT MOVE, EDIT OR REMOVE - this is needed in order for popup content to be populated in it -->
+    <div class="modal fade" id="common-modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <div class="modal-body">
+          </div><!-- .modal-body -->
+        </div><!-- .modal-content -->
+      </div><!-- .modal-dialog -->
+    </div><!-- .modal -->   
+   {% include 'bottom_javascript.html' %}  
+</body>
+</html>

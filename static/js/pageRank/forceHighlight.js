@@ -129,7 +129,7 @@ d3.json("/static/json/pageRank3.json", function(error, graph) {
 		d3.select("#people").append("a")
 		    .html(d.name.split(/(?=[A-Z])/).join(" "))
 		    .attr("class","person")
-		    .attr("href","/viz/"+d.id+"/")
+		    .attr("href","/cope/viz/"+d.id+"/")
 		    .attr("rel","group")
 		    .attr("id","show"+d.index.toString())
 		    .attr("data-fancybox-type","iframe");

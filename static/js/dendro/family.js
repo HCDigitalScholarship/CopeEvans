@@ -65,6 +65,7 @@ var svg = d3.select("body").append("svg")
 
 function highlightChildren(data) {
     var lines = $(".link");
+    lines.css('stroke','grey');
     for (var i=0; i<lines.length; i++) {
 	var id = lines[i].getAttribute("id");
 	if (data.children != undefined) {
