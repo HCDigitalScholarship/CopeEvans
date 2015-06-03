@@ -5,7 +5,7 @@ var width = 1200,
 
 if (depth > 3) { height = height + 60*depth; }
 
-var cluster = d3.layout.cluster()
+var cluster = d3.layout.tree()
     .size([height, width - 160]);
 
 var diagonal = d3.svg.diagonal()
