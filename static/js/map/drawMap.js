@@ -258,8 +258,8 @@ function showFilterOptions(name){
     if (name == "author") {
 	optionsBox.append("<div class=\"col\" id=\"authorSelect\">");
 	var current =$("#authorSelect");
-	current.append("<a href=\"/cope/pageRank/info/\" data-fancybox-type=\"iframe\" class=\"people-select\"><div class=\"options-button-null\" id=\"AboutPR\">About the Network</div></a>");
-	current.append("<a href=\"/cope/PageRank/\" data-fancybox-type=\"iframe\" id=\"authorsFrame\" class=\"people-select\"><div class=\"options-button\" id=\"selectAuthor\">Select authors</div></a>");
+	current.append("<a href=\"/pageRank/info/\" data-fancybox-type=\"iframe\" class=\"people-select\"><div class=\"options-button-null\" id=\"AboutPR\">About the Network</div></a>");
+	current.append("<a href=\"/PageRank/\" data-fancybox-type=\"iframe\" id=\"authorsFrame\" class=\"people-select\"><div class=\"options-button\" id=\"selectAuthor\">Select authors</div></a>");
 	updateNameBox();
 	optionsBox.append("</div>");
     }
@@ -338,10 +338,6 @@ function filterMap() {
     var keys = ["age","gender","family","transcript","subject","author","date"];
     var placesToAdd = [];
     var keys_used = getKeysUsed(keys);
-    if (keys_used.length == 0 ) {
-	zoom();
-    }
-    else {
        $("path.leaflet-clickable[stroke-opacity=\"0.5\"]").remove();
        var filterNames = {"age":"age_of_author","gender":"gender_of_author","family":"Family","transcript":"transcript","subject":"Subject","author":"author_name", "date":"date"};
        for (var j=0; j<letters_data.length; j++) {
@@ -405,7 +401,6 @@ function filterMap() {
        }
 
        drawPlaces(placesToAdd);
-    }
 }
 
 function drawPlaces(placesToAdd) {
