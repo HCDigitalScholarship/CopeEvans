@@ -7,8 +7,8 @@ class Person(models.Model):
     family = models.CharField("Family", max_length=20)
     other_1 = models.CharField("Other_1", max_length=50)
     other_2 = models.CharField("Other_2", max_length=50)
-    parent_1 = models.ForeignKey("self", related_name="parent 1", null=True)
-    parent_2 = models.ForeignKey("self", related_name="parent 2", null=True)
+    parent_1 = models.ForeignKey("self", related_name="parent__1", null=True)
+    parent_2 = models.ForeignKey("self", related_name="parent__2", null=True)
     
     def __unicode__(self):
 	return self.name + " " + str(self.id)
@@ -37,7 +37,7 @@ class Place(models.Model):
 
 class Trip(models.Model):
     person = models.ForeignKey(Person, related_name="traveler")
-    origin = models.ForeignKey(Place, related_name="from")
+    origin = models.ForeignKey(Place, related_name="from_place")
     destination = models.ForeignKey(Place, related_name="to")
 
     def __unicode__(self):
