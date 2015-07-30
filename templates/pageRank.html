@@ -1,19 +1,28 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Page Rank</title>
-    <meta charset="utf-8">
-    {% include "top_links.html" %}
-    {% include "libraries.html" %}
-    <link href="{{STATIC_URL}}css/pageRank/main.css" rel="stylesheet" type="text/css">
-    <script src="{{STATIC_URL}}js/pageRank/forceHighlight.js" defer></script>
-    <script src="{{STATIC_URL}}js/pageRank/peopleInteract.js" defer></script>
-</head>
-<body>
-    {% include "menu.html" %}
-    <div class="button-top" id="select">Select People</div>
-    <div class="button-top" id="info">Info</div>
-    <div id="graph"></div>
-    <div id="people"></div>
-</body>
-</html>
+<h2>PageRank</h2>
+<h3>About PageRank</h3>
+<p>PageRank is a way of determining the importance of different nodes within a network. It
+is currently used by Google to determine what are the most important websites on the internet
+and give you the most relevant search results (Google uses other techniques as well, but those
+are trade secrets). PageRank takes all of the nodes (in our case, people writing letters) within the graph and finds who they link to and who links to them. Then, to
+calculate the actual PageRank value of a site, the formula takes into account how many people link to you and the importance of the people that link to you. By iterating over the graph a couple
+times, the importance of each of the pages becomes relatively constant, setting the final PageRank values.
+To get a more in depth description of the PageRank formula, check out the <a style="color:black" href=http://en.wikipedia.org/wiki/PageRank>
+Wikipedia article</a> on the subject.</p>
+<h3>How PageRank Applies to the Collection</h3>
+<p>The Cope Evans family papers is a collection of letters that link different people throughout time
+and space, to create a complex network of almost 400 people. It is difficult
+to determine how significant any one of those members are within the overall network at a glance. By applying the
+PageRank formula to this network, we are able to see the most connected members of the community
+and their relative importance to every other member of the network. For this particular network, there
+exists a distinct group of people that are far more significant than any other group in the
+network. Because of this, the size of each of the nodes (representing their PageRank) had to be square-rooted
+so that they would not completely dominate the visualization. This means that if a particular node appears twice
+as large as another node, it is actually 4 times more significant. Through this representation, researchers can
+choose to focus on the important members of the family more easily, without guessing about the significance of an individual. Unfortunately the dataset is not complete, so all connections are not represented by this network, and
+will be added as more data becomes available.</p>
+<h3>How to Use the Network</h3>
+<p> To select different members within the network, you can simply click on the node and the person's name will
+appear at the bottom of the screen. You can select multiple people by either clicking on multiple nodes, or by
+doing an area select, by holding down your mouse and then dragging it over an area of people you want to look at.
+When you have the group of people you would like to select, simply click "Select People" at the top of the screen.
+This will take you back to the main map, where you will see all of their letters.</p>

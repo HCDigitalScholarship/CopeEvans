@@ -10,7 +10,7 @@ background-color:black;
 }
 
 .node {
-  font: 10px sans-serif;
+  font: 10px Sans-serif;
 }
 
 .selected {
@@ -21,10 +21,12 @@ fill: yellow;
   fill: none;
   stroke: #ccc;
   stroke-width: 1.5px;
+  opacity: .3;
 }
 
 text {
 fill:white;
+padding: 25px;
 }
 
 #info {
@@ -61,3 +63,5 @@ color:white;
 .child:hover {
 background-color:yellow;
 }
+
+

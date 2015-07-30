@@ -20,26 +20,28 @@ def index(request):
 	return HttpResponse('<h1>I\'m sorry, you must be authenticated to view this page</h1><p>Please login and then try again</p>')
 
 def page(request, page_id):
-    if request.user.is_authenticated() or not authenticate:
-	print page_id
-	if page_id == "home":
-	    return render(request, 'CopeEvansHOME.html')
-	elif page_id == "family":
-	    return render(request, 'CopeEvansFAMILY.html')
-	elif page_id == "philadelphia":
-	    return render(request, 'CopeEvansPHILLY.html')
-	elif page_id == "transformation":
-	    return render(request, 'CopeEvansTRANSFORMATION.html')
-	elif page_id == "life":
-	    return render(request, 'CopeEvansDOMESTIC.html')
-	elif page_id == "political":
-	    return render(request, 'CopeEvansPOLITICAL.html')
-	elif page_id == "bibliography":
-	    return render(request, 'CopeEvansBIBLIO.htm')
+	if request.user.is_authenticated() or not authenticate:
+		print page_id
+		if page_id == "home":
+			return render(request, 'CopeEvansHOME.html')
+		elif page_id == "family":
+			return render(request, 'CopeEvansFAMILY.html')
+		elif page_id == "philadelphia":
+			return render(request, 'CopeEvansPHILLY.html')
+		elif page_id == "transformation":
+			return render(request, 'CopeEvansTRANSFORMATION.html')
+		elif page_id == "life":
+			return render(request, 'CopeEvansDOMESTIC.html')
+		elif page_id == "political":
+			return render(request, 'CopeEvansPOLITICAL.html')
+		elif page_id == "health":  
+			return render(request, 'CopeEvansHEALTH.html')
+		elif page_id == "bibliography":
+			return render(request, 'CopeEvansBIBLIO.htm')
+		else:
+			return HttpResponseNotFound('<h1>I\'m sorry. We could not locate the page at this time</h1>')
 	else:
-	    return HttpResponseNotFound('<h1>I\'m sorry. We could not locate the page at this time</h1>')
-    else:
-	return HttpResponse('<h1>I\'m sorry, you must be authenticated to view this page</h1><p>Please login and then try again</p>')
+		return HttpResponse('<h1>I\'m sorry, you must be authenticated to view this page</h1><p>Please login and then try again</p>')
 
 def pageRank(request):
     if request.user.is_authenticated() or not authenticate:

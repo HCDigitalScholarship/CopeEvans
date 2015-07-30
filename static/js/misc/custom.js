@@ -10,6 +10,7 @@ $(document).mouseup(function (e)
 });
 
 $(document).ready(function() {
+	
     /*
     $('div, svg').not('#info, .ttip').on('click',function() {
 	console.log(this);

@@ -13,6 +13,8 @@ class Person(models.Model):
     def __unicode__(self):
 	return self.name + " " + str(self.id)
 
+
+
 class Partner(models.Model):
     partner_1 = models.ForeignKey(Person, related_name="partner_1")
     partner_2 = models.ForeignKey(Person, related_name="partner_2")

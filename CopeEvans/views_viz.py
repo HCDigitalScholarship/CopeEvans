@@ -136,10 +136,10 @@ def dendro(request, person):
 	    # If the person has a known partner, the try will work
 	    try:
 	        partner = Partner.objects.filter(partner_1=person)[0]
-	        starter = {"Cope Member":person.name, "Partner":partner.partner_2.name, "children":final, "id":person.id}
+	        starter = {"Cope Member":person.name,  "Partner":partner.partner_2.name, "children":final, "id":person.id}
 	    # Otherwise partner will be filled in as unknown
 	    except:
-	        starter = {"Cope Member":person.name, "Partner":"Unkown", "children":final, "id":person.id}
+	        starter = {"Cope Member":person.name, "birth":person.birth, "Partner":"Unkown", "children":final, "id":person.id}
 	    # Need the depth to know how tall to make the svg, otherwise some trees are too spread out and others are too close together	
 	    depth = findDepth(starter,0)
 	    

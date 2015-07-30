@@ -1571,3 +1571,13 @@ img.full-width {
     }
     @media (min-width: 1200px) {  
     }
+
+
+
+    .popover-img:hover{
+   -webkit-transform: scale(3,3);
+   -moz-transform:scale(3,3);
+   opacity: 1;
+   -webkit-opacity: 1;
+   -moz-opacity: 1;
+}
