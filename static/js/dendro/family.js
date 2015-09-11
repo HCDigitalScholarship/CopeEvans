@@ -43,7 +43,7 @@ var svg = d3.select("body").append("svg")
       .on("click", function(d) {
 	    var text = "<div class=\"close-mine\">-</div>"
 	    text = text + "<b>Name:</b><span onclick=\"tooltipClicked(this)\" id="+d.id+" class=tooltip-mine>"+d["Cope Member"]+"</span><br>";	
-	    text = text + "<b>Birthdate:</b> " + d.Birth + " " + "-" + " " + d["Cope Member"].death +"<br>";
+	    text = text + "<b>Birthdate:</b> " + d.Birth + " " + "-" + " " + d.Death +"<br>";
       text = text + "<b>Partner:</b> " + d.Partner + "<br>";
 	    text = text + "<b>Children:</b> <br>";
 	    if (d.children != undefined) {
