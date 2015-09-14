@@ -1,11 +1,10 @@
 body {
-padding:0px;
-margin:0px;
+padding-top: 45px;
 background-color:white;
 }
 
 .navbar-default {
-position:relative;
+position:fixed;
 margin-bottom:0px;
 }
 
@@ -14,25 +13,38 @@ height:0px;
 }
 
 #wrapper {
-width:100%;
+display: block;
+margin: auto;
+width: 100%;
+height: 80%;
 background-image:url('/static/images/other_images/Wyoming_and_Tonawanda.jpg');
 background-size:cover;
+background-repeat:no-repeat;
 text-align:center;
 }
 
 
 #title {
-font-size:60px;
-color:black;
+padding-top: 15px;
+font-size:3.5em;
+color:white;
+font-family: "Sahitya";
 margin:auto;
 }
 
 #subtitle {
-font-size:45px;
-font-style: italic;
-color:black;
+font-size:30px;
+color:white;
 padding:10px;
-margin:auto;
+font-family: "Amiri";
+position: relative;
+margin: auto; 
+}
+
+@media screen and (max-width: 350px) {
+    #subtitle {
+        display: none;
+    }
 }
 
 #menu {
@@ -66,29 +78,11 @@ opacity:.5;
 cursor:pointer;
 }
 
-#start {
-left:100px;
-bottom:200px;
-background-image:url("../images/independence_hall2.png");
+#container {
+background-color: #C6D1DC;
 }
 
-#section-1 {
-left:400px;
-bottom:100px;
-background-image:url("../images/industrialplant250.jpg");
-}
 
-#section-2 {
-left:700px;
-bottom:250px;
-background-image:url("../images/liberty_bell2.png");
-}
-
-#end {
-left:1000px;
-background-image:url("../images/WilliamPenn-Good-End1.png");
-bottom:200px;
-}
 
 #content {
 margin:auto;
@@ -96,10 +90,25 @@ color:black;
 width:80%;
 }
 
+.col-centered{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
 a {
 color:black;
 }
 
 a:hover {
-color:lightgrey;
+color:#333333;
+}
+
+h2 {
+color: black;
+}
+
+p {
+color: black;
 }

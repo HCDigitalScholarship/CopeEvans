@@ -3,84 +3,84 @@
 <head>
     <title>The Cope Evans Project</title>
     {% include 'top_links.html' %}
+    <link href='https://fonts.googleapis.com/css?family=Sahitya|Amiri' rel='stylesheet' type='text/css'>
     <link href="{{STATIC_URL}}css/index.css" rel="stylesheet" type="text/css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script>
-	$(document).ready(function() {
-	    $(window).scroll(function() {
-		if ($("nav").offset().top - $(window).scrollTop() < 0) {
-		    $("nav").css("position","fixed");
-		    $("nav").css("top","0");
-		}
-		else if ($(window).scrollTop() < 150) {
-		    $("nav").css("position","relative");
-		}
-	    });
-	});
-    </script>
 </head>
 <body>
-    {% include 'menu.html' %}
+    {% include 'new-menu.html' %}
     <div id="wrapper">
 	<div id="title">
-	The Cope Evans Project:
+	The Cope Evans Project
 	</div>
 	<div id="subtitle">
 	 A Quaker Family in an Era of American Reform and Innovation, 1827-1910
 	</div>
     </div>
+
     <div id="content">
-    <h2>What is The Cope Evans Project?</h2>
+    <h2 class = "text-center">What is The Cope Evans Project?</h2>
 
 <p>In the summer of 2014, three Haverford College students, Cormac Quinn Rada ('17), Brandon Smith ('16), and Andrew Kafker ('17), conducted archival research in the <a href="http://www.haverford.edu/library/special/aids/copeevans/"> Cope Evans Family Papers </a> for their digital project titled “The Cope Evans Project: A History of Quaker Networks During the Industrial Age.” Exploring the argument and themes of Philip S. Benjamin’s influential work <i>The Philadelphia Quakers in the Industrial Age, 1865-1920</i> (1978), the students documented the numerous social, cultural, economic, and political changes that the Cope family, a prominent Quaker family in Philadelphia, faced during a period of rapid industrialization and urbanization in America. According to Benjamin, during this period the development of a national culture that valued individualism, competition in the marketplace and the accumulation of wealth, and progress ran counter to Quaker principles of community, egalitarianism, and simplicity. Quakerism had already undergone a radical transformation in the 1820s which resulted in separations within the Society of Friends. How would Quaker identity and distinctiveness fare in the face of a rising national culture and religious secularization during the Industrial Age?  How would Quakers adapt their principles to address the concerns of a rapidly changing city? How would they reconcile their religious principles with their participation in Philadelphia’s  growing industries? (Benjamin, vii-ix).</p>
 <p>Building on Benjamin’s work, which made a substantial contribution to the study of Quakers in America beyond the eighteenth century, The Cope Evans Project explores the above questions by highlighting select manuscripts and images from Haverford Special Collections to place the Cope and Evans families into this larger narrative. The project also showcases interactive data visualizations, including a family tree, a map representing the network of letters, and a letter bar chart, created by the students using materials from the <a href="http://triptych.brynmawr.edu/cdm/landingpage/collection/cope" target="_blank">Cope Evans Family digital collection</a>, including digitized scrapbooks and photographs as well as transcribed letters. Other features include a virtual scrapbook, a time-lapse video, and an interactive timeline. This project serves as an invitation to scholars and researchers to further explore the history of Quakers in nineteenth century Philadelphia. 
 </p>
 <p>The Cope Evans Project is supported by Haverford Libraries through the Quaker & Special Collections and Digital Scholarship Departments. This academic project is based on a collection of family papers, The Cope Evans Papers, that was generously donated to the college's Quaker & Special Collections. The project is funded by the J. Morris and Anne T. Evans Fund. We look forward to continually expanding the scope of this project in the future.</p>   
-</body> 
-<h2>Features</h2>    
 
-<div class="container">
-	<div class="row">
-		<div class="col-md-6 col-sm-12">
-			<div class="row">
-				<a href="/letterNetwork/"><img name="letter-map" class="img-responsive" src="{{STATIC_URL}}images/other_images/letterNetwork.png"></a>
-			</div>
-			<div class="row">
-				<p>   <st><a href="/letterNetwork/">Letter Map</st></a> Uses geographical data of each writer and recipient of the letter and plots it on a map to show the complete breadth of this extensive network. </p>
-			</div>
+</div>
+
+<div id = "container">
+<div class = "container">
+<h2 class = "text-center">Features</h2>
+<br>    
+	<div class = "row">
+		<div class = "col-md-5 col-md-offset-1">
+			 <a href="/letterNetwork/"><img width = "350px" name="letter-map" class="img-responsive" src="{{STATIC_URL}}images/other_images/letterNetwork.png"></a>
+                                <p><a href="/letterNetwork/">Letter Map</a> Uses geographical data of each writer and recipient of the letter and plots it on a map to show the complete breadth of this extensive network. </p>
+
 		</div>
-		<div class="col-md-6" name="small-vizzes">
-			<div class="row">
-				<div class="col-md-6">
-					<a href="/SubjectChart/"><img name="subject-chart" class="img-responsive" src="{{STATIC_URL}}images/other_images/SubjectChart.png"></a>
-					<p>  <st> <a href="/SubjectChart/">Letter Bar Chart by Letter Subject</a></st>- Uses texual analysis to shows the subjects of letters over each decade</p>
-				</div>
-				<!-- <div class="col-md-6">
-					<a href="/FamilyTravels/"><img name="family-travels" class="img-responsive" src="{{STATIC_URL}}images/other_images/familyTravels.png"></a>
-					<p> <st><a href="/FamilyTravels/">Family Travels Map</a></st> - Uses data collected through mentions of travel in the collection of letters and the post cards in Clementine Cope's scrapbook, while plotting them over each decade</p>
-				</div>
-			</div>  small-vizzes row 1 -->
-			<div class="row">
-				<div class="col-md-6">
-					<a href="/PageRank/"><img name="page-rank" class="img-responsive" src="{{STATIC_URL}}images/other_images/pageRank.png"></a>
-					<p>  <st> <a href="/PageRank/">Important People Network</a></st> - Uses a PageRank formula to shows the major actors and their prominence in the letter network</p>
-				</div>
-				<div class="col-md-6">
-					<a href="/dendro/364/"><img name="dendro" class="img-responsive" src="{{STATIC_URL}}images/other_images/familyTree.png"></a>
-					<p>   <st><a href="/dendro/364/">Family Tree</st></a> - A horizontally oriented representation of the Cope family tree.</p>
-				</div>
-			</div> <!-- small-vizzes row 3 -->			
-		</div> <!-- small-vizzes -->
-	</div> <!-- row -->
-</div> <!-- container -->
-  </p>  
-    <h2>Additional Features</h2>
-    <p><st><a href="/page/philadelphia/#timeline">Timeline of Inventions of the Industrial Revolution</a></st></p>
-    <p><st><a href="/page/philadelphia/#timelapse">Philadelphia Street Timelapse</a></st></p>
-	<p><st><a href="/page/life/#clementine">Clementine Cope's Virtual Scrapbook</a><st></p>
-    <p><st><a href="/page/transformation/#text">Textual Analysis of Thee and Thy</a></st></p>
-    <p></p>
-    <p></p>
+		<div class = "col-md-5 col-md-offset-1">
+			 <br>
+        		 <br>
+			  <br>
+			<br>
+			<a href="/SubjectChart/"><img width = "350px" name="subject-chart" class="img-responsive" src="{{STATIC_URL}}images/other_images/SubjectChart.png"></a>
+				<p><a href="/SubjectChart/">Letter Bar Chart by Letter Subject</a> Uses texual analysis to shows the subjects of letters over each decade</p>
+</div>
+</div>
+<div class = "row">
+	<div class = "col-md-5 col-md-offset-1">
+		<a href="/dendro/364/"><img width = "350px" name="dendro" class="img-responsive" src="{{STATIC_URL}}images/other_images/familyTree.png"></a>
+				<p>   <a href="/dendro/364/">Family Tree</a> A horizontally oriented representation of the Cope family tree.</p>
+	</div>
+	<div class = "col-md-5 col-md-offset-1">
+		<a href="/PageRank/"><img width = "350px" name="page-rank" class="img-responsive" src="{{STATIC_URL}}images/other_images/pageRank.png"></a>
+				<p> <a href="/PageRank/">Important People Network</a> Uses a PageRank formula to shows the major actors and their prominence in the letter network</p>
+
+	</div>
+</div>
+<br>
+</div>
+</div>
+
+<div class = "container">
+<div class = "row">
+<div class = "col-md-6 col-md-offset-4 col-sm-6 col-sm-offset-3">
+<h2>Additional Features</h2>
+<p><st><a href="/page/philadelphia/#timeline">Timeline of Inventions of the Industrial Revolution</a></st></p>
+<p><st><a href="/page/philadelphia/#timelapse">Philadelphia Street Timelapse</a></st></p>
+<p><st><a href="/page/life/#clementine">Clementine Cope's Virtual Scrapbook</a><st></p>
+<p><st><a href="/page/transformation/#text">Textual Analysis of Thee and Thy</a></st></p>
+<br>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -89,17 +89,27 @@
   ga('create', 'UA-45185227-6', 'auto');
   ga('send', 'pageview');
 </script>
-   <h2>Contact Us</h2>
-<div class=contact details>
-<address>
-		  <a href="http://ds.haverford.edu" target="_blank">Digital Scholarship</a><br>
+
+  
+<div style = "background-color: black;">
+<br>
+		  <p style = "color: white;margin: 0;" class = "text-center"><a style = "color:white;" href="http://ds.haverford.edu" target="_blank">Digital Scholarship</a><br>
 		  Haverford College Libraries<br>
                   370 Lancaster Avenue<br>
 		  Haverford, PA 19041<br>
-                  <a href="mailto:hcdigitalscholarship@gmail.com">hcdigitalscholarship@gmail.com</a><br>
+                  <a style = "color: white;" href="mailto:hcdigitalscholarship@gmail.com">hcdigitalscholarship@gmail.com</a><br></p>
+<br>
 </div>
 
 	{% include "bottom_javascript.html" %}
-
+	<script>
+		$(function() {
+    $('#nav-wrapper').height($("#nav").height());
+    
+    $('#nav').affix({
+        offset: { top: $('#nav').offset().top }
+    });
+});
+	</script>
 </body>    
 </html>
