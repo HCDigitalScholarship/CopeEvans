@@ -134,9 +134,11 @@ def dendro(request, person):
 	    person = Person.objects.filter(id=person)[0]
 	    final = findChildren(person)
 	    # If the person has a known partner, the try will work
+	    birth_date = getBirthDate(person)
+	    death_date = getDeathDate(person)
 	    try:
 	        partner = Partner.objects.filter(partner_1=person)[0]
-	        starter = {"Cope Member":person.name,"Birth":person.birth, "Death":person.death, "Partner":partner.partner_2.name, "children":final, "id":person.id}
+	        starter = {"Cope Member":person.name,"Birth":birth_date, "Death":death_date, "Partner":partner.partner_2.name, "children":final, "id":person.id}
 	    # Otherwise partner will be filled in as unknown
 	    except:
 	        starter = {"Cope Member":person.name, "Birth":person.birth, "Death":person.death, "Partner":"Unkown", "children":final, "id":person.id}
@@ -167,15 +169,30 @@ def findChildren(root):
     temp_list = []
     for child in children_list:
 	children = findChildren(child.child)
+	birth_date = getBirthDate(child.child)
+	death_date = getDeathDate(child.child)
 	try:
 	    partner = Partner.objects.filter(partner_1=child.child)[0]
-	    child_object = {"Cope Member":child.child.name, "Birth": child.child.birth, "Death":child.child.death, "Partner":partner.partner_2.name, "children":children, "id":child.child.id}
+
+	    child_object = {"Cope Member":child.child.name, "Birth": birth_date, "Death":death_date, "Partner":partner.partner_2.name, "children":children, "id":child.child.id}
 	except:
 	    child_object = {"Cope Member":child.child.name, "Birth": child.child.birth, "Death":child.child.death, "Partner":"Unknown", "children":children, "id":child.child.id}
 	    
 	temp_list.append(child_object)
 
     return temp_list
+
+def getBirthDate(person):
+    birth_date = person.birth
+    if birth_date == "" or birth_date == None:
+        birth_date = "Unknown"
+    return birth_date
+
+def getDeathDate(person):
+    death_date = person.death
+    if death_date == "" or death_date == None:
+        death_date = "Unknown"
+    return death_date
 
 ############ END DENDROGRAM HELPER FUNCTIONS ############################
 def frequency(request, person):
