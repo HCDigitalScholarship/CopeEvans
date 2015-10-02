@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Symptoms chart</title>
+        {% include "top_links.html" %}
+        {% include "libraries.html" %}
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" defer>
+        <link href="{{STATIC_URL}}css/barChart/main.css" rel="stylesheet" type="text/css" defer>
+        <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js" defer></script>
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+        <script src="{{STATIC_URL}}js/barChart/healthSymptomsGraph.js" rel="javascript" defer></script>
+    </head>
+    <body>
+        {% include "menu.html" %}
+        <svg class="healthSymptomsGraph">
+        </svg>
+
+        {% include "bottom_javascript.html" %}
+    </body>
+</html>
+

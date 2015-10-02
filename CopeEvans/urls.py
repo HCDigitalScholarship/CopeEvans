@@ -23,4 +23,5 @@ urlpatterns = patterns('',
     url(r'^SubjectChart/$', 'CopeEvans.views_viz.subjectChart', name='subjectChart'),
     url(r'^FamilyTravels/$', 'CopeEvans.views_viz.travels', name='Family Travels'),
     url(r'^TravelInfo/$', 'CopeEvans.views_viz.travels', name='Travels Info'),
+    url(r'^HealthSymptoms/$', 'CopeEvans.views_viz.healthSymptoms', name='Health Symptoms'),
 )

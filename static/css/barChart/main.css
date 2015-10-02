@@ -54,3 +54,18 @@ margin:10px;
 padding:5px;
 cursor:pointer;
 }
+
+.healthSymptomsGraph {
+float:left;
+}
+
+/*
+.healthSymptomsGraph rect {
+fill: steelblue;
+}
+
+.healthSymptomsGraph text {
+fill: white;
+font: 10px sans-serif;
+text-anchor: end;
+}*/
