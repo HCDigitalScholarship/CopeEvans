@@ -1,0 +1,101 @@
+<html>
+<head>
+    <title>Cope Evan's Family Project</title>
+    {% include "top_links.html" %}
+    <link href="{{STATIC_URL}}css/index.css" rel="stylesheet" type="text/css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+	$(document).ready(function() {
+	    $(window).scroll(function() {
+		if ($("nav").offset().top - $(window).scrollTop() < 0) {
+		    $("nav").css("position","fixed");
+		    $("nav").css("top","0");
+		}
+		else if ($(window).scrollTop() < 150) {
+		    $("nav").css("position","relative");
+		}
+	    });
+	});
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+	<div id="title">
+	The Cope Evans Project:
+	</div>
+	<div id="subtitle">
+	A History of Quaker Networks During the Industrial Age
+	</div>
+    </div>
+    {% include "menu.html" %}
+    <div id="content">
+    <h3>Hello! What is The Cope Evans Project?</h3>
+</body>
+  <blockquote>The Cope Evans Project is an undergraduate Digital Humanities project supported by Haverford Libraries through the Quaker & Special Collections and Digital Scholarship Departments. This academic project is based on a collection of family papers, The Cope Evans Papers, that was generously donated to the school's Quaker & Special Collections. </blockquote>
+    <p>Rather than writing an academic paper or digitizing more material, we set out to make a virtual exhibit of our research, data visualizations, and analyses. Throughout these pages you will see images of the collection's materials, most notably the letterheads that are featured as some of the backgrounds. Other important attributes of this project are data visualizations that were developed from data collected within the digitized collection. 
+     </p>   <p>
+These visualizations are both exploratory and argumentative, so please feel free to click on the visualizations and play around!  While you are navigating through the website, you will notice that most names are underlined. If you click on one of these names, a drop down menu will appear underneath their name with a list of visualizations that are connected to that person. To select a visualization, simply click on the name within the menu. This functionality carries on even within visualizations in order to make navigation between visualizations easier. Our hope is that while exploring the site, you will begin to create your own narrative about the Cope and Evans family, as you begin to recognize all the members of the Cope and Evans families, and see just how intertwined each actor is to the larger story.</p>
+    
+    
+  <p> <h3>Features</h3>    
+<p> <p> 
+<div class="container">
+	<div class="row">
+		<div class="col-md-6 col-sm-12">
+			<div class="row">
+				<a href="/cope/letterNetwork/"><img name="letter-map" class="img-responsive" src="{{STATIC_URL}}images/other_images/letterNetwork.png"></a>
+			</div>
+			<div class="row">
+				<p>   <st><a href="/cope/letterNetwork/">Letter Map</st></a> Uses geographical data of each writer and recipient of the letter and plots it on a map to show the complete breadth of this extensive network. </p>
+			</div>
+		</div>
+		<div class="col-md-6" name="small-vizzes">
+			<div class="row">
+				<div class="col-md-6">
+					<a href="/cope/SubjectChart/"><img name="subject-chart" class="img-responsive" src="{{STATIC_URL}}images/other_images/SubjectChart.png"></a>
+					<p>  <st> <a href="/cope/SubjectChart/">Letter Bar Chart by Letter Subject</a></st>- Uses texual analysis to shows the subjects of letters over each decade</p>
+				</div>
+				<div class="col-md-6">
+					<a href="/cope/FamilyTravels/"><img name="family-travels" class="img-responsive" src="{{STATIC_URL}}images/other_images/familyTravels.png"></a>
+					<p> <st><a href="/cope/FamilyTravels/">Family Travels Map</a></st> - Uses data collected through mentions of travel in the collection of letters and the post cards in Clementine Cope's scrapbook, while plotting them over each decade</p>
+				</div>
+			</div> <!-- small-vizzes row 1 -->
+			<div class="row">
+				<div class="col-md-6">
+					<a href="/cope/PageRank/"><img name="page-rank" class="img-responsive" src="{{STATIC_URL}}images/other_images/pageRank.png"></a>
+					<p>  <st> <a href="/cope/PageRank/">Important People Network</a></st> - Uses a PageRank formula to shows the major actors and their importance in the letter CATS network</p>
+				</div>
+				<div class="col-md-6">
+					<a href="/cope/dendro/364/"><img name="dendro" class="img-responsive" src="{{STATIC_URL}}images/other_images/familyTree.png"></a>
+					<p>   <st><a href="/cope/dendro/364/">Family Tree</st></a> - A horizontally oriented representation of the Cope family tree.</p>
+				</div>
+			</div> <!-- small-vizzes row 3 -->			
+		</div> <!-- small-vizzes -->
+	</div> <!-- row -->
+</div> <!-- container -->
+ 
+  	
+ 	
+    
+	
+  </p>  
+    <h6>Other Features</h6>
+    <p><st><a href="/cope/page/3/#timeline">Timeline of Inventions of the Industrial Revolution</a></st></p>
+    <p><st><a href="/cope/page/3/#timelapse">Philadelphia Street Timelapse</a></st></p>
+	<p><st><a href="/cope/page/5/#scrapbook">Clementine Cope's Virtual Scrapbook</a><st></p>
+    <p><st><a href="/cope/page/5/#thee_thy">Textual Analysis of Thee and Thy</a></st></p>
+    <p></p>
+    <p></p>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45185227-6', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  {% include "bottom_javascript.html" %}
+</body>    
+</html>
