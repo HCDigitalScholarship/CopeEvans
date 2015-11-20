@@ -1,113 +1,354 @@
-
-<html>
-<head>
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
     <title>The Cope Evans Project</title>
-    {% include 'top_links.html' %}
-    <link href="{{STATIC_URL}}css/index.css" rel="stylesheet" type="text/css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script>
-	$(document).ready(function() {
-	    $(window).scroll(function() {
-		if ($("nav").offset().top - $(window).scrollTop() < 0) {
-		    $("nav").css("position","fixed");
-		    $("nav").css("top","0");
-		}
-		else if ($(window).scrollTop() < 150) {
-		    $("nav").css("position","relative");
-		}
-	    });
-	});
-    </script>
-</head>
-<body>
-<div class="background-image-overlay"></div>
-<div id="outer-background-container" data-default-background-img="C:/home/digitalscholarship/Documents/repos/Cope-ve/CopeEvans/other_images/Founders_Hall.jpg" style="position: fixed; z-index: -2; background: none;"> 
-<div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 619px; width: 705px; z-index: -999998; position: abosolute;">
-<img src="C:/home/digitalscholarship/Documents/repos/Cope-ve/CopeEvans/other_images/Founders_Hall.jpg"
-style="position: absolute; margin: 0px; padding: 0px; border: none; width: 1263px; height: 859.741px; max-height: none; max-width: none; z-index: -999999; left: 0px; top: -142.37px;"
+<!-- Bootstrap core CSS -->
+<link href="{{STATIC_URL}}css/bootstrap-mine.css" rel="stylesheet">
+<!-- Bootstrap theme -->
+
+
+<link href="{{STATIC_URL}}css/bootstrap-theme.min.css" rel="stylesheet">
+<!-- owl carousel css -->
+<link href="{{STATIC_URL}}css/owl.carousel.css" rel="stylesheet">
+<link href="{{STATIC_URL}}css/owl.theme.css" rel="stylesheet">
+<link href="{{STATIC_URL}}css/owl.transitions.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="{{STATIC_URL}}css/styles.css" rel="stylesheet">
+
+<!-- Custom styles for Cope Evans -->
+<link href="{{STATIC_URL}}css/custom.css" rel="stylesheet">
+<script async="" src="file://www.google-analytics.com/analytics.js"></script><script async="" src="file://www.google-analytics.com/analytics.js"></script><script async="" src="file://www.google-analytics.com/analytics.js"></script><script async="" src="file://www.google-analytics.com/analytics.js"></script><script async="" src="file://www.google-analytics.com/analytics.js"></script><script async="" src="file://www.google-analytics.com/analytics.js"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45185227-6', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+
+  </head>
+ {% include 'menu.html' %}
+
+<div class="spacer"></div>
+
+  
+    <!-- background image overlay (semi transparent dark background image overlay) -->
+    <!-- comment or remove if you don't want the overlay on top of the image -->
+    <div class="background-image-overlay"></div>
+
+    <!-- outer background container - the element from where the default page background image is set, and the element which changes its background when scrolling through other sections (.section-wrapoer) that have attribute "data-custom-background-img" set. 
+     - data-default-background-img attr is required for sections (.section-wrapper) below that have no custom background defined.
+     - use same image in the backstretch.js code in the footer for IE8 or less browsers -->
+    <div id="outer-background-container" data-default-background-img="/static/images/other_images/White-Background-Xtra.jpg" style="background: transparent none repeat scroll 0% 0%; position: fixed; z-index: -2;"><div style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 798px; width: 1838px; z-index: -999998; position: absolute;" class="backstretch"><img src="/static/images/other_images/Founders_Hall.jpg" style="position: absolute; margin: 0px; padding: 0px; border: medium none; width: 1838px; height: 1339.94px; max-height: none; max-width: none; z-index: -999999; left: 0px; top: -370.97px;"></img>
 </div>
 </div>
+    <!-- end: #outer-background-container -->    
 
-    {% include 'menu.html' %}
-    <div id="wrapper">
-	<div id="title">
-	The Cope Evans Project:
-	</div>
-	<div id="subtitle">
-	 A Quaker Family in an Era of American Reform and Innovation, 1827-1910
-	</div>
-    </div>
-    <div id="content">
-    <h2>Hello! What is The Cope Evans Project?</h2>
+    <!-- Outer Container -->
+    <div id="outer-container" style="opacity: 1;">
 
-<p>In the summer of 2014, three Haverford College students, Cormac Quinn Rada ('17), Brandon Smith ('16), and Andrew Kafker ('17), conducted archival research in the <a href="http://www.haverford.edu/library/special/aids/copeevans/"> Cope Evans Family Papers </a> for their digital project titled “The Cope Evans Project: A History of Quaker Networks During the Industrial Age.” Exploring the argument and themes of Philip S. Benjamin’s influential work <i>The Philadelphia Quakers in the Industrial Age, 1865-1920</i> (1978), the students documented the numerous social, cultural, economic, and political changes that the Cope family, a prominent Quaker family in Philadelphia, faced during a period of rapid industrialization and urbanization in America. According to Benjamin, during this period the development of a national culture that valued individualism, competition in the marketplace and the accumulation of wealth, and progress ran counter to Quaker principles of community, egalitarianism, and simplicity. Quakerism had already undergone a radical transformation in the 1820s which resulted in separations within the Society of Friends. How would Quaker identity and distinctiveness fare in the face of a rising national culture and religious secularization during the Industrial Age?  How would Quakers adapt their principles to address the concerns of a rapidly changing city? How would they reconcile their religious principles with their participation in Philadelphia’s  growing industries? (Benjamin, vii-ix).</p>
+      <!-- Left Sidebar -->
+     <!--  <section id="left-sidebar">
+
+        <!-- Menu Icon for smaller viewports -->
+        <!-- <div id="mobile-menu-icon" class="visible-xs" onClick="toggle_main_menu();"><span class="glyphicon glyphicon-th"></span></div>  -->
+
+        <!-- ==================================================================
+        MAIN MENU 
+        ==================================================================  -->
+        <!-- Each menu item links to a section (<article class="section-wrapper...") in the main content below.
+             - set each <li> id to this format: "menu-item-[the id of the .section-wrapper to link to]".
+             - set href of each <a> to the id of the .section-wrapper to link to -->
+        <!-- <ul id="main-menu">
+          <li class = "text-center"id="menu-item-intro" class="menu-item scroll"><a href="#intro">Taylor's Test Page</a></li>
+          <li id="menu-item-industrial" class="menu-item scroll"><a href="#quaker">Quaker Life in Philadelphia</a></li>
+          <li id="menu-item-timeline" class="menu-item scroll"><a href="#timeline">Industrial Revolution Timeline</a></li>
+          <li id="menu-item-timelapse" class="menu-item scroll"><a href="#timelapse">Philadelphia Timelapse</a></li> -->
+          <!-- to include a link which doesn't scroll to a section inside the page, remove the .scroll class from the <li> - example below -->
+          <!-- <li id="menu-item-alt-page" class="menu-item"><a href="http://www.link.com">Outer Link</a></li> -->
+       <!--  </ul> --><!-- #main-menu -->
+        <!-- ==================== END: MAIN MENU ==================== -->
+
+      <!-- </section> --><!-- #left-sidebar -->
+      <!-- end: Left Sidebar -->
+
+      <!-- ==================================================================
+      MAIN CONTENT
+      ==================================================================  -->
+      <!-- all the website sections are contained in the <article> tag with class ".section-wrapper" and a unique id.
+	- to edit / remove / create website sections, you have to handle the content contained in these <article> tags -->
+      <section id="main-content" class="clearfix text-center" style="margin-left:auto;margin-right:auto;padding-left:20%;padding-right:20%;">
+        
+        <!-- ==================== SECTION TYPE: Intro Text ==================== -->
+        <!-- This type of section should contain heading and intro paragraph. It can also include links to other sections -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="intro" class="section-wrapper clearfix active" data-custom-background-img="/static/images/other_images/Founders_Hall.jpg">
+          <div class="content-wrapper clearfix" style="position: static;">
+            <div class="col-sm-12 text-center">
+
+              <!-- Start: Section content to edit -->
+
+                <!-- <p> text in .feature-text is larger  -->
+                <section class="feature-text">
+                  <h1 style="color: #808080;"><b>The Cope Evans Project:</b></h1>
+                  <h4>A Quaker Family in an Era of American Reform and Innovation, 1827-1910</h4>   
+  <p>
+  </p><center>
+    <img src="{{STATIC_URL}}images/other_images/copeevansbooklet_final-27.jpg">
+  </center>
+<p></p>
+		</section>
+			
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Intro Text ==================== -->
+
+ <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+<article id="quaker" class="section-wrapper clearfix" data-custom-background-img="/static/images/other_images/Founders_Hall.jpg">
+          <div class="content-wrapper clearfix" style="position: static;">
+           <!--  <div class="col-sm-10 col-md-9 pull-right"> -->
+            <div class="col-sm-12 text-center">
+              <!-- Start: Section content to edit -->
+                
+  <h2 style="color: #808080;">
+  <b>What is the Cope Evans Project?</b>
+</h2>
+<p> In the summer of 2014, three Haverford College students, Cormac Quinn Rada ('17), Brandon Smith ('16), and Andrew Kafker ('17), conducted archival research in the
+  <a href="http://www.haverford.edu/library/special/aids/copeevans/"> Cope Evans Family Papers </a> for their digital project titled “The Cope Evans Project: A History of Quaker Networks During the Industrial Age.” Exploring the argument and themes of Philip S. Benjamin’s influential work <i>The Philadelphia Quakers in the Industrial Age, 1865-1920</i>  (1978), the students documented the numerous social, cultural, economic, and political changes that the Cope family, a prominent Quaker family in Philadelphia, faced during a period of rapid industrialization and urbanization in America.
+</p><br>
+<p class="text-center">
+  <a class="btn btn-outline-inverse btn-sm" onclick="populate_and_open_modal(event, 'modal-content-10');"href="">Read More</a> 
+</p>
+  
+  <div id="modal-content-10" class="content-to-populate-in-modal" >
+			<p>According to Benjamin, during this period the development of a national culture that valued individualism, competition in the marketplace and the accumulation of wealth, and progress ran counter to Quaker principles of community, egalitarianism, and simplicity. Quakerism had already undergone a radical transformation in the 1820s which resulted in separations within the Society of Friends. How would Quaker identity and distinctiveness fare in the face of a rising national culture and religious secularization during the Industrial Age?  How would Quakers adapt their principles to address the concerns of a rapidly changing city? How would they reconcile their religious principles with their participation in Philadelphia’s  growing industries? (Benjamin, vii-ix). </p>
 <p>Building on Benjamin’s work, which made a substantial contribution to the study of Quakers in America beyond the eighteenth century, The Cope Evans Project explores the above questions by highlighting select manuscripts and images from Haverford Special Collections to place the Cope and Evans families into this larger narrative. The project also showcases interactive data visualizations, including a family tree, a map representing the network of letters, and a letter bar chart, created by the students using materials from the <a href="http://triptych.brynmawr.edu/cdm/landingpage/collection/cope" target="_blank">Cope Evans Family digital collection</a>, including digitized scrapbooks and photographs as well as transcribed letters. Other features include a virtual scrapbook, a time-lapse video, and an interactive timeline. This project serves as an invitation to scholars and researchers to further explore the history of Quakers in nineteenth century Philadelphia. 
 </p>
-<p>The Cope Evans Project is supported by Haverford Libraries through the Quaker & Special Collections and Digital Scholarship Departments. This academic project is based on a collection of family papers, The Cope Evans Papers, that was generously donated to the college's Quaker & Special Collections. The project is funded by the J. Morris and Anne T. Evans Fund. We look forward to continually expanding the scope of this project in the future.</p>   
-</body> 
-<h2>Features</h2>    
-
-<div class="container">
-	<div class="row">
-		<div class="col-md-6 col-sm-12">
-			<div class="row">
-				<a href="/letterNetwork/"><img name="letter-map" class="img-responsive" src="{{STATIC_URL}}images/other_images/letterNetwork.png"></a>
-			</div>
-			<div class="row">
-				<p>   <st><a href="/letterNetwork/">Letter Map</st></a> Uses geographical data of each writer and recipient of the letter and plots it on a map to show the complete breadth of this extensive network. </p>
-			</div>
+<p>
+  The Cope Evans Project is supported by Haverford Libraries through the Quaker &amp; Special Collections and Digital Scholarship Departments. This academic project is based on a collection of family papers, The Cope Evans Papers, that was generously donated to the college's Quaker &amp; Special Collections. The project is funded by the J. Morris and Anne T. Evans Fund. We look forward to continually expanding the scope of this project in the future.
+</p>
 		</div>
-		<div class="col-md-6" name="small-vizzes">
-			<div class="row">
-				<div class="col-md-6">
-					<a href="/SubjectChart/"><img name="subject-chart" class="img-responsive" src="{{STATIC_URL}}images/other_images/SubjectChart.png"></a>
-					<p>  <st> <a href="/SubjectChart/">Letter Bar Chart by Letter Subject</a></st>- Uses texual analysis to shows the subjects of letters over each decade</p>
-				</div>
-				<!-- <div class="col-md-6">
-					<a href="/FamilyTravels/"><img name="family-travels" class="img-responsive" src="{{STATIC_URL}}images/other_images/familyTravels.png"></a>
-					<p> <st><a href="/FamilyTravels/">Family Travels Map</a></st> - Uses data collected through mentions of travel in the collection of letters and the post cards in Clementine Cope's scrapbook, while plotting them over each decade</p>
-				</div>
-			</div>  small-vizzes row 1 -->
-			<div class="row">
-				<div class="col-md-6">
-					<a href="/PageRank/"><img name="page-rank" class="img-responsive" src="{{STATIC_URL}}images/other_images/pageRank.png"></a>
-					<p>  <st> <a href="/PageRank/">Important People Network</a></st> - Uses a PageRank formula to shows the major actors and their prominence in the letter network</p>
-				</div>
-				<div class="col-md-6">
-					<a href="/dendro/364/"><img name="dendro" class="img-responsive" src="{{STATIC_URL}}images/other_images/familyTree.png"></a>
-					<p>   <st><a href="/dendro/364/">Family Tree</st></a> - A horizontally oriented representation of the Cope family tree.</p>
-				</div>
-			</div> <!-- small-vizzes row 3 -->			
-		</div> <!-- small-vizzes -->
-	</div> <!-- row -->
-</div> <!-- container -->
-  </p>  
-    <h2>Additional Features</h2>
-    <p><st><a href="/page/philadelphia/#timeline">Timeline of Inventions of the Industrial Revolution</a></st></p>
+
+
+
+
+
+                <!-- to make a popup/modal link add an onClick function call to the function: 
+                     - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+                
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+                     - it is important to set a unique id -->
+				
+
+              <!-- End: Section content to edit --> 
+              
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
+
+        <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="features" class="section-wrapper clearfix" data-custom-background-img="/static/images/other_images/letter.jpg">
+          <div class="content-wrapper clearfix" style="position: static;">
+           <!--  <div class="col-sm-10 col-md-9 pull-right"> -->
+            <div class="col-sm-12 text-center">
+
+              <!-- Start: Section content to edit -->
+
+              <a id="features"></a>
+              <h2 class="section-title" style="color:#808080"><b>Features</b>
+              </h2>
+
+              <p>   <st><a href="/letterNetwork/">Letter Map</a></st> Uses geographical data of each writer and recipient of the letter and plots it on a map to show the complete breadth of this extensive network. </p>
+<div class="row">
+<img name="letter-map" class="img-responsive" src="{{STATIC_URL}}images/other_images/letterNetwork.png">
+</div>
+</a>
+		
+
+               
+                <p>  <st> <a href="/SubjectChart/">Letter Bar Chart by Letter Subject</a></st>- Uses texual analysis to shows the subjects of letters over each decade</p>
+<div class="row">
+<img name="subject-chart" class="img-responsive" src="{{STATIC_URL}}images/other_images/SubjectChart.png">
+</div>
+</a>
+
+
+<p><st> <a href="/PageRank/">Important People Network</a></st> - Uses a PageRank formula to shows the major actors and their prominence in the letter network</p>
+<div class="row">
+<img name="page-rank" class="img-responsive" src="{{STATIC_URL}}images/other_images/pageRank.png">
+</div>
+</a>
+
+<p class="text-center">   <st><a href="/dendro/364/">Family Tree</a></st> - A horizontally oriented representation of the Cope family tree.</p>
+<div class="row">
+<img name="dendro" class="img-responsive" src="{{STATIC_URL}}images/other_images/familyTree.png">
+</div>
+</a>
+
+<br>
+<p class="text-center">
+<a href="" onclick="populate_and_open_modal(event, 'modal-content-11');" class="btn btn-outline-inverse btn-sm">Additional Features</a>
+</p>
+     
+                <!-- to make a popup/modal link add an onClick function call to the function: 
+                     - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+    
+                
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+                     - it is important to set a unique id -->
+                <!-- #modal-content-1 -->
+
+              <!-- End: Section content to edit --> 
+
+            </div>
+<div class="content-to-populate-in-modal" id="modal-content-11">
+			<p><st><a href="/page/philadelphia/#timeline">Timeline of Inventions of the Industrial Revolution</a></st></p>
     <p><st><a href="/page/philadelphia/#timelapse">Philadelphia Street Timelapse</a></st></p>
 	<p><st><a href="/page/life/#clementine">Clementine Cope's Virtual Scrapbook</a><st></p>
     <p><st><a href="/page/transformation/#text">Textual Analysis of Thee and Thy</a></st></p>
     <p></p>
     <p></p>
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-45185227-6', 'auto');
-  ga('send', 'pageview');
-</script>
-   <h2>Contact Us</h2>
-<div class=contact details>
+	</div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
+
+            <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+
+              <!-- Start: Section content to edit -->
+                <!-- to make a popup/modal link add an onClick function call to the function: 
+                     - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+                
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+                     - it is important to set a unique id -->
+                <!-- #modal-content-1 -->
+
+              <!-- End: Section content to edit --> 
+
+            <!-- .col-sm-10 -->
+          <!-- .content-wrapper -->
+        <!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
+        
+        <!-- ==================== SECTION TYPE: Featured Items ==================== -->
+        <!-- This type of section should contain a max. of 3 items each consisting of an image and text. Each item may be linked -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="timelapse" class="section-wrapper clearfix" data-custom-background-img="/static/images/other_images/letter.jpg">
+          <div class="content-wrapper clearfix" style="position: static;">
+          <!--   <div class="col-sm-10 col-md-9 pull-right"> -->
+           <div class="col-sm-12 text-center">
+
+              <!-- Start: Section content to edit -->
+                <a id="contact"></a><h2 class="section-title text-center" style="color:#808080"><b>Contact Us</b></h2>
+              <div class="contact" details="">
 <address>
-		  <a href="http://ds.haverford.edu" target="_blank">Digital Scholarship</a><br>
+		  <a href="http://ds.haverford.edu/" target="_blank">Digital Scholarship</a><br>
 		  Haverford College Libraries<br>
                   370 Lancaster Avenue<br>
 		  Haverford, PA 19041<br>
                   <a href="mailto:hcdigitalscholarship@gmail.com">hcdigitalscholarship@gmail.com</a><br>
-</div>
+</address></div>
+                
+              <!-- End: Section content to edit -->
 
-	{% include "bottom_javascript.html" %}
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Featured Items ==================== -->
+      </section><!-- #main-content -->
+      <!-- ==================== END: MAIN CONTENT ==================== -->
 
-</body>    
-</html>
+      <!-- Footer -->
+      <section id="footer">
+
+        <!-- Go to Top -->
+        <div id="go-to-top" onclick="scroll_to_top();" class=""><span class="icon glyphicon glyphicon-chevron-up"></span></div>
+
+        <!-- copyright text -->
+        <div class="footer-text-line">2015 Twilli | Air theme
+	adapted by <a href="http://ds.haverford.edu/" target="_blank">Haverford Digital Scholarship</a></div>
+      </section>
+      <!-- end: Footer -->      
+
+    </div><!-- #outer-container -->
+    <!-- end: Outer Container -->
+
+    <!-- Modal -->
+    <!-- DO NOT MOVE, EDIT OR REMOVE - this is needed in order for popup content to be populated in it -->
+    <div class="modal fade" id="common-modal" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <div class="modal-body"></div><!-- .modal-body -->
+        </div><!-- .modal-content -->
+      </div><!-- .modal-dialog -->
+    </div><!-- .modal -->    
+  <script src="{{STATIC_URL}}js/jquery-1.10.2.min.js"></script>
+<script src="{{STATIC_URL}}js/bootstrap.min.js"></script>
+
+<!-- Easing - for transitions and effects -->
+<script src="{{STATIC_URL}}js/jquery.easing.1.3.js"></script>
+
+<!-- background image strech script -->
+<script src="{{STATIC_URL}}js/jquery.backstretch.min.js"></script>
+<!-- background image fix for IE 9 or less
+- use same background as set above to <body> -->
+<!--[if lt IE 9]>
+<script type="text/javascript">
+$(document).ready(function(){
+jQuery("#outer-background-container").backstretch("assets/images/other_images/bg5.jpg");
+});
+</script> 
+<![endif]-->  
+
+<!-- detect mobile browsers -->
+<script src="{{STATIC_URL}}js/detectmobilebrowser.js"></script>
+
+<!-- owl carousel js -->
+<script src="{{STATIC_URL}}js/owl.carousel.min.js"></script>
+
+<!-- Custom functions for this theme -->
+<script src="{{STATIC_URL}}js/functions.js"></script>
+<script src="{{STATIC_URL}}js/initialise-functions.js"></script>
+<script type="text/javascript" src="{{STATIC_URL}}js/jquery.imBookFlip-1.2.js"></script>
+
+<script src="{{STATIC_URL}}js/custom.js"></script>
+<!-- IE9 form fields placeholder fix -->
+<!--[if lt IE 9]>
+<script>contact_form_IE9_placeholder_fix();</script>
+<![endif]-->  
+ 
+  
+
+</body></html>

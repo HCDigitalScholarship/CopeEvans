@@ -51,7 +51,9 @@
     <!-- outer background container - the element from where the default page background image is set, and the element which changes its background when scrolling through other sections (.section-wrapoer) that have attribute "data-custom-background-img" set. 
      - data-default-background-img attr is required for sections (.section-wrapper) below that have no custom background defined.
      - use same image in the backstretch.js code in the footer for IE8 or less browsers -->
-    <div id="outer-background-container" data-default-background-img="C:/home/digitalscholarship/Documents/repos/Cope-ve/CopeEvans/other_images/Founders_Hall.jpg" style="position: fixed; z-index: -2; background: none;"><div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 575px; width: 1263px; z-index: -999998; position: absolute;"> <img src="C:/home/digitalscholarship/Documents/repos/Cope-ve/CopeEvans/other_images/Founders_Hall.jpg" style="position: absolute; margin: 0px; padding: 0px; border: none; width: 1263px; height: 859.741px; max-height: none; max-width: none; z-index: -999999; left: 0px; top: -142.37px;"></div></div>
+    <div id="outer-background-container" data-default-background-img="/static/images/other_images/White-Background-Xtra.jpg" style="background: transparent none repeat scroll 0% 0%; position: fixed; z-index: -2;"><div style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 798px; width: 1838px; z-index: -999998; position: absolute;" class="backstretch"><img src="/static/images/other_images/Founders_Hall.jpg" style="position: absolute; margin: 0px; padding: 0px; border: medium none; width: 1838px; height: 1339.94px; max-height: none; max-width: none; z-index: -999999; left: 0px; top: -370.97px;"></img>
+</div>
+</div>
     <!-- end: #outer-background-container -->    
 
     <!-- Outer Container -->
@@ -94,7 +96,7 @@
         <!-- FOR EACH SECTION <article class="section-wrapper".. :
              - remember to use a unique id, 
              - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
-        <article id="intro" class="section-wrapper clearfix active" data-custom-background-img="C:/home/digitalscholarship/Documents/repos/Cope-ve/CopeEvans/other_images/Founders_Hall.jpg">
+        <article id="intro" class="section-wrapper clearfix active" data-custom-background-img="/static/images/other_images/Founders_Hall.jpg">
           <div class="content-wrapper clearfix" style="position: static;">
             <div class="col-sm-12 text-center">
 
@@ -106,7 +108,7 @@
                   <h4>A Quaker Family in an Era of American Reform and Innovation, 1827-1910</h4>   
   <p>
   </p><center>
-    <img src="C:/home/digitalscholarship/Documents/repos/Cope-ve/CopeEvans/other_images/copeevansbooklet_final-27.jpg">
+    <img src="{{STATIC_URL}}images/other_images/copeevansbooklet_final-27.jpg">
   </center>
 <p></p>
 		</section>
@@ -122,7 +124,7 @@
         <!-- FOR EACH SECTION <article class="section-wrapper".. :
              - remember to use a unique id, 
              - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
-<article id="quaker" class="section-wrapper clearfix" data-custom-background-img="C:/home/digitalscholarship/Documents/repos/Cope-ve/CopeEvans/other_images/Founders_Hall.jpg">
+<article id="quaker" class="section-wrapper clearfix" data-custom-background-img="/static/images/other_images/Founders_Hall.jpg">
           <div class="content-wrapper clearfix" style="position: static;">
            <!--  <div class="col-sm-10 col-md-9 pull-right"> -->
             <div class="col-sm-12 text-center">
@@ -135,10 +137,10 @@
   <a href="http://www.haverford.edu/library/special/aids/copeevans/"> Cope Evans Family Papers </a> for their digital project titled “The Cope Evans Project: A History of Quaker Networks During the Industrial Age.” Exploring the argument and themes of Philip S. Benjamin’s influential work <i>The Philadelphia Quakers in the Industrial Age, 1865-1920</i>  (1978), the students documented the numerous social, cultural, economic, and political changes that the Cope family, a prominent Quaker family in Philadelphia, faced during a period of rapid industrialization and urbanization in America.
 </p><br>
 <p class="text-center">
-  <a href="" onclick="populate_and_open_modal(event, &#39;modal-content-4&#39;);" class="btn btn-outline-inverse btn-sm">Read More</a>
+  <a class="btn btn-outline-inverse btn-sm" onclick="populate_and_open_modal(event, 'modal-content-10');"href="">Read More</a> 
 </p>
   
-  <div class="content-to-populate-in-modal" id="modal-content-4">
+  <div id="modal-content-10" class="content-to-populate-in-modal" >
 			<p>According to Benjamin, during this period the development of a national culture that valued individualism, competition in the marketplace and the accumulation of wealth, and progress ran counter to Quaker principles of community, egalitarianism, and simplicity. Quakerism had already undergone a radical transformation in the 1820s which resulted in separations within the Society of Friends. How would Quaker identity and distinctiveness fare in the face of a rising national culture and religious secularization during the Industrial Age?  How would Quakers adapt their principles to address the concerns of a rapidly changing city? How would they reconcile their religious principles with their participation in Philadelphia’s  growing industries? (Benjamin, vii-ix). </p>
 <p>Building on Benjamin’s work, which made a substantial contribution to the study of Quakers in America beyond the eighteenth century, The Cope Evans Project explores the above questions by highlighting select manuscripts and images from Haverford Special Collections to place the Cope and Evans families into this larger narrative. The project also showcases interactive data visualizations, including a family tree, a map representing the network of letters, and a letter bar chart, created by the students using materials from the <a href="http://triptych.brynmawr.edu/cdm/landingpage/collection/cope" target="_blank">Cope Evans Family digital collection</a>, including digitized scrapbooks and photographs as well as transcribed letters. Other features include a virtual scrapbook, a time-lapse video, and an interactive timeline. This project serves as an invitation to scholars and researchers to further explore the history of Quakers in nineteenth century Philadelphia. 
 </p>
@@ -170,7 +172,7 @@
         <!-- FOR EACH SECTION <article class="section-wrapper".. :
              - remember to use a unique id, 
              - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
-        <article id="features" class="section-wrapper clearfix" data-custom-background-img="C:/home/digitalscholarship/Documents/repos/Cope-ve/CopeEvans/other_images/letter.jpg">
+        <article id="features" class="section-wrapper clearfix" data-custom-background-img="/static/images/other_images/letter.jpg">
           <div class="content-wrapper clearfix" style="position: static;">
            <!--  <div class="col-sm-10 col-md-9 pull-right"> -->
             <div class="col-sm-12 text-center">
@@ -182,27 +184,35 @@
               </h2>
 
               <p>   <st><a href="/letterNetwork/">Letter Map</a></st> Uses geographical data of each writer and recipient of the letter and plots it on a map to show the complete breadth of this extensive network. </p>
-                <div class="row">
-				<a href="/letterNetwork/"><img name="letter-map" class="img-responsive" src="{{STATIC_URL}}images/other_images/letterNetwork.png"></a>
-			</div>
+<div class="row">
+<img name="letter-map" class="img-responsive" src="{{STATIC_URL}}images/other_images/letterNetwork.png">
+</div>
+</a>
+		
 
                
                 <p>  <st> <a href="/SubjectChart/">Letter Bar Chart by Letter Subject</a></st>- Uses texual analysis to shows the subjects of letters over each decade</p>
 <div class="row">
-<a href="/SubjectChart/"><img name="subject-chart" class="img-responsive" src="{{STATIC_URL}}images/other_images/SubjectChart.png"></a>
+<img name="subject-chart" class="img-responsive" src="{{STATIC_URL}}images/other_images/SubjectChart.png">
+</div>
+</a>
 
 
 <p><st> <a href="/PageRank/">Important People Network</a></st> - Uses a PageRank formula to shows the major actors and their prominence in the letter network</p>
 <div class="row">
-<a href="/PageRank/"><img name="page-rank" class="img-responsive" src="{{STATIC_URL}}images/other_images/pageRank.png"></a>
+<img name="page-rank" class="img-responsive" src="{{STATIC_URL}}images/other_images/pageRank.png">
+</div>
+</a>
 
-<p>   <st><a href="/dendro/364/">Family Tree</a></st> - A horizontally oriented representation of the Cope family tree.</p>
+<p class="text-center">   <st><a href="/dendro/364/">Family Tree</a></st> - A horizontally oriented representation of the Cope family tree.</p>
 <div class="row">
-<a href="/dendro/364/"><img name="dendro" class="img-responsive" src="{{STATIC_URL}}images/other_images/familyTree.png"></a>
+<img name="dendro" class="img-responsive" src="{{STATIC_URL}}images/other_images/familyTree.png">
+</div>
+</a>
 
 <br>
 <p class="text-center">
-  <a href="" onclick="populate_and_open_modal(event, &#39;modal-content-5&#39;);" class="btn btn-outline-inverse btn-sm">Additional Features</a>
+<a href="" onclick="populate_and_open_modal(event, 'modal-content-11');" class="btn btn-outline-inverse btn-sm">Additional Features</a>
 </p>
      
                 <!-- to make a popup/modal link add an onClick function call to the function: 
@@ -216,7 +226,7 @@
               <!-- End: Section content to edit --> 
 
             </div>
-<div class="content-to-populate-in-modal" id="modal-content-5">
+<div class="content-to-populate-in-modal" id="modal-content-11">
 			<p><st><a href="/page/philadelphia/#timeline">Timeline of Inventions of the Industrial Revolution</a></st></p>
     <p><st><a href="/page/philadelphia/#timelapse">Philadelphia Street Timelapse</a></st></p>
 	<p><st><a href="/page/life/#clementine">Clementine Cope's Virtual Scrapbook</a><st></p>
@@ -254,7 +264,7 @@
         <!-- FOR EACH SECTION <article class="section-wrapper".. :
              - remember to use a unique id, 
              - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
-        <article id="timelapse" class="section-wrapper clearfix" data-custom-background-img="C:/home/digitalscholarship/Documents/repos/Cope-ve/CopeEvans/other_images/letter.jpg">
+        <article id="timelapse" class="section-wrapper clearfix" data-custom-background-img="/static/images/other_images/letter.jpg">
           <div class="content-wrapper clearfix" style="position: static;">
           <!--   <div class="col-sm-10 col-md-9 pull-right"> -->
            <div class="col-sm-12 text-center">
