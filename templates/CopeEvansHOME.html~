@@ -46,12 +46,16 @@
   
     <!-- background image overlay (semi transparent dark background image overlay) -->
     <!-- comment or remove if you don't want the overlay on top of the image -->
-    <div class="background-image-overlay"></div>
+    <div class="background-image-overlay">
+</div>
 
     <!-- outer background container - the element from where the default page background image is set, and the element which changes its background when scrolling through other sections (.section-wrapoer) that have attribute "data-custom-background-img" set. 
      - data-default-background-img attr is required for sections (.section-wrapper) below that have no custom background defined.
      - use same image in the backstretch.js code in the footer for IE8 or less browsers -->
-    <div id="outer-background-container" data-default-background-img="/static/images/other_images/White-Background-Xtra.jpg" style="background: transparent none repeat scroll 0% 0%; position: fixed; z-index: -2;"><div style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 798px; width: 1838px; z-index: -999998; position: absolute;" class="backstretch"><img src="/static/images/other_images/Founders_Hall.jpg" style="position: absolute; margin: 0px; padding: 0px; border: medium none; width: 1838px; height: 1339.94px; max-height: none; max-width: none; z-index: -999999; left: 0px; top: -370.97px;"></img>
+    <div id="outer-background-container" data-default-background-img="/static/images/other_images/White-Background-Xtra.jpg" style="background: transparent none repeat scroll 0% 0%; position: fixed; z-index: -2;">
+<div style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 798px; width: 1838px; z-index: -999998; position: absolute;" class="backstretch">
+<img src="/static/images/other_images/Founders_Hall.jpg" style="position: absolute; margin: 0px; padding: 0px; border: medium none; width: 1838px; height: 1339.94px; max-height: none; max-width: none; z-index: -999999; left: 0px; top: -370.97px;">
+</img>
 </div>
 </div>
     <!-- end: #outer-background-container -->    
@@ -106,11 +110,11 @@
                 <section class="feature-text">
                   <h1 style="color: #808080;"><b>The Cope Evans Project:</b></h1>
                   <h4>A Quaker Family in an Era of American Reform and Innovation, 1827-1910</h4>   
-  <p>
-  </p><center>
+<br>  
+<center>
     <img src="{{STATIC_URL}}images/other_images/copeevansbooklet_final-27.jpg">
   </center>
-<p></p>
+<br>
 		</section>
 			
 
@@ -124,21 +128,23 @@
         <!-- FOR EACH SECTION <article class="section-wrapper".. :
              - remember to use a unique id, 
              - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
-<article id="quaker" class="section-wrapper clearfix" data-custom-background-img="/static/images/other_images/Founders_Hall.jpg">
+<article id="quaker" class="section-wrapper clearfix active" data-custom-background-img="/static/images/other_images/Founders_Hall.jpg">
           <div class="content-wrapper clearfix" style="position: static;">
            <!--  <div class="col-sm-10 col-md-9 pull-right"> -->
             <div class="col-sm-12 text-center">
               <!-- Start: Section content to edit -->
                 
-  <h2 style="color: #808080;">
+<section class="feature-text"> 
+ <h1 style="color: #808080;">
   <b>What is the Cope Evans Project?</b>
-</h2>
+</h1>
 <p> In the summer of 2014, three Haverford College students, Cormac Quinn Rada ('17), Brandon Smith ('16), and Andrew Kafker ('17), conducted archival research in the
-  <a href="http://www.haverford.edu/library/special/aids/copeevans/"> Cope Evans Family Papers </a> for their digital project titled “The Cope Evans Project: A History of Quaker Networks During the Industrial Age.” Exploring the argument and themes of Philip S. Benjamin’s influential work <i>The Philadelphia Quakers in the Industrial Age, 1865-1920</i>  (1978), the students documented the numerous social, cultural, economic, and political changes that the Cope family, a prominent Quaker family in Philadelphia, faced during a period of rapid industrialization and urbanization in America.
+  <a href="http://library.haverford.edu/file-id-765"> Cope Evans Family Papers </a> for their digital project titled “The Cope Evans Project: A History of Quaker Networks During the Industrial Age.” Exploring the argument and themes of Philip S. Benjamin’s influential work <i>The Philadelphia Quakers in the Industrial Age, 1865-1920</i>  (1978), the students documented the numerous social, cultural, economic, and political changes that the Cope family, a prominent Quaker family in Philadelphia, faced during a period of rapid industrialization and urbanization in America.
 </p><br>
 <p class="text-center">
-  <a class="btn btn-outline-inverse btn-sm" onclick="populate_and_open_modal(event, 'modal-content-10');"href="">Read More</a> 
+  <a class="btn btn-outline-inverse btn-sm" onclick="populate_and_open_modal(event, 'modal-content-10');" href="">Read More</a> 
 </p>
+</section>
   
   <div id="modal-content-10" class="content-to-populate-in-modal" >
 			<p>According to Benjamin, during this period the development of a national culture that valued individualism, competition in the marketplace and the accumulation of wealth, and progress ran counter to Quaker principles of community, egalitarianism, and simplicity. Quakerism had already undergone a radical transformation in the 1820s which resulted in separations within the Society of Friends. How would Quaker identity and distinctiveness fare in the face of a rising national culture and religious secularization during the Industrial Age?  How would Quakers adapt their principles to address the concerns of a rapidly changing city? How would they reconcile their religious principles with their participation in Philadelphia’s  growing industries? (Benjamin, vii-ix). </p>
@@ -172,7 +178,7 @@
         <!-- FOR EACH SECTION <article class="section-wrapper".. :
              - remember to use a unique id, 
              - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
-        <article id="features" class="section-wrapper clearfix" data-custom-background-img="/static/images/other_images/letter.jpg">
+        <article id="features" class="section-wrapper clearfix active" data-custom-background-img="/static/images/other_images/letter.jpg">
           <div class="content-wrapper clearfix" style="position: static;">
            <!--  <div class="col-sm-10 col-md-9 pull-right"> -->
             <div class="col-sm-12 text-center">
@@ -185,30 +191,24 @@
 
               <p>   <st><a href="/letterNetwork/">Letter Map</a></st> Uses geographical data of each writer and recipient of the letter and plots it on a map to show the complete breadth of this extensive network. </p>
 <div class="row">
-<img name="letter-map" class="img-responsive" src="{{STATIC_URL}}images/other_images/letterNetwork.png">
+<a href="/letterNetwork/"><img name="letter-map" class="img-responsive" src="{{STATIC_URL}}images/other_images/letterNetwork.png"></a>
 </div>
-</a>
+<br>
+
 		
 
                
                 <p>  <st> <a href="/SubjectChart/">Letter Bar Chart by Letter Subject</a></st>- Uses texual analysis to shows the subjects of letters over each decade</p>
 <div class="row">
-<img name="subject-chart" class="img-responsive" src="{{STATIC_URL}}images/other_images/SubjectChart.png">
+<a href="/SubjectChart/"><img name="subject-chart" class="img-responsive" src="{{STATIC_URL}}images/other_images/SubjectChart.png"></a>
 </div>
-</a>
+<br>
 
-
-<p><st> <a href="/PageRank/">Important People Network</a></st> - Uses a PageRank formula to shows the major actors and their prominence in the letter network</p>
+<p><st> <a href="/dendro/364/">Family Tree</a></st> - A horizontally oriented representation of the Cope family tree.</p>
 <div class="row">
-<img name="page-rank" class="img-responsive" src="{{STATIC_URL}}images/other_images/pageRank.png">
+<a href="/dendro/364/"><img name="dendro" class="img-responsive" src="{{STATIC_URL}}images/other_images/familyTree.png"></a>
 </div>
-</a>
 
-<p class="text-center">   <st><a href="/dendro/364/">Family Tree</a></st> - A horizontally oriented representation of the Cope family tree.</p>
-<div class="row">
-<img name="dendro" class="img-responsive" src="{{STATIC_URL}}images/other_images/familyTree.png">
-</div>
-</a>
 
 <br>
 <p class="text-center">
@@ -231,8 +231,6 @@
     <p><st><a href="/page/philadelphia/#timelapse">Philadelphia Street Timelapse</a></st></p>
 	<p><st><a href="/page/life/#clementine">Clementine Cope's Virtual Scrapbook</a><st></p>
     <p><st><a href="/page/transformation/#text">Textual Analysis of Thee and Thy</a></st></p>
-    <p></p>
-    <p></p>
 	</div><!-- .col-sm-10 -->
           </div><!-- .content-wrapper -->
         </article><!-- .section-wrapper -->
@@ -264,7 +262,7 @@
         <!-- FOR EACH SECTION <article class="section-wrapper".. :
              - remember to use a unique id, 
              - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
-        <article id="timelapse" class="section-wrapper clearfix" data-custom-background-img="/static/images/other_images/letter.jpg">
+        <article id="timelapse" class="section-wrapper clearfix active" data-custom-background-img="/static/images/other_images/letter.jpg">
           <div class="content-wrapper clearfix" style="position: static;">
           <!--   <div class="col-sm-10 col-md-9 pull-right"> -->
            <div class="col-sm-12 text-center">
@@ -314,14 +312,15 @@
         </div><!-- .modal-content -->
       </div><!-- .modal-dialog -->
     </div><!-- .modal -->    
-  <script src="{{STATIC_URL}}js/jquery-1.10.2.min.js"></script>
-<script src="{{STATIC_URL}}js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script> 
+  <script src="/static/js/jquery-1.10.2.min.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
 
 <!-- Easing - for transitions and effects -->
-<script src="{{STATIC_URL}}js/jquery.easing.1.3.js"></script>
+<script src="/static/js/jquery.easing.1.3.js"></script>
 
 <!-- background image strech script -->
-<script src="{{STATIC_URL}}js/jquery.backstretch.min.js"></script>
+<script src="/static/js/jquery.backstretch.min.js"></script>
 <!-- background image fix for IE 9 or less
 - use same background as set above to <body> -->
 <!--[if lt IE 9]>
@@ -333,17 +332,17 @@ jQuery("#outer-background-container").backstretch("assets/images/other_images/bg
 <![endif]-->  
 
 <!-- detect mobile browsers -->
-<script src="{{STATIC_URL}}js/detectmobilebrowser.js"></script>
+<script src="/static/js/detectmobilebrowser.js"></script>
 
 <!-- owl carousel js -->
-<script src="{{STATIC_URL}}js/owl.carousel.min.js"></script>
+<script src="/static/js/owl.carousel.min.js"></script>
 
 <!-- Custom functions for this theme -->
-<script src="{{STATIC_URL}}js/functions.js"></script>
-<script src="{{STATIC_URL}}js/initialise-functions.js"></script>
-<script type="text/javascript" src="{{STATIC_URL}}js/jquery.imBookFlip-1.2.js"></script>
+<script src="/static/js/functions.js"></script>
+<script src="/static/js/initialise-functions.js"></script>
+<script type="text/javascript" src="/static/js/jquery.imBookFlip-1.2.js"></script>
 
-<script src="{{STATIC_URL}}js/custom.js"></script>
+<script src="/static/js/custom.js"></script>
 <!-- IE9 form fields placeholder fix -->
 <!--[if lt IE 9]>
 <script>contact_form_IE9_placeholder_fix();</script>
