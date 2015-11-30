@@ -54,7 +54,7 @@
      - use same image in the backstretch.js code in the footer for IE8 or less browsers -->
     <div id="outer-background-container" data-default-background-img="/static/images/other_images/White-Background-Xtra.jpg" style="background: transparent none repeat scroll 0% 0%; position: fixed; z-index: -2;">
 <div style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 798px; width: 1838px; z-index: -999998; position: absolute;" class="backstretch">
-<img src="/static/images/other_images/Founders_Hall.jpg" style="position: absolute; margin: 0px; padding: 0px; border: medium none; width: 1838px; height: 1339.94px; max-height: none; max-width: none; z-index: -999999; left: 0px; top: -370.97px;">
+<img src="/static/images/other_images/newFounders_Hall.jpg" style="position: absolute; margin: 0px; padding: 0px; border: medium none; width: 1838px; height: 1339.94px; max-height: none; max-width: none; z-index: -999999; left: 0px; top: -370.97px;">
 </img>
 </div>
 </div>
@@ -100,7 +100,7 @@
         <!-- FOR EACH SECTION <article class="section-wrapper".. :
              - remember to use a unique id, 
              - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
-        <article id="intro" class="section-wrapper clearfix active" data-custom-background-img="/static/images/other_images/Founders_Hall.jpg">
+        <article id="intro" class="section-wrapper clearfix active" data-custom-background-img="/static/images/other_images/newFounders_Hall.jpg">
           <div class="content-wrapper clearfix" style="position: static;">
             <div class="col-sm-12 text-center">
 
@@ -128,8 +128,8 @@
         <!-- FOR EACH SECTION <article class="section-wrapper".. :
              - remember to use a unique id, 
              - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
-<article id="quaker" class="section-wrapper clearfix active" data-custom-background-img="/static/images/other_images/Founders_Hall.jpg">
-          <div class="content-wrapper clearfix" style="position: static;">
+<article id="quaker" class="section-wrapper clearfix active" data-custom-background-img="/static/images/other_images/newFounders_Hall.jpg">
+          <div class="content-wrapper clearfix" style="position: relative; top:-10px; right:0px; bottom:-10px; left:0px; ">
            <!--  <div class="col-sm-10 col-md-9 pull-right"> -->
             <div class="col-sm-12 text-center">
               <!-- Start: Section content to edit -->
@@ -138,11 +138,10 @@
  <h1 style="color: #808080;">
   <b>What is the Cope Evans Project?</b>
 </h1>
-<p> In the summer of 2014, three Haverford College students, Cormac Quinn Rada ('17), Brandon Smith ('16), and Andrew Kafker ('17), conducted archival research in the
-  <a href="http://library.haverford.edu/file-id-765"> Cope Evans Family Papers </a> for their digital project titled “The Cope Evans Project: A History of Quaker Networks During the Industrial Age.” Exploring the argument and themes of Philip S. Benjamin’s influential work <i>The Philadelphia Quakers in the Industrial Age, 1865-1920</i>  (1978), the students documented the numerous social, cultural, economic, and political changes that the Cope family, a prominent Quaker family in Philadelphia, faced during a period of rapid industrialization and urbanization in America.
+<p> In the summer of 2014, three Haverford College students, Cormac Quinn Rada ('17), Brandon Smith ('16), and Andrew Kafker ('17), conducted archival research in the <a href="http://library.haverford.edu/file-id-765"> Cope Evans Family Papers </a>for their digital project titled “The Cope Evans Project: A History of Quaker Networks During the Industrial Age.” Exploring the argument and themes of Philip S. Benjamin’s influential work <i>The Philadelphia Quakers in the Industrial Age, 1865-1920</i>  (1978), the students documented the numerous social, cultural, economic, and political changes that the Cope family, a prominent Quaker family in Philadelphia, faced during a period of rapid industrialization and urbanization in America.
 </p><br>
 <p class="text-center">
-  <a class="btn btn-outline-inverse btn-sm" onclick="populate_and_open_modal(event, 'modal-content-10');" href="">Read More</a> 
+  <a class="btn btn-outline-inverse btn-lg" onclick="populate_and_open_modal(event, 'modal-content-10');" href="">Read More</a> 
 </p>
 </section>
   
