@@ -195,10 +195,7 @@
 </div>
 <br>
 
-		
-
-               
-                <p>  <st> <a href="/SubjectChart/">Letter Bar Chart by Letter Subject</a></st>- Uses texual analysis to shows the subjects of letters over each decade</p>
+<p>  <st> <a href="/SubjectChart/">Letter Bar Chart by Letter Subject</a></st>- Uses texual analysis to shows the subjects of letters over each decade</p>
 <div class="row">
 <a href="/SubjectChart/"><img name="subject-chart" class="img-responsive" src="{{STATIC_URL}}images/other_images/SubjectChart.png"></a>
 </div>
@@ -206,7 +203,7 @@
 
 <p><st> <a href="/dendro/364/">Family Tree</a></st> - A horizontally oriented representation of the Cope family tree.</p>
 <div class="row">
-<a href="/dendro/364/"><img name="dendro" class="img-responsive" src="{{STATIC_URL}}images/other_images/familyTree.png"></a>
+<a href="/dendro/364/"><img name="dendro" class="img-responsive" src="{{STATIC_URL}}images/other_images/secondcrop_Screenshot_of_family_tree.png"></a>
 </div>
 
 
