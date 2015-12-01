@@ -6,6 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>The Cope Evans Project</title>
+ {% include "top_links.html" %}
 <!-- Bootstrap core CSS -->
 <link href="{{STATIC_URL}}css/bootstrap-mine.css" rel="stylesheet">
 <!-- Bootstrap theme -->
@@ -22,7 +23,13 @@
 
 <!-- Custom styles for Cope Evans -->
 <link href="{{STATIC_URL}}css/custom.css" rel="stylesheet">
-<script async="" src="file://www.google-analytics.com/analytics.js"></script><script async="" src="file://www.google-analytics.com/analytics.js"></script><script async="" src="file://www.google-analytics.com/analytics.js"></script><script async="" src="file://www.google-analytics.com/analytics.js"></script><script async="" src="file://www.google-analytics.com/analytics.js"></script><script async="" src="file://www.google-analytics.com/analytics.js"></script><script>
+<script async="" src="file://www.google-analytics.com/analytics.js"></script>
+<script async="" src="file://www.google-analytics.com/analytics.js"></script>
+<script async="" src="file://www.google-analytics.com/analytics.js"></script>
+<script async="" src="file://www.google-analytics.com/analytics.js"></script>
+<script async="" src="file://www.google-analytics.com/analytics.js"></script>
+<script async="" src="file://www.google-analytics.com/analytics.js"></script>
+<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -41,20 +48,22 @@
   </head>
  {% include 'menu.html' %}
 
+<body>
 <div class="spacer"></div>
 
   
     <!-- background image overlay (semi transparent dark background image overlay) -->
     <!-- comment or remove if you don't want the overlay on top of the image -->
-    <div class="background-image-overlay">
+   
+ <div class="background-image-overlay">
 </div>
 
     <!-- outer background container - the element from where the default page background image is set, and the element which changes its background when scrolling through other sections (.section-wrapoer) that have attribute "data-custom-background-img" set. 
      - data-default-background-img attr is required for sections (.section-wrapper) below that have no custom background defined.
      - use same image in the backstretch.js code in the footer for IE8 or less browsers -->
     <div id="outer-background-container" data-default-background-img="/static/images/other_images/White-Background-Xtra.jpg" style="background: transparent none repeat scroll 0% 0%; position: fixed; z-index: -2;">
-<div style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 798px; width: 1838px; z-index: -999998; position: absolute;" class="backstretch">
-<img src="/static/images/other_images/newFounders_Hall.jpg" style="position: absolute; margin: 0px; padding: 0px; border: medium none; width: 1838px; height: 1339.94px; max-height: none; max-width: none; z-index: -999999; left: 0px; top: -370.97px;">
+<div style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 1339.94px; width: 1838px; z-index: -999998; position: absolute;" class="backstretch">
+<img src="/static/images/other_images/newFounders_Hall.jpg" style="position: absolute; margin: 0px; padding: 0px; border: medium none; width: 1838px; height: 1339.94px; max-height: none; max-width: none; z-index: -999998; left: 0px; top: -370.97px;">
 </img>
 </div>
 </div>
@@ -101,7 +110,7 @@
              - remember to use a unique id, 
              - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
         <article id="intro" class="section-wrapper clearfix active" data-custom-background-img="/static/images/other_images/newFounders_Hall.jpg">
-          <div class="content-wrapper clearfix" style="position: static;">
+          <div class="content-wrapper clearfix" style="position: static">
             <div class="col-sm-12 text-center">
 
               <!-- Start: Section content to edit -->
@@ -120,7 +129,8 @@
 
             </div><!-- .col-sm-10 -->
           </div><!-- .content-wrapper -->
-        </article><!-- .section-wrapper -->
+        </article>
+<!-- .section-wrapper -->
         <!-- ==================== END: SECTION TYPE: Intro Text ==================== -->
 
  <!-- ==================== SECTION TYPE: Text / Generic ==================== -->

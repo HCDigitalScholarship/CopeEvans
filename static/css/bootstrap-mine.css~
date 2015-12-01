@@ -5899,7 +5899,7 @@ button.close {
 .panel-body:after,
 .modal-footer:before,
 .modal-footer:after {
-  content: " ";
+  content: "";
   display: table;
 }
 .clearfix:after,
@@ -5919,6 +5919,8 @@ button.close {
 .modal-footer:after {
   clear: both;
 }
+
+
 .center-block {
   display: block;
   margin-left: auto;
