@@ -5900,7 +5900,7 @@ button.close {
 .modal-footer:before,
 .modal-footer:after {
   content: "";
-  display: table;
+  display: block;
 }
 .clearfix:after,
 .dl-horizontal dd:after,
@@ -5918,6 +5918,7 @@ button.close {
 .panel-body:after,
 .modal-footer:after {
   clear: both;
+overflow: auto;
 }
 
 

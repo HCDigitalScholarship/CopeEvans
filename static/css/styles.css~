@@ -507,7 +507,7 @@ p {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.18);
     padding:65px 0 0 0;
     /*background: url(../images/theme_images/mobile_section_divider.png) no-repeat center bottom; */
-    background-size:35% auto;             
+    background-size:auto;             
 }
 
 
@@ -661,7 +661,7 @@ h6 {
         #main-content .feature-text .btn-xs { font-size:0.30em; }        
     }
     @media (min-width: 992px) {
-        #main-content .feature-text { font-size:0.85em; }   
+        #main-content .feature-text { font-size:0.84em; }   
     }
     @media (min-width: 1200px) {
 
