@@ -51,23 +51,18 @@
 <body>
 <div class="spacer"></div>
 
-  
+
     <!-- background image overlay (semi transparent dark background image overlay) -->
     <!-- comment or remove if you don't want the overlay on top of the image -->
-   
- <div class="background-image-overlay">
-</div>
 
-    <!-- outer background container - the element from where the default page background image is set, and the element which changes its background when scrolling through other sections (.section-wrapoer) that have attribute "data-custom-background-img" set. 
+ <div class="background-image-overlay"></div>
+
+    <!-- outer background container - the element from where the default page background image is set, and the element which changes its background when scrolling through other sections (.section-wrapoer) that have attribute "data-custom-background-img" set.
      - data-default-background-img attr is required for sections (.section-wrapper) below that have no custom background defined.
      - use same image in the backstretch.js code in the footer for IE8 or less browsers -->
-    <div id="outer-background-container" data-default-background-img="/static/images/other_images/White-Background-Xtra.jpg" style="background: transparent none repeat scroll 0% 0%; position: fixed; z-index: -2;">
-<div style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 1339.94px; width: 1838px; z-index: -999998; position: static;" class="backstretch">
-<img src="/static/images/other_images/newFounders_Hall.jpg" style="position: absolute; margin: 0px; padding: 0px; border: medium none; width: 1838px; height: 1339.94px; max-height: none; max-width: none; z-index: -999998; left: 0px; top: -371.97px;">
-</img>
-</div>
-</div>
-    <!-- end: #outer-background-container -->    
+    <div id="outer-background-container" data-default-background-img="{{STATIC_URL}}images/other_images/White-Background-Xtra.jpg" style="background-image:url({{STATIC_URL}}images/other_images/White-Background-Xtra.jpg);"></div>
+
+    <!-- end: #outer-background-container -->
 
     <!-- Outer Container -->
     <div id="outer-container" style="opacity: 1;">
@@ -79,7 +74,7 @@
         <!-- <div id="mobile-menu-icon" class="visible-xs" onClick="toggle_main_menu();"><span class="glyphicon glyphicon-th"></span></div>  -->
 
         <!-- ==================================================================
-        MAIN MENU 
+        MAIN MENU
         ==================================================================  -->
         <!-- Each menu item links to a section (<article class="section-wrapper...") in the main content below.
              - set each <li> id to this format: "menu-item-[the id of the .section-wrapper to link to]".
@@ -103,13 +98,13 @@
       <!-- all the website sections are contained in the <article> tag with class ".section-wrapper" and a unique id.
 	- to edit / remove / create website sections, you have to handle the content contained in these <article> tags -->
       <section id="main-content" class="clearfix text-center" style="margin-left:auto;margin-right:auto;padding-left:20%;padding-right:20%;">
-        
+
         <!-- ==================== SECTION TYPE: Intro Text ==================== -->
         <!-- This type of section should contain heading and intro paragraph. It can also include links to other sections -->
         <!-- FOR EACH SECTION <article class="section-wrapper".. :
-             - remember to use a unique id, 
+             - remember to use a unique id,
              - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
-        <article id="intro" class="section-wrapper clearfix active" data-custom-background-img="/static/images/other_images/newFounders_Hall.jpg">
+        <article id="intro" class="section-wrapper clearfix; min-height: 75%;" data-custom-background-img="{{STATIC_URL}}images/other_images/newFounders_Hall.jpg">
           <div class="content-wrapper clearfix" style="position: absolute">
             <div class="col-sm-12 text-center">
 
@@ -118,14 +113,14 @@
                 <!-- <p> text in .feature-text is larger  -->
                 <section class="feature-text">
                   <h1 style="color: #808080;"><b>The Cope Evans Project:</b></h1>
-                  <h4>A Quaker Family in an Era of American Reform and Innovation, 1827-1910</h4>   
-<br>  
+                  <h4>A Quaker Family in an Era of American Reform and Innovation, 1827-1910</h4>
+<br>
 <center>
     <img src="{{STATIC_URL}}images/other_images/copeevansbooklet_final-27.jpg">
   </center>
 <br>
 		</section>
-			
+
 
             </div><!-- .col-sm-10 -->
           </div><!-- .content-wrapper -->
@@ -136,28 +131,28 @@
  <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
         <!-- This type of section should contain generic content (text, image, etc) -->
         <!-- FOR EACH SECTION <article class="section-wrapper".. :
-             - remember to use a unique id, 
+             - remember to use a unique id,
              - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
-<article id="quaker" class="section-wrapper clearfix active" data-custom-background-img="/static/images/other_images/newFounders_Hall.jpg">
+<article id="quaker" class="section-wrapper clearfix active" data-custom-background-img="{{STATIC_URL}}images/other_images/newFounders_Hall.jpg">
           <div class="content-wrapper clearfix" style="position: absolute;">
            <!--  <div class="col-sm-10 col-md-9 pull-right"> -->
             <div class="col-sm-12 text-center">
               <!-- Start: Section content to edit -->
-                
-<section class="feature-text"> 
+
+<section class="feature-text">
  <h1 style="color: #808080;">
   <b>What is the Cope Evans Project?</b>
 </h1>
 <p> In the summer of 2014, three Haverford College students, Cormac Quinn Rada ('17), Brandon Smith ('16), and Andrew Kafker ('17), conducted archival research in the <a href="http://library.haverford.edu/file-id-765"> Cope Evans Family Papers </a>for their digital project titled “The Cope Evans Project: A History of Quaker Networks During the Industrial Age.” Exploring the argument and themes of Philip S. Benjamin’s influential work <i>The Philadelphia Quakers in the Industrial Age, 1865-1920</i>  (1978), the students documented the numerous social, cultural, economic, and political changes that the Cope family, a prominent Quaker family in Philadelphia, faced during a period of rapid industrialization and urbanization in America.
 </p><br>
 <p class="text-center">
-  <a class="btn btn-outline-inverse btn-lg" onclick="populate_and_open_modal(event, 'modal-content-10');" href="">Read More</a> 
+  <a class="btn btn-outline-inverse btn-lg" onclick="populate_and_open_modal(event, 'modal-content-10');" href="">Read More</a>
 </p>
 </section>
-  
+
   <div id="modal-content-10" class="content-to-populate-in-modal" >
 			<p>According to Benjamin, during this period the development of a national culture that valued individualism, competition in the marketplace and the accumulation of wealth, and progress ran counter to Quaker principles of community, egalitarianism, and simplicity. Quakerism had already undergone a radical transformation in the 1820s which resulted in separations within the Society of Friends. How would Quaker identity and distinctiveness fare in the face of a rising national culture and religious secularization during the Industrial Age?  How would Quakers adapt their principles to address the concerns of a rapidly changing city? How would they reconcile their religious principles with their participation in Philadelphia’s  growing industries? (Benjamin, vii-ix). </p>
-<p>Building on Benjamin’s work, which made a substantial contribution to the study of Quakers in America beyond the eighteenth century, The Cope Evans Project explores the above questions by highlighting select manuscripts and images from Haverford Special Collections to place the Cope and Evans families into this larger narrative. The project also showcases interactive data visualizations, including a family tree, a map representing the network of letters, and a letter bar chart, created by the students using materials from the <a href="http://triptych.brynmawr.edu/cdm/landingpage/collection/cope" target="_blank">Cope Evans Family digital collection</a>, including digitized scrapbooks and photographs as well as transcribed letters. Other features include a virtual scrapbook, a time-lapse video, and an interactive timeline. This project serves as an invitation to scholars and researchers to further explore the history of Quakers in nineteenth century Philadelphia. 
+<p>Building on Benjamin’s work, which made a substantial contribution to the study of Quakers in America beyond the eighteenth century, The Cope Evans Project explores the above questions by highlighting select manuscripts and images from Haverford Special Collections to place the Cope and Evans families into this larger narrative. The project also showcases interactive data visualizations, including a family tree, a map representing the network of letters, and a letter bar chart, created by the students using materials from the <a href="http://triptych.brynmawr.edu/cdm/landingpage/collection/cope" target="_blank">Cope Evans Family digital collection</a>, including digitized scrapbooks and photographs as well as transcribed letters. Other features include a virtual scrapbook, a time-lapse video, and an interactive timeline. This project serves as an invitation to scholars and researchers to further explore the history of Quakers in nineteenth century Philadelphia.
 </p>
 <p>
   The Cope Evans Project is supported by Haverford Libraries through the Quaker &amp; Special Collections and Digital Scholarship Departments. This academic project is based on a collection of family papers, The Cope Evans Papers, that was generously donated to the college's Quaker &amp; Special Collections. The project is funded by the J. Morris and Anne T. Evans Fund. We look forward to continually expanding the scope of this project in the future.
@@ -168,15 +163,15 @@
 
 
 
-                <!-- to make a popup/modal link add an onClick function call to the function: 
+                <!-- to make a popup/modal link add an onClick function call to the function:
                      - populate_and_open_modal(event, '[id of popup content container - see below]') -->
-                
-                <!-- content which will be shown in the popup/modal when clicking on the above link 
-                     - it is important to set a unique id -->
-				
 
-              <!-- End: Section content to edit --> 
-              
+                <!-- content which will be shown in the popup/modal when clicking on the above link
+                     - it is important to set a unique id -->
+
+
+              <!-- End: Section content to edit -->
+
             </div><!-- .col-sm-10 -->
           </div><!-- .content-wrapper -->
         </article><!-- .section-wrapper -->
@@ -185,7 +180,7 @@
         <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
         <!-- This type of section should contain generic content (text, image, etc) -->
         <!-- FOR EACH SECTION <article class="section-wrapper".. :
-             - remember to use a unique id, 
+             - remember to use a unique id,
              - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
         <article id="features" class="section-wrapper clearfix active" data-custom-background-img="/static/images/other_images/letter.jpg">
           <div class="content-wrapper clearfix" style="position: absolute;">
@@ -220,16 +215,16 @@
 <p class="text-center">
 <a href="" onclick="populate_and_open_modal(event, 'modal-content-11');" class="btn btn-outline-inverse btn-sm">Additional Features</a>
 </p>
-     
-                <!-- to make a popup/modal link add an onClick function call to the function: 
+
+                <!-- to make a popup/modal link add an onClick function call to the function:
                      - populate_and_open_modal(event, '[id of popup content container - see below]') -->
-    
-                
-                <!-- content which will be shown in the popup/modal when clicking on the above link 
+
+
+                <!-- content which will be shown in the popup/modal when clicking on the above link
                      - it is important to set a unique id -->
                 <!-- #modal-content-1 -->
 
-              <!-- End: Section content to edit --> 
+              <!-- End: Section content to edit -->
 
             </div>
 <div class="content-to-populate-in-modal" id="modal-content-11">
@@ -245,31 +240,31 @@
             <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
         <!-- This type of section should contain generic content (text, image, etc) -->
         <!-- FOR EACH SECTION <article class="section-wrapper".. :
-             - remember to use a unique id, 
+             - remember to use a unique id,
              - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
 
               <!-- Start: Section content to edit -->
-                <!-- to make a popup/modal link add an onClick function call to the function: 
+                <!-- to make a popup/modal link add an onClick function call to the function:
                      - populate_and_open_modal(event, '[id of popup content container - see below]') -->
-                
-                <!-- content which will be shown in the popup/modal when clicking on the above link 
+
+                <!-- content which will be shown in the popup/modal when clicking on the above link
                      - it is important to set a unique id -->
                 <!-- #modal-content-1 -->
 
-              <!-- End: Section content to edit --> 
+              <!-- End: Section content to edit -->
 
             <!-- .col-sm-10 -->
           <!-- .content-wrapper -->
         <!-- .section-wrapper -->
         <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
-        
+
         <!-- ==================== SECTION TYPE: Featured Items ==================== -->
         <!-- This type of section should contain a max. of 3 items each consisting of an image and text. Each item may be linked -->
         <!-- FOR EACH SECTION <article class="section-wrapper".. :
-             - remember to use a unique id, 
+             - remember to use a unique id,
              - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
         <article id="timelapse" class="section-wrapper clearfix active" data-custom-background-img="/static/images/other_images/letter.jpg">
-          <div class="content-wrapper clearfix" style="position: static;">
+          <div class="content-wrapper clearfix" style="position: absolute;">
           <!--   <div class="col-sm-10 col-md-9 pull-right"> -->
            <div class="col-sm-12 text-center">
 
@@ -283,7 +278,7 @@
 		  Haverford, PA 19041<br>
                   <a href="mailto:hcdigitalscholarship@gmail.com">hcdigitalscholarship@gmail.com</a><br>
 </address></div>
-                
+
               <!-- End: Section content to edit -->
 
             </div><!-- .col-sm-10 -->
@@ -303,7 +298,7 @@
         <div class="footer-text-line">2015 Twilli | Air theme
 	adapted by <a href="http://ds.haverford.edu/" target="_blank">Haverford Digital Scholarship</a></div>
       </section>
-      <!-- end: Footer -->      
+      <!-- end: Footer -->
 
     </div><!-- #outer-container -->
     <!-- end: Outer Container -->
@@ -317,8 +312,8 @@
           <div class="modal-body"></div><!-- .modal-body -->
         </div><!-- .modal-content -->
       </div><!-- .modal-dialog -->
-    </div><!-- .modal -->    
-<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script> 
+    </div><!-- .modal -->
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
   <script src="/static/js/jquery-1.10.2.min.js"></script>
 <script src="/static/js/bootstrap.min.js"></script>
 
@@ -334,8 +329,8 @@
 $(document).ready(function(){
 jQuery("#outer-background-container").backstretch("assets/images/other_images/bg5.jpg");
 });
-</script> 
-<![endif]-->  
+</script>
+<![endif]-->
 
 <!-- detect mobile browsers -->
 <script src="/static/js/detectmobilebrowser.js"></script>
@@ -352,8 +347,8 @@ jQuery("#outer-background-container").backstretch("assets/images/other_images/bg
 <!-- IE9 form fields placeholder fix -->
 <!--[if lt IE 9]>
 <script>contact_form_IE9_placeholder_fix();</script>
-<![endif]-->  
- 
-  
+<![endif]-->
+
+
 
 </body></html>
