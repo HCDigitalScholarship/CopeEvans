@@ -177,9 +177,13 @@
                 <h2 class="section-title">Symptoms</h2>
 
 
-                <p>How these women describe health suggests gender differences that may reflect the different lives Cope men and women lived. The gendered language is represented by certain words which were used more frequently with women than with men and vice versa.  Women were frequently described as having a cold, exhaustion, or fatigue while men were overwhelmingly diagnosed with fevers and physical illnesses. In "Symptoms by Gender" women had twice as many colds and three times the exhaustion while men had five times as many fevers and all of the broken bones. The differences in the data could be explained by the differences in daily activities.  </p><p><a class="btn btn-outline-inverse btn-lg" onclick="populate_and_open_modal(event, 'modal-content-50');" href=""><img src="{{STATIC_URL}}images/other_images/symptoms_gendered.png"></a> </p>
-<div id= "modal-content-50" class="content-to-populate-in-modal">
-<p><img src="{{STATIC_URL}}images/other_images/symptoms_gendered.png"></p>
+                <p>How these women describe health suggests gender differences that may reflect the different lives Cope men and women lived. The gendered language is represented by certain words which were used more frequently with women than with men and vice versa.  Women were frequently described as having a cold, exhaustion, or fatigue while men were overwhelmingly diagnosed with fevers and physical illnesses. In "Symptoms by Gender" women had twice as many colds and three times the exhaustion while men had five times as many fevers and all of the broken bones. The differences in the data could be explained by the differences in daily activities.  </p>
+<p>
+<a class="img-responsive" onclick="populate_and_open_modal(event, 'modal-content-20');" href=""><img src="{{STATIC_URL}}images/other_images/symptoms_gendered.png" class= "pull-left"></a> 
+</p>
+<div id= "modal-content-20" class="content-to-populate-in-modal">
+<p><img src="{{STATIC_URL}}images/other_images/symptoms_gendered.png" width="1200" height= "400">
+</p>
 </div>
                 <p>For instance, the women lived in similar environments, often away from city life and spent more in their country estates. They tired from the heat and attributed colds to the state of the atmosphere. Their husbands and sons worked in the city and participated in more strenuous activities.  This may be a gender difference in the way they thought about men’s health but it could also reflect that the men were away from the house and that was news that would interest the rest of the family.  Francis R. Cope spent much of his professional life during the summer away from the family.  During his retirement and declining health, he spent all of his time with Anna, and there was an increase in health related events during this time. This was a time when he was with his family for a prolonged period and therefore health was reported very regularly.</p>
 
@@ -235,7 +239,13 @@
                  
 </p>
 		  
-<img src ="/static/images/other_images/symptomsratio_female.png" class="pull-left popover-img"><img src ="/static/images/other_images/symptomsratio_male.png" class="pull-left popover-img">
+<p>
+<a class="img-responsive" onclick="populate_and_open_modal(event, 'modal-content-21');" href=""><img src="{{STATIC_URL}}images/other_images/symptomsratio_female.png" class= "pull-left"></a> 
+</p>
+<div id= "modal-content-21" class="content-to-populate-in-modal">
+<p><img src="{{STATIC_URL}}images/other_images/symptomsratio_female.png" width="750" height= "450">
+</p>
+</div><img src ="/static/images/other_images/symptomsratio_male.png" class="pull-left popover-img">
 <p>Looking at the bar chart, the proportion of specific to vagye symptoms is consistently larger when the symptoms are about the men of the family than when they are about the women. Although the men have their fair share of unspecific symptoms, it is significantly less than the women. Men are mentioned less often than women in general, but they are more likely to have specific symptoms than their female relatives according to the data set. This is an interesting trend with a variety of possible explanations. Men of this time period were involved in physical activities, such as horse riding, sailing, and sports more often than the women. The men in this family travelled extensively and worked frequently, perhaps prompting them to hide their illnesses and injuries until they had progressed far enough to become easily diagnosable. It could be that the three Cope-Evans women writing these letters worried more about the health of the men, since the men were frequently away from home, than they did about their daughters who were often in their company. </p> 
 Regardless of the causes, the data shows that the men’s health is usually more specific from the beginning of the time period studied, 1870, through the end, 1910. The letter volume increases slightly, but the women do not change the way they specify men’s and women’s health. Although the world was changing around these women, their conversations with one another about the family and the family’s health are an area of consistency. 
 </p>

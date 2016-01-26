@@ -931,7 +931,7 @@ margin-right: auto;
   border-radius: 6px;
 }
 .img-thumbnail {
-  padding: 4px;
+  padding: 0px;
   line-height: 1.42857143;
   background-color: #ffffff;
   border: 1px solid #dddddd;
@@ -5918,7 +5918,6 @@ button.close {
 .panel-body:after,
 .modal-footer:after {
   clear: both;
-overflow: auto;
 }
 
 
