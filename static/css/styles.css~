@@ -1460,7 +1460,7 @@ h6 {
             padding:30px 60px;
         }      
     }
-    @media (min-width: 992px) { 
+     @media (min-width: 992px) { 
         .modal .modal-dialog {
             width: 800px;
             margin: 40px auto;
@@ -1472,7 +1472,7 @@ h6 {
         .modal .modal-content .modal-body {
             padding:55px 90px;
         }                   
-    }
+    } 
     @media (min-width: 1200px) {  
     }
 
@@ -1553,7 +1553,7 @@ img.full-width {
         img.pull-left,
         img.pull-right {
             height:auto !important;
-            max-width:45%; 
+            /*max-width:45%;*/ 
             margin-top:10px;          
         } 
         img.pull-left {
