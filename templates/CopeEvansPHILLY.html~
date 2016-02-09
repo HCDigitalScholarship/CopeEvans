@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>The Cope Evans Project</title>
+{% include 'top_links.html' %}
+  </head>
+{% include 'menu.html' %}
+  <body>
+    <!-- background image overlay (semi transparent dark background image overlay) -->
+    <!-- comment or remove if you don't want the overlay on top of the image -->
+    <div class="background-image-overlay"></div>
+
+    <!-- outer background container - the element from where the default page background image is set, and the element which changes its background when scrolling through other sections (.section-wrapoer) that have attribute "data-custom-background-img" set. 
+     - data-default-background-img attr is required for sections (.section-wrapper) below that have no custom background defined.
+     - use same image in the backstretch.js code in the footer for IE8 or less browsers -->
+    <div id="outer-background-container" data-default-background-img="{{STATIC_URL}}images/other_images/White-Background-Xtra.jpg" style="background-image:url({{STATIC_URL}}images/other_images/White-Background-Xtra.jpg);"></div>
+    <!-- end: #outer-background-container -->    
+
+    <!-- Outer Container -->
+    <div id="outer-container">
+
+      <!-- Left Sidebar -->
+      <section id="left-sidebar">
+
+        <!-- Menu Icon for smaller viewports -->
+        <div id="mobile-menu-icon" class="visible-xs" onClick="toggle_main_menu();"><span class="glyphicon glyphicon-th"></span></div>
+
+        <!-- ==================================================================
+        MAIN MENU 
+        ==================================================================  -->
+        <!-- Each menu item links to a section (<article class="section-wrapper...") in the main content below.
+             - set each <li> id to this format: "menu-item-[the id of the .section-wrapper to link to]".
+             - set href of each <a> to the id of the .section-wrapper to link to -->
+        <ul id="main-menu">
+          <li id="menu-item-intro" class="menu-item scroll"><a href="#intro">Philadelphia in the Industrial Age</a></li>
+          <li id="menu-item-industrial" class="menu-item scroll"><a href="#quaker">Quaker Life in Philadelphia</a></li>
+          <li id="menu-item-timeline" class="menu-item scroll"><a href="#timeline">Industrial Revolution Timeline</a></li>
+          <li id="menu-item-timelapse" class="menu-item scroll"><a href="#timelapse">Philadelphia Timelapse</a></li>
+          <!-- to include a link which doesn't scroll to a section inside the page, remove the .scroll class from the <li> - example below -->
+          <!-- <li id="menu-item-alt-page" class="menu-item"><a href="http://www.link.com">Outer Link</a></li> -->
+        </ul><!-- #main-menu -->
+        <!-- ==================== END: MAIN MENU ==================== -->
+
+      </section><!-- #left-sidebar -->
+      <!-- end: Left Sidebar -->
+
+      <!-- ==================================================================
+      MAIN CONTENT
+      ==================================================================  -->
+      <!-- all the website sections are contained in the <article> tag with class ".section-wrapper" and a unique id.
+	- to edit / remove / create website sections, you have to handle the content contained in these <article> tags -->
+      <section id="main-content" class="clearfix">
+        
+        <!-- ==================== SECTION TYPE: Intro Text ==================== -->
+        <!-- This type of section should contain heading and intro paragraph. It can also include links to other sections -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="intro" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/hsc0777_01.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              <!-- Start: Section content to edit -->
+
+                <!-- <p> text in .feature-text is larger  -->
+                <section class="feature-text">
+                  <h2>Philadelphia in the Industrial Age</h2>
+                  <p>The Industrial Age in America radically transformed nearly every aspect of American daily life after the Civil War (1861-1865). Nowhere was this more evident than in Philadelphia, "the first great industrial city" (Beers, 430). However, as new technology and new modes of transportation changed the nature of work and travel, rapid industrialization also led to a wave of social and economic problems.</p> 
+                  <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-3');" class="btn btn-outline-inverse btn-sm">Read More</a></p>
+		</section>
+			<div class="content-to-populate-in-modal" id="modal-content-3">
+			<p>Innovations in transportation and manufacturing accelerated the rate at which goods were produced and distributed, and changed the nature of work. New printing and photographic processes, the invention of the telegraph and telephone, and mass production improved the standard of living for many Americans and connected them to each other in new ways.</p>
+<p>New forms of transportation like the railroad and steamboat were adopted by the city in the nineteenth century, requiring the construction of new bridges, turnpikes, and canals, and the improvement of existing ones. By 1821, eighty five turnpikes had been chartered in the state of Pennsylvania. A network of paved toll roads were developed leading from Philadelphia to New York, Reading, Harrisburg, Lancaster, Baltimore, and into New Jersey (Richardson, 230).</p>
+		</div>
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Intro Text ==================== -->
+
+ <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+<article id="quaker" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/hsc0777_01.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+              <!-- Start: Section content to edit -->
+                  <h2>Quaker Life in Philadelphia</h2>
+<p>In the late nineteenth and early twentieth centuries, "Philadelphia had transformed into an industrial city plagued by crime and local unrest and directed by political professionals who ignored moderation and traditional moral standards" (Benjamin, 73). Urbanization in Philadelphia brought to light a number of issues that became the basis for social and political policies. Educational reform, the rising immigrant population, the status of women and African Americans soon took precedence while the rise of factories led to debates over appropriate work hours, fair wages, and the use of child labor.</p>
+
+<p>Members of the Quaker popluation in the city found themselves in powerful positions as "members of the boards of the city's banks, corporations, and social agencies" (Benjamin, viii). Members of the Cope and Evans families, like many other members of the Quaker community, grew concerned over the "moral climate" of the city (Benjamin, 93).</p>
+
+<p>The subsequent Progressive Era saw a wave of legislation for social reform in the nation’s largest cities, including New York City, Baltimore, and Philadelphia.</p>
+
+
+                <!-- to make a popup/modal link add an onClick function call to the function: 
+                     - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+                
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+                     - it is important to set a unique id -->
+				
+
+              <!-- End: Section content to edit --> 
+              
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
+
+        <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="timeline" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/hsc5256_1.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              <!-- Start: Section content to edit -->
+
+                <a id="timeline"></a><h2 class="section-title">Industrial Revolution Timeline</h2>
+
+                <p class="feature-paragraph"><img data-img-src="" class="lazy pull-right" alt="">Move through this timeline to explore the many revolutionary inventions that changed the way of life during the Industrial Age.</p>
+                <iframe src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0AhM8cb9G345IdFotR1JObGgtYnJKSzFUV1otZy1vV2c&font=Bevan-PotanoSans&maptype=toner&lang=en&height=650' width='100%' height='650' frameborder='0'></iframe></p>
+               
+                <p><a href="#timeline"></a></p>
+     
+                <!-- to make a popup/modal link add an onClick function call to the function: 
+                     - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+    
+                
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+                     - it is important to set a unique id -->
+                <!-- #modal-content-1 -->
+
+              <!-- End: Section content to edit --> 
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
+
+            <!-- ==================== SECTION TYPE: Text / Generic ==================== -->
+        <!-- This type of section should contain generic content (text, image, etc) -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+
+              <!-- Start: Section content to edit -->
+                <!-- to make a popup/modal link add an onClick function call to the function: 
+                     - populate_and_open_modal(event, '[id of popup content container - see below]') -->
+                
+                <!-- content which will be shown in the popup/modal when clicking on the above link 
+                     - it is important to set a unique id -->
+                <!-- #modal-content-1 -->
+
+              <!-- End: Section content to edit --> 
+
+            <!-- .col-sm-10 -->
+          <!-- .content-wrapper -->
+        <!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Text / Generic ==================== -->
+        
+        <!-- ==================== SECTION TYPE: Featured Items ==================== -->
+        <!-- This type of section should contain a max. of 3 items each consisting of an image and text. Each item may be linked -->
+        <!-- FOR EACH SECTION <article class="section-wrapper".. :
+             - remember to use a unique id, 
+             - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
+        <article id="timelapse" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/hsc1186_01.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+              <!-- Start: Section content to edit -->
+                <a id="timelapse"></a><h2 class="section-title">Philadelphia Timelapse</h2>
+              <iframe width="640" height="360" src="//www.youtube.com/embed/e-ktnJ6-EkI" frameborder="0"></iframe>
+                <p>The impact of Philadelphia’s growing population was evident in the changing landscape and architecture of the city.</p>
+              <!-- End: Section content to edit -->
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+        <!-- ==================== END: SECTION TYPE: Featured Items ==================== -->
+      </section><!-- #main-content -->
+      <!-- ==================== END: MAIN CONTENT ==================== -->
+
+      <!-- Footer -->
+      <section id="footer">
+
+        <!-- Go to Top -->
+        <div id="go-to-top" onclick="scroll_to_top();"><span class="icon glyphicon glyphicon-chevron-up"></span></div>
+
+        <!-- copyright text -->
+        <div class="footer-text-line">2015 Twilli | Air theme
+	adapted by <a href="http://ds.haverford.edu" target="_blank">Haverford Digital Scholarship</a></div>
+      </section>
+      <!-- end: Footer -->      
+
+    </div><!-- #outer-container -->
+    <!-- end: Outer Container -->
+
+    <!-- Modal -->
+    <!-- DO NOT MOVE, EDIT OR REMOVE - this is needed in order for popup content to be populated in it -->
+    <div class="modal fade" id="common-modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <div class="modal-body">
+          </div><!-- .modal-body -->
+        </div><!-- .modal-content -->
+      </div><!-- .modal-dialog -->
+    </div><!-- .modal -->    
+  {% include 'bottom_javascript.html' %} 
+  </body>
+</html>

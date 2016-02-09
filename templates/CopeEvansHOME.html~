@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -116,9 +118,9 @@
                   <h4>A Quaker Family in an Era of American Reform and Innovation, 1827-1910</h4>
 <br>
 <center>
-    <img src="{{STATIC_URL}}images/other_images/copeevansbooklet_final-27.jpg">
+    <img src="{{STATIC_URL}}images/other_images/hsc0323_01.jpeg" width=550 height=450>
   </center>
-<br>
+
 		</section>
 
 
@@ -133,18 +135,24 @@
         <!-- FOR EACH SECTION <article class="section-wrapper".. :
              - remember to use a unique id,
              - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
-<article id="quaker" class="section-wrapper clearfix active" data-custom-background-img="{{STATIC_URL}}images/other_images/newFounders_Hall.jpg">
+<article id="whatis" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/newFounders_Hall.jpg">
           <div class="content-wrapper clearfix" style="position: absolute;">
            <!--  <div class="col-sm-10 col-md-9 pull-right"> -->
             <div class="col-sm-12 text-center">
               <!-- Start: Section content to edit -->
 
-<section class="feature-text">
- <h1 style="color: #808080;">
+<section>
+ <h2 style="color: #808080;">
   <b>What is the Cope Evans Project?</b>
-</h1>
+</h2>
 <p> In the summer of 2014, three Haverford College students, Cormac Quinn Rada ('17), Brandon Smith ('16), and Andrew Kafker ('17), conducted archival research in the <a href="http://library.haverford.edu/file-id-765"> Cope Evans Family Papers </a>for their digital project titled “The Cope Evans Project: A History of Quaker Networks During the Industrial Age.” Exploring the argument and themes of Philip S. Benjamin’s influential work <i>The Philadelphia Quakers in the Industrial Age, 1865-1920</i>  (1978), the students documented the numerous social, cultural, economic, and political changes that the Cope family, a prominent Quaker family in Philadelphia, faced during a period of rapid industrialization and urbanization in America.
-</p><br>
+<br>
+<center>
+    <img src="{{STATIC_URL}}images/other_images/hsc0733_02.jpg"
+with=550 height=450>
+  </center>
+</p>
+<br>
 <p class="text-center">
   <a class="btn btn-outline-inverse btn-lg" onclick="populate_and_open_modal(event, 'modal-content-10');" href="">Read More</a>
 </p>
@@ -155,7 +163,7 @@
 <p>Building on Benjamin’s work, which made a substantial contribution to the study of Quakers in America beyond the eighteenth century, The Cope Evans Project explores the above questions by highlighting select manuscripts and images from Haverford Special Collections to place the Cope and Evans families into this larger narrative. The project also showcases interactive data visualizations, including a family tree, a map representing the network of letters, and a letter bar chart, created by the students using materials from the <a href="http://triptych.brynmawr.edu/cdm/landingpage/collection/cope" target="_blank">Cope Evans Family digital collection</a>, including digitized scrapbooks and photographs as well as transcribed letters. Other features include a virtual scrapbook, a time-lapse video, and an interactive timeline. This project serves as an invitation to scholars and researchers to further explore the history of Quakers in nineteenth century Philadelphia.
 </p>
 <p>
-  The Cope Evans Project is supported by Haverford Libraries through the Quaker &amp; Special Collections and Digital Scholarship Departments. This academic project is based on a collection of family papers, The Cope Evans Papers, that was generously donated to the college's Quaker &amp; Special Collections. The project is funded by the J. Morris and Anne T. Evans Fund. We look forward to continually expanding the scope of this project in the future.
+  The Cope Evans Project is supported by Haverford Libraries through the Quaker &amp; Special Collections and Digital Scholarship Departments. This academic project is based on a collection of family papers, The Cope Evans Papers, that was generously donated to the college's Quaker &amp; Special Collections. We look forward to continually expanding the scope of this project in the future.
 </p>
 		</div>
 
@@ -182,7 +190,7 @@
         <!-- FOR EACH SECTION <article class="section-wrapper".. :
              - remember to use a unique id,
              - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
-        <article id="features" class="section-wrapper clearfix active" data-custom-background-img="/static/images/other_images/letter.jpg">
+        <article id="features" class="section-wrapper clearfix" data-custom-background-img="/static/images/other_images/letter.jpg">
           <div class="content-wrapper clearfix" style="position: absolute;">
            <!--  <div class="col-sm-10 col-md-9 pull-right"> -->
             <div class="col-sm-12 text-center">
@@ -263,7 +271,7 @@
         <!-- FOR EACH SECTION <article class="section-wrapper".. :
              - remember to use a unique id,
              - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
-        <article id="timelapse" class="section-wrapper clearfix active" data-custom-background-img="/static/images/other_images/letter.jpg">
+        <article id="information" class="section-wrapper clearfix" data-custom-background-img="/static/images/other_images/letter.jpg">
           <div class="content-wrapper clearfix" style="position: absolute;">
           <!--   <div class="col-sm-10 col-md-9 pull-right"> -->
            <div class="col-sm-12 text-center">
