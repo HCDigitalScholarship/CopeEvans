@@ -51,7 +51,6 @@
  {% include 'menu.html' %}
 
 <body>
-<div class="spacer"></div>
 
 
     <!-- background image overlay (semi transparent dark background image overlay) -->
@@ -67,13 +66,13 @@
     <!-- end: #outer-background-container -->
 
     <!-- Outer Container -->
-    <div id="outer-container" style="opacity: 1;">
+    <div id="outer-container">
 
       <!-- Left Sidebar -->
-     <!--  <section id="left-sidebar">
+      <section id="left-sidebar">
 
         <!-- Menu Icon for smaller viewports -->
-        <!-- <div id="mobile-menu-icon" class="visible-xs" onClick="toggle_main_menu();"><span class="glyphicon glyphicon-th"></span></div>  -->
+        <div id="mobile-menu-icon" class="visible-xs" onClick="toggle_main_menu();"><span class="glyphicon glyphicon-th"></span></div>
 
         <!-- ==================================================================
         MAIN MENU
@@ -81,17 +80,18 @@
         <!-- Each menu item links to a section (<article class="section-wrapper...") in the main content below.
              - set each <li> id to this format: "menu-item-[the id of the .section-wrapper to link to]".
              - set href of each <a> to the id of the .section-wrapper to link to -->
-        <!-- <ul id="main-menu">
-          <li class = "text-center"id="menu-item-intro" class="menu-item scroll"><a href="#intro">Taylor's Test Page</a></li>
-          <li id="menu-item-industrial" class="menu-item scroll"><a href="#quaker">Quaker Life in Philadelphia</a></li>
-          <li id="menu-item-timeline" class="menu-item scroll"><a href="#timeline">Industrial Revolution Timeline</a></li>
-          <li id="menu-item-timelapse" class="menu-item scroll"><a href="#timelapse">Philadelphia Timelapse</a></li> -->
+        <ul id="main-menu">
+          <li id="menu-item-intro" class="menu-item scroll"><a href="#intro">The Cope Evans Project</a></li>
+          <li id="menu-item-whatis" class="menu-item scroll"><a href="#whatis">What is the Cope Evans Project</a></li>
+          <li id="menu-item-features" class="menu-item scroll"><a href="#features">Features</a></li>
+<br>
+          <li id="menu-item-information" class="menu-item scroll"><a href="#information">Contact</a></li>
           <!-- to include a link which doesn't scroll to a section inside the page, remove the .scroll class from the <li> - example below -->
           <!-- <li id="menu-item-alt-page" class="menu-item"><a href="http://www.link.com">Outer Link</a></li> -->
-       <!--  </ul> --><!-- #main-menu -->
+       </ul><!-- #main-menu -->
         <!-- ==================== END: MAIN MENU ==================== -->
 
-      <!-- </section> --><!-- #left-sidebar -->
+      </section><!-- #left-sidebar -->
       <!-- end: Left Sidebar -->
 
       <!-- ==================================================================
@@ -99,7 +99,7 @@
       ==================================================================  -->
       <!-- all the website sections are contained in the <article> tag with class ".section-wrapper" and a unique id.
 	- to edit / remove / create website sections, you have to handle the content contained in these <article> tags -->
-      <section id="main-content" class="clearfix text-center" style="margin-left:auto;margin-right:auto;padding-left:20%;padding-right:20%;">
+      <section id="main-content" class="clearfix">
 
         <!-- ==================== SECTION TYPE: Intro Text ==================== -->
         <!-- This type of section should contain heading and intro paragraph. It can also include links to other sections -->
@@ -107,8 +107,8 @@
              - remember to use a unique id,
              - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
         <article id="intro" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/newFounders_Hall.jpg">
-          <div class="content-wrapper clearfix" style="position: absolute">
-            <div class="col-sm-12 text-center">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
 
               <!-- Start: Section content to edit -->
 
@@ -136,9 +136,9 @@
              - remember to use a unique id,
              - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
 <article id="whatis" class="section-wrapper clearfix" data-custom-background-img="{{STATIC_URL}}images/other_images/newFounders_Hall.jpg">
-          <div class="content-wrapper clearfix" style="position: absolute;">
+          <div class="content-wrapper clearfix">
            <!--  <div class="col-sm-10 col-md-9 pull-right"> -->
-            <div class="col-sm-12 text-center">
+            <div class="col-sm-10 col-md-9 pull-right">
               <!-- Start: Section content to edit -->
 
 <section>
@@ -191,9 +191,8 @@ with=550 height=450>
              - remember to use a unique id,
              - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
         <article id="features" class="section-wrapper clearfix" data-custom-background-img="/static/images/other_images/letter.jpg">
-          <div class="content-wrapper clearfix" style="position: absolute;">
-           <!--  <div class="col-sm-10 col-md-9 pull-right"> -->
-            <div class="col-sm-12 text-center">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
 
               <!-- Start: Section content to edit -->
 
@@ -272,12 +271,12 @@ with=550 height=450>
              - remember to use a unique id,
              - (optional) set a "data-custom-background-img" attribute with a link to custom background image which will be used when the viewer scrolls to this section -->
         <article id="information" class="section-wrapper clearfix" data-custom-background-img="/static/images/other_images/letter.jpg">
-          <div class="content-wrapper clearfix" style="position: absolute;">
-          <!--   <div class="col-sm-10 col-md-9 pull-right"> -->
-           <div class="col-sm-12 text-center">
+          <div class="content-wrapper clearfix">
+          <div class="col-sm-10 col-md-9 pull-right">
+          
 
               <!-- Start: Section content to edit -->
-                <a id="contact"></a><h2 class="section-title text-center"><b>Contact Us</b></h2>
+                <a id="contact"></a><h2 class="section-title"><b>Contact Us</b></h2>
               <div class="contact" details="">
 <address>
 		  <a href="http://ds.haverford.edu/" target="_blank">Digital Scholarship</a><br>
